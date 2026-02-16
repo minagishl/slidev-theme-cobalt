@@ -1,0 +1,517 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/noto-sans-jp';
+
+:root {
+	--slidev-theme-primary: oklch(37.9% 0.146 265.522);
+
+	--color-blue-50: oklch(0.97 0.014 254.604);
+	--color-blue-100: oklch(0.932 0.032 255.585);
+	--color-blue-200: oklch(0.882 0.059 254.128);
+	--color-blue-300: oklch(0.809 0.105 251.813);
+	--color-blue-400: oklch(0.707 0.165 254.624);
+	--color-blue-500: oklch(0.623 0.214 259.815);
+	--color-blue-600: oklch(0.546 0.245 262.881);
+	--color-blue-700: oklch(0.488 0.243 264.376);
+	--color-blue-800: oklch(0.424 0.199 265.638);
+	--color-blue-900: oklch(0.379 0.146 265.522);
+	--color-blue-950: oklch(0.282 0.091 267.935);
+
+	--color-amber-50: oklch(0.987 0.022 95.277);
+	--color-amber-100: oklch(0.962 0.059 95.617);
+	--color-amber-200: oklch(0.924 0.12 95.746);
+	--color-amber-300: oklch(0.879 0.169 91.605);
+	--color-amber-400: oklch(0.828 0.189 84.429);
+	--color-amber-500: oklch(0.769 0.188 70.08);
+	--color-amber-600: oklch(0.666 0.179 58.318);
+	--color-amber-700: oklch(0.555 0.163 48.998);
+	--color-amber-800: oklch(0.473 0.137 46.201);
+	--color-amber-900: oklch(0.414 0.112 45.904);
+	--color-amber-950: oklch(0.279 0.077 45.635);
+
+	--color-neutral-50: oklch(0.985 0 0);
+	--color-neutral-100: oklch(0.97 0 0);
+	--color-neutral-200: oklch(0.922 0 0);
+	--color-neutral-300: oklch(0.87 0 0);
+	--color-neutral-400: oklch(0.708 0 0);
+	--color-neutral-500: oklch(0.556 0 0);
+	--color-neutral-600: oklch(0.439 0 0);
+	--color-neutral-700: oklch(0.371 0 0);
+	--color-neutral-800: oklch(0.269 0 0);
+	--color-neutral-900: oklch(0.205 0 0);
+	--color-neutral-950: oklch(0.145 0 0);
+
+	--color-gray-50: oklch(0.985 0.002 247.839);
+	--color-gray-100: oklch(0.967 0.003 264.542);
+	--color-gray-200: oklch(0.928 0.006 264.531);
+	--color-gray-300: oklch(0.872 0.01 258.338);
+	--color-gray-400: oklch(0.707 0.022 261.325);
+	--color-gray-500: oklch(0.551 0.027 264.364);
+	--color-gray-600: oklch(0.446 0.03 256.802);
+	--color-gray-700: oklch(0.373 0.034 259.733);
+	--color-gray-800: oklch(0.278 0.033 256.848);
+	--color-gray-900: oklch(0.21 0.034 264.665);
+	--color-gray-950: oklch(0.13 0.028 261.692);
+
+	--color-black: #000;
+	--color-white: #fff;
+
+	/*
+	 * Spacing scale — values match Tailwind's default spacing scale.
+	 * https://tailwindcss.com/docs/customizing-spacing
+	 * 1 unit = 0.25rem = 4px
+	 */
+	--size-0: 0px;
+	--size-px: 1px;
+	--size-0\.5: 0.125rem;
+	--size-1: 0.25rem;
+	--size-1\.5: 0.375rem;
+	--size-2: 0.5rem;
+	--size-2\.5: 0.625rem;
+	--size-3: 0.75rem;
+	--size-3\.5: 0.875rem;
+	--size-4: 1rem;
+	--size-5: 1.25rem;
+	--size-6: 1.5rem;
+	--size-7: 1.75rem;
+	--size-8: 2rem;
+	--size-9: 2.25rem;
+	--size-10: 2.5rem;
+	--size-11: 2.75rem;
+	--size-12: 3rem;
+	--size-14: 3.5rem;
+	--size-16: 4rem;
+	--size-20: 5rem;
+	--size-24: 6rem;
+	--size-28: 7rem;
+	--size-32: 8rem;
+	--size-36: 9rem;
+	--size-40: 10rem;
+	--size-44: 11rem;
+	--size-48: 12rem;
+	--size-52: 13rem;
+	--size-56: 14rem;
+	--size-60: 15rem;
+	--size-64: 16rem;
+	--size-72: 18rem;
+	--size-80: 20rem;
+	--size-96: 24rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.slidev-layout {
+	/* Structure */
+	--frame: var(--size-7);
+	--pad: var(--size-4);
+	--title-left-pad: var(--size-20);
+	--title-gap: var(--size-3\.5);
+	--panel-inset: var(--size-7);
+	--panel-radius: var(--size-2);
+
+	/* Cover */
+	--cover-h1: var(--size-11);
+	--cover-h2: var(--size-9);
+	--cover-gap: var(--size-7);
+
+	/* Title */
+	--title-h1: var(--size-9);
+	--title-sub: var(--size-4);
+	--title-sandwich-pad-top: calc(var(--frame) + var(--size-48));
+	--title-sandwich-pad-bottom: var(--size-16);
+
+	/* Line height */
+	--line-height-none: 1;
+	--line-height-tight: 1.25;
+	--line-height-snug: 1.375;
+	--line-height-normal: 1.5;
+	--line-height-relaxed: 1.625;
+	--line-height-loose: 2;
+
+	/* Letter spacing */
+	--letter-spacing-tighter: -0.05em;
+	--letter-spacing-tight: -0.025em;
+	--letter-spacing-normal: 0em;
+	--letter-spacing-wide: 0.025em;
+	--letter-spacing-wider: 0.05em;
+	--letter-spacing-widest: 0.1em;
+
+	/* Section */
+	--section-h1: var(--size-9);
+
+	/* TOC */
+	--toc-h: var(--size-3\.5);
+	--toc-gap: var(--size-7);
+	--toc-item-gap: var(--size-6);
+	--toc-item-min-width: var(--size-48);
+	--toc-badge-w: var(--size-12);
+	--toc-badge-h: var(--size-11);
+	--toc-badge-radius: var(--size-1\.5);
+	--toc-badge-text: var(--size-4);
+	--toc-text: var(--size-6);
+
+	/* Team */
+	--team-img: var(--size-48);
+	--team-gap: var(--size-12);
+	--team-member-gap: var(--size-4);
+	--team-name: var(--size-6);
+
+	/* Quote */
+	--quote-size: var(--size-5);
+
+	/* Profile */
+	--profile-name: var(--size-8);
+	--profile-name-mb: var(--size-4);
+	--profile-text: var(--size-5);
+	--profile-list-pl: var(--size-2);
+	--profile-list-gap: var(--size-4);
+
+	font-family:
+		'Inter Variable', 'Noto Sans JP Variable', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+		'Yu Gothic', 'Meiryo', sans-serif;
+	color: var(--color-neutral-800);
+	font-size: var(--profile-text);
+	line-height: var(--line-height-normal);
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout p {
+	margin: 0;
+}
+
+.slidev-layout h1 {
+	font-size: var(--title-h1);
+	font-weight: 700;
+	letter-spacing: var(--letter-spacing-normal);
+}
+
+.slidev-layout h2 {
+	font-size: var(--title-sub);
+	font-weight: 600;
+}
+
+.slidev-layout h3 {
+	font-size: var(--title-sub);
+	font-weight: 600;
+}
+
+.slidev-layout p {
+	font-size: var(--profile-text);
+}
+
+.text-blue {
+	color: var(--color-blue-900);
+}
+
+.text-muted {
+	color: var(--color-neutral-800);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+/* Override Slidev base py-10 px-14 padding that shifts content down */
+.slidev-layout.cover,
+.slidev-layout.section,
+.slidev-layout.frame,
+.slidev-layout.panel {
+	padding: 0;
+}
+
+.cover,
+.section {
+	background: var(--color-blue-900);
+	color: var(--color-white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.cover .cover-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--cover-gap);
+}
+
+.cover h1 {
+	font-size: var(--cover-h1);
+	font-weight: 700;
+}
+
+.cover h2 {
+	font-size: var(--cover-h2);
+	font-weight: 600;
+}
+
+.section h1 {
+	font-size: var(--section-h1);
+	font-weight: 700;
+}
+
+.frame {
+	position: relative;
+	background: var(--color-blue-900);
+	color: var(--color-neutral-800);
+}
+
+.frame::before {
+	content: '';
+	position: absolute;
+	inset: var(--frame);
+	background: var(--color-white);
+}
+
+.frame > .frame-content {
+	position: relative;
+	height: 100%;
+	padding: calc(var(--frame) + var(--pad));
+	display: flex;
+	flex-direction: column;
+	gap: var(--title-gap);
+}
+
+.frame.section-frame > .frame-content,
+.frame.frame-center > .frame-content {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.section-frame h1 {
+	color: var(--color-blue-900);
+	font-size: var(--section-h1);
+}
+
+.title-left h1,
+.title-center h1,
+.title-sandwich .title-main {
+	font-size: var(--title-h1);
+	font-weight: 700;
+	letter-spacing: var(--letter-spacing-normal);
+}
+
+.title-left p,
+.title-center p,
+.title-sandwich .title-top,
+.title-sandwich .title-footer {
+	color: var(--color-blue-900);
+	font-weight: 600;
+	font-size: var(--title-sub);
+}
+
+.title-left .frame-content {
+	justify-content: center;
+	align-items: flex-start;
+	text-align: left;
+	padding-left: var(--title-left-pad);
+	padding-right: calc(var(--frame) + var(--pad));
+	gap: var(--title-gap);
+}
+
+.title-center .frame-content {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: var(--title-gap);
+}
+
+.title-sandwich .frame-content {
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	padding-top: var(--title-sandwich-pad-top);
+	padding-bottom: var(--title-sandwich-pad-bottom);
+}
+
+.title-sandwich .title-footer {
+	margin-top: auto;
+}
+
+.toc h1 {
+	color: var(--color-blue-900);
+	font-size: var(--toc-h);
+	font-weight: 700;
+	margin-bottom: 0;
+	line-height: var(--line-height-normal);
+	position: absolute;
+	top: calc(var(--frame) + var(--pad));
+	left: calc(var(--frame) + var(--pad));
+}
+
+.toc .frame-content {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+}
+
+.toc ol {
+	list-style: none;
+	counter-reset: toc;
+	display: flex;
+	flex-direction: column;
+	gap: var(--toc-gap);
+	align-items: stretch;
+	padding: 0;
+	margin: var(--toc-margin-top) 0 0;
+	width: max-content;
+	max-width: 100%;
+}
+
+.toc ol li {
+	counter-increment: toc;
+	display: flex;
+	align-items: center;
+	gap: var(--toc-item-gap);
+	font-size: var(--toc-text);
+	font-weight: 600;
+	color: var(--color-blue-900);
+	margin-left: 0;
+	padding-left: 0;
+	min-width: var(--toc-item-min-width);
+	width: 100%;
+	white-space: nowrap;
+}
+
+.toc ol li::before {
+	content: counter(toc, decimal-leading-zero);
+	background: var(--color-blue-900);
+	color: var(--color-white);
+	width: var(--toc-badge-w);
+	height: var(--toc-badge-h);
+	border-radius: var(--toc-badge-radius);
+	display: grid;
+	place-items: center;
+	font-size: var(--toc-badge-text);
+	font-weight: 700;
+}
+
+.profile h1 {
+	color: var(--color-blue-900);
+	font-size: var(--profile-name);
+	font-weight: 700;
+	margin-bottom: var(--profile-name-mb);
+}
+
+.profile .profile-inner {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-8);
+	justify-content: space-between;
+	padding: var(--size-28) var(--size-14);
+	height: 100%;
+}
+
+.profile p {
+	font-size: var(--profile-text);
+	color: var(--color-blue-900);
+	font-weight: 500;
+	line-height: var(--line-height-normal);
+}
+
+.profile .body {
+	color: var(--color-blue-900);
+	font-weight: 500;
+}
+
+.profile ol {
+	list-style: decimal;
+	padding-left: var(--profile-list-pl);
+	color: var(--color-blue-900);
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	gap: var(--profile-list-gap);
+}
+
+.profile ol li {
+	font-size: var(--profile-text);
+}
+
+.panel {
+	background: var(--color-white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.panel .panel-inner {
+	background: var(--color-gray-100);
+	width: calc(100% - (var(--panel-inset) * 2));
+	height: calc(100% - (var(--panel-inset) * 2));
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.team .panel-inner {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--team-gap);
+	text-align: center;
+}
+
+.team.team-border .panel-inner {
+	background: transparent;
+	box-shadow: 0 0 0 var(--size-1) var(--color-blue-900);
+}
+
+.team .member {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--team-member-gap);
+}
+
+.team img {
+	width: var(--team-img);
+	height: var(--team-img);
+	border-radius: 999px;
+	object-fit: cover;
+}
+
+.team .name {
+	font-size: var(--team-name);
+	font-weight: 700;
+	color: var(--color-neutral-800);
+}
+
+.quote {
+	font-size: var(--quote-size);
+	font-weight: 500;
+}
+
+.quote.blue {
+	color: var(--color-blue-900);
+}
+
+.quote.black {
+	color: var(--color-neutral-800);
+}
+
+.frame-header {
+	position: absolute;
+	top: calc(var(--frame) + var(--pad));
+	left: calc(var(--frame) + var(--pad));
+	color: var(--color-blue-900);
+	font-size: var(--toc-h);
+	font-weight: 700;
+}
