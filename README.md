@@ -25,7 +25,7 @@ Add the following frontmatter to your `slides.md`:
 
 ```
 ---
-theme: <b>cobalt</b>
+theme: cobalt
 ---
 ```
 
