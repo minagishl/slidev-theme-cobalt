@@ -69,6 +69,14 @@ layout: team
   <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" />
   <div class="name">Team Member 3</div>
 </div>
+<div class="member">
+  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" />
+  <div class="name">Team Member 4</div>
+</div>
+<div class="member">
+  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" />
+  <div class="name">Team Member 5</div>
+</div>
 
 ---
 layout: team-border
