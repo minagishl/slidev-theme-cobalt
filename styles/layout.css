@@ -444,6 +444,10 @@
   font-size: var(--profile-text);
 }
 
+.slidev-layout ol > li::first-line {
+  font-weight: 700;
+}
+
 .panel {
   background: var(--color-white);
   display: flex;
