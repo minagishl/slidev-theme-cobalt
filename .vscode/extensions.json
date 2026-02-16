@@ -1,3 +1,3 @@
 {
-	"recommendations": ["antfu.slidev", "esbenp.prettier-vscode"]
+  "recommendations": ["antfu.slidev", "esbenp.prettier-vscode"]
 }

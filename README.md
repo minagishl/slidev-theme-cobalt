@@ -23,9 +23,11 @@ A Slidev theme featuring a deep cobalt blue color scheme with framed layouts, in
 
 Add the following frontmatter to your `slides.md`:
 
-<pre><code>---
+```
+---
 theme: <b>cobalt</b>
----</code></pre>
+---
+```
 
 When you run Slidev, it will automatically install the `slidev-theme-cobalt` package.
 

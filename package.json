@@ -1,41 +1,41 @@
 {
-	"name": "slidev-theme-cobalt",
-	"version": "0.0.0",
-	"type": "module",
-	"keywords": [
-		"slidev-theme",
-		"slidev"
-	],
-	"engines": {
-		"node": ">=18.0.0"
-	},
-	"scripts": {
-		"build": "slidev build example.md",
-		"dev": "slidev example.md --open",
-		"export": "slidev export example.md",
-		"screenshot": "slidev export example.md --format png",
-		"format": "prettier --write .",
-		"format:check": "prettier --check ."
-	},
-	"dependencies": {
-		"@fontsource-variable/inter": "^5.2.8",
-		"@fontsource-variable/noto-sans-jp": "^5.2.10",
-		"@slidev/types": "^52.12.0"
-	},
-	"devDependencies": {
-		"@slidev/cli": "^52.12.0",
-		"playwright-chromium": "^1.58.2",
-		"prettier": "^3.2.5",
-		"prettier-plugin-slidev": "^1.0.5"
-	},
-	"//": "Learn more: https://sli.dev/guide/write-theme.html",
-	"slidev": {
-		"colorSchema": "both",
-		"defaults": {
-			"fonts": {
-				"sans": "Inter",
-				"mono": "Fira Code"
-			}
-		}
-	}
+  "name": "slidev-theme-cobalt",
+  "version": "0.0.0",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/noto-sans-jp": "^5.2.10",
+    "@slidev/types": "^52.12.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.12.0",
+    "playwright-chromium": "^1.58.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-slidev": "^1.0.5"
+  },
+  "//": "Learn more: https://sli.dev/guide/write-theme.html",
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "fonts": {
+        "sans": "Inter",
+        "mono": "Fira Code"
+      }
+    }
+  }
 }
