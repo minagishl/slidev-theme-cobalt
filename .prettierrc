@@ -1,19 +1,16 @@
 {
-	"useTabs": true,
-	"tabWidth": 2,
-	"semi": false,
-	"singleQuote": true,
-	"trailingComma": "es5",
-	"printWidth": 100,
-	"arrowParens": "always",
-	"endOfLine": "lf",
-	"overrides": [
-		{
-			"files": ["*.md", "example.md"],
-			"options": {
-				"parser": "slidev",
-				"plugins": ["prettier-plugin-slidev"]
-			}
-		}
-	]
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": ["*.md", "example.md"],
+      "options": {
+        "parser": "slidev",
+        "plugins": ["prettier-plugin-slidev"]
+      }
+    }
+  ]
 }
