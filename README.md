@@ -1,4 +1,4 @@
-# Slidev Theme - Cobalt
+# Slidev Theme Cobalt
 
 A Slidev theme featuring a deep cobalt blue color scheme with framed layouts, inspired by the v2.0 slide template.
 
