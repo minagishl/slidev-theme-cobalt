@@ -2,9 +2,22 @@
   "name": "slidev-theme-cobalt",
   "version": "0.0.0",
   "type": "module",
+  "description": "A Slidev theme featuring a deep cobalt blue color scheme with framed layouts",
   "keywords": [
     "slidev-theme",
     "slidev"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minagishl/slidev-theme-cobalt.git"
+  },
+  "files": [
+    "layouts",
+    "styles",
+    "setup",
+    "README.md",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=18.0.0"
