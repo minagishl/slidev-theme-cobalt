@@ -21,10 +21,10 @@ A Slidev theme featuring a deep cobalt blue color scheme with framed layouts, in
 
 ## Live Demo
 
-| Mode      | URL                                     |
-| --------- | --------------------------------------- |
-| Live Demo | https://cobalt.minagishl.com            |
-| Presenter | https://cobalt.minagishl.com/presenter/ |
+| Mode       | URL                                     |
+| ---------- | --------------------------------------- |
+| Slide Show | https://cobalt.minagishl.com            |
+| Presenter  | https://cobalt.minagishl.com/presenter/ |
 
 ## Install
 
