@@ -56,6 +56,7 @@ This theme provides the following layouts:
 - `team` - Panel layout for three team members with images
 - `team-border` - Team layout with blue border frame
 - `steps-layout` - Vertical or 2-column step list layout (use `.steps-column`, `.step`, `.step-header`, `.step-number`, `.step-title`, `.step-body`)
+- `table` - Framed table-focused layout for feature comparison or data overview slides
 - `profile` - Framed profile/text pages with header
 - `frame-panel` - Framed slide with inner panel and header
 - `image-left` - Left image and right text (use `image-col` and `content-col` divs)
@@ -69,6 +70,7 @@ No custom components are required. Use the utility classes in `styles/layout.css
 - `quote` - Larger quote text in blue or black
 - `member` / `name` - Team member blocks and names
 - `steps-column`, `step`, `step-header`, `step-number`, `step-title`, `step-body` - For structuring step-by-step slides with `steps-layout`
+- `table-layout` with native Markdown tables or HTML `<table>` elements - For clean, full-width tables with zebra stripes and hover states
 
 ## Features
 

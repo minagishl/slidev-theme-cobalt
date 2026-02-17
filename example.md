@@ -134,6 +134,18 @@ layout: steps-layout
 </div>
 
 ---
+layout: table
+---
+
+| Plan  | Price per month | Storage | Support              |
+| ----- | --------------- | ------- | -------------------- |
+| Basic | $9              | 10 GB   | Community only       |
+| Pro   | $29             | 100 GB  | Email + Chat         |
+| Elite | $79             | 1 TB    | Priority 24/7 SLA    |
+| Gold  | $139            | 2 TB    | Dedicated Manager    |
+| Ultra | $249            | 5 TB    | VIP 24/7 White Glove |
+
+---
 layout: panel
 ---
 
