@@ -94,7 +94,7 @@ layout: steps-layout
 <div class="steps-column">
   <div class="step">
     <div class="step-header">
-      <span class="step-number">1</span>
+      <span class="step-number">01</span>
       <span class="step-title">Understand the goal</span>
     </div>
     <div class="step-body">
@@ -104,7 +104,7 @@ layout: steps-layout
 
   <div class="step">
     <div class="step-header">
-      <span class="step-number">2</span>
+      <span class="step-number">02</span>
       <span class="step-title">Gather requirements</span>
     </div>
     <div class="step-body">
@@ -114,7 +114,7 @@ layout: steps-layout
 
   <div class="step">
     <div class="step-header">
-      <span class="step-number">3</span>
+      <span class="step-number">03</span>
       <span class="step-title">Design the solution</span>
     </div>
     <div class="step-body">
@@ -124,31 +124,11 @@ layout: steps-layout
 
   <div class="step">
     <div class="step-header">
-      <span class="step-number">4</span>
+      <span class="step-number">04</span>
       <span class="step-title">Implement iteratively</span>
     </div>
     <div class="step-body">
       Build small pieces, verify them early, and adjust based on feedback.
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="step-header">
-      <span class="step-number">5</span>
-      <span class="step-title">Test and refine</span>
-    </div>
-    <div class="step-body">
-      Validate behavior, performance, and usability, then refine where needed.
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="step-header">
-      <span class="step-number">6</span>
-      <span class="step-title">Share and iterate</span>
-    </div>
-    <div class="step-body">
-      Present the result, collect feedback, and plan the next improvements.
     </div>
   </div>
 </div>
