@@ -88,6 +88,34 @@ layout: team-border
 </div>
 
 ---
+layout: organization-chart
+---
+
+<div class="org-chart">
+  <div class="org-level">
+    <div class="org-node org-node--root">
+      <span class="org-node-name">Jane Smith</span>
+      <span class="org-node-role">Chief Executive Officer</span>
+    </div>
+  </div>
+  <div class="org-connector-v"></div>
+  <div class="org-level org-level--children">
+    <div class="org-node">
+      <span class="org-node-name">John Doe</span>
+      <span class="org-node-role">CTO · Technology</span>
+    </div>
+    <div class="org-node">
+      <span class="org-node-name">Alice Brown</span>
+      <span class="org-node-role">COO · Operations</span>
+    </div>
+    <div class="org-node">
+      <span class="org-node-name">Bob Wilson</span>
+      <span class="org-node-role">CFO · Finance</span>
+    </div>
+  </div>
+</div>
+
+---
 layout: panel
 ---
 

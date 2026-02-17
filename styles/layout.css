@@ -159,6 +159,16 @@
   --team-img-scale-multiple: 0.8;
   --team-name-scale-multiple: 0.9;
 
+  /* Organization chart */
+  --org-node-pad: var(--size-4);
+  --org-node-min-width: var(--size-56);
+  --org-node-name-size: var(--size-5);
+  --org-node-role-size: var(--size-3\.5);
+  --org-level-gap: var(--size-8);
+  --org-connector-stroke: var(--size-1);
+  --org-connector-color: var(--color-blue-900);
+  --org-node-border: var(--color-gray-300);
+
   /* Quote */
   --quote-size: var(--size-5);
 
@@ -642,6 +652,157 @@
 .team.team-count-11 .name,
 .team.team-count-12 .name {
   font-size: calc(var(--team-name) * var(--team-name-scale-multiple));
+}
+
+/* Organization chart layout */
+.org-chart-layout.frame > .frame-content.org-chart-content {
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--frame) + var(--pad));
+  overflow: auto;
+}
+
+.org-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: var(--size-4) 0;
+}
+
+.org-level {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--org-level-gap);
+}
+
+/* Hide standalone vertical connector; vertical bar is drawn with ::after on children level so it aligns with the horizontal bar */
+.org-level + .org-connector-v {
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.org-connector-h {
+  width: 100%;
+  height: var(--org-connector-stroke);
+  background: var(--org-connector-color);
+  flex-shrink: 0;
+}
+
+.org-level.org-level--children {
+  position: relative;
+  padding-top: calc(var(--size-6) + var(--size-2));
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Horizontal bar: spans from center of first child to center of last child.
+   Formula: (100% - (N-1)*gap) / (2*N) = half-node-width as a percentage of container */
+.org-level.org-level--children::before {
+  content: '';
+  position: absolute;
+  top: var(--size-6);
+  left: calc((100% - 2 * var(--org-level-gap)) / 6);
+  right: calc((100% - 2 * var(--org-level-gap)) / 6);
+  height: var(--org-connector-stroke);
+  background: var(--org-connector-color);
+}
+
+.org-level--children:has(> .org-node:only-child)::before {
+  display: none;
+}
+
+.org-level--children:has(> .org-node:nth-child(2):last-child)::before {
+  left: calc((100% - var(--org-level-gap)) / 4);
+  right: calc((100% - var(--org-level-gap)) / 4);
+}
+
+.org-level--children:has(> .org-node:nth-child(4):last-child)::before {
+  left: calc((100% - 3 * var(--org-level-gap)) / 8);
+  right: calc((100% - 3 * var(--org-level-gap)) / 8);
+}
+
+.org-level--children:has(> .org-node:nth-child(5):last-child)::before {
+  left: calc((100% - 4 * var(--org-level-gap)) / 10);
+  right: calc((100% - 4 * var(--org-level-gap)) / 10);
+}
+
+/* Vertical bar from root down to horizontal bar */
+.org-level.org-level--children::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--org-connector-stroke);
+  height: var(--size-6);
+  background: var(--org-connector-color);
+}
+
+.org-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: var(--org-node-min-width);
+  padding: var(--org-node-pad) var(--size-5);
+  background: var(--color-white);
+  border: var(--org-connector-stroke) solid var(--org-node-border);
+  border-radius: 0;
+  position: relative;
+}
+
+.org-node::before {
+  content: '';
+  position: absolute;
+  top: calc(-1 * (var(--size-2) + var(--org-connector-stroke)));
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--org-connector-stroke);
+  height: var(--size-2);
+  background: var(--org-connector-color);
+}
+
+.org-level:first-child .org-node::before,
+.org-node--root::before {
+  display: none;
+}
+
+.org-node--root {
+  background: var(--color-blue-900);
+  border-color: var(--color-blue-900);
+  color: var(--color-white);
+}
+
+.org-node--root .org-node-name,
+.org-node--root .org-node-role {
+  color: var(--color-white);
+}
+
+.org-node-name {
+  font-size: var(--org-node-name-size);
+  font-weight: 700;
+  color: var(--color-blue-900);
+  text-align: center;
+  line-height: var(--line-height-tight);
+}
+
+.org-node-role {
+  font-size: var(--org-node-role-size);
+  font-weight: 500;
+  color: var(--color-neutral-600);
+  text-align: center;
+  margin-top: var(--size-1);
+  line-height: var(--line-height-normal);
 }
 
 .quote {
