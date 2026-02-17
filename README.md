@@ -55,6 +55,7 @@ This theme provides the following layouts:
 - `panel` - Light gray panel on white background for quotes and content
 - `team` - Panel layout for three team members with images
 - `team-border` - Team layout with blue border frame
+- `steps-layout` - Vertical or 2-column step list layout (use `.steps-column`, `.step`, `.step-header`, `.step-number`, `.step-title`, `.step-body`)
 - `profile` - Framed profile/text pages with header
 - `frame-panel` - Framed slide with inner panel and header
 - `image-left` - Left image and right text (use `image-col` and `content-col` divs)
@@ -62,14 +63,19 @@ This theme provides the following layouts:
 
 ## Components
 
-No custom components are required. Use the utility classes in `styles/layout.css` such as `text-blue`, `quote`, `member`, and `name`.
+No custom components are required. Use the utility classes in `styles/layout.css` such as:
+
+- `text-blue` - Emphasized blue text
+- `quote` - Larger quote text in blue or black
+- `member` / `name` - Team member blocks and names
+- `steps-column`, `step`, `step-header`, `step-number`, `step-title`, `step-body` - For structuring step-by-step slides with `steps-layout`
 
 ## Features
 
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
 - **Japanese Support**: Includes Noto Sans JP font for Japanese text
-- **Multiple Layouts**: 15 layout options for various presentation needs
+- **Multiple Layouts**: 16 layout options for various presentation needs
 
 ## Deploy (Cloudflare Workers)
 
