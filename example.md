@@ -169,3 +169,21 @@ layout: image-right
 With the `image-right` layout, the image is on the right and the text on the left.
 
 </div>
+
+---
+layout: section
+---
+
+# About This Theme
+
+This presentation uses **Slidev Theme Cobalt** by [minagishl](https://github.com/minagishl). It is licensed under MIT. We would be happy if you could credit the theme name and developer somewhere in your slides.
+
+---
+layout: panel
+---
+
+<div class="license-block">
+  <div class="license-title">License</div>
+  <p><strong>Copyright (c) 2026 Minagishl</strong></p>
+  <p>This theme is provided under the MIT License.</p>
+</div>
