@@ -180,6 +180,19 @@
   /* Image + Text (left/right) */
   --image-text-gap: var(--size-8);
 
+  /* Slidev Code Block */
+  --slidev-code-background: #f5f5f5 !important;
+  --slidev-code-foreground: #1b1b1b !important;
+  --slidev-code-padding: var(--size-2) !important;
+  --slidev-code-font-size: var(--font-size-p) !important;
+  --slidev-code-line-height: var(--line-height-normal) !important;
+  --slidev-code-radius: var(--size-1) !important;
+  --slidev-code-margin: var(--size-2) 0 !important;
+  --slidev-code-tab-divider: var(--color-gray-200) !important;
+  --slidev-code-tab-text-color: var(--color-gray-500) !important;
+  --slidev-code-tab-font-size: var(--font-size-p) !important;
+  --slidev-code-tab-active-text-color: #3c3c43;
+
   font-family:
     'Inter Variable', 'Noto Sans JP Variable', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
     'Yu Gothic', 'Meiryo', sans-serif;
