@@ -11,6 +11,12 @@
         "parser": "slidev",
         "plugins": ["prettier-plugin-slidev"]
       }
+    },
+    {
+      "files": ["*.json", "*.jsonc"],
+      "options": {
+        "trailingComma": "none"
+      }
     }
   ]
 }
