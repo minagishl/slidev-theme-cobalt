@@ -852,7 +852,7 @@
   background: var(--color-white);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   gap: var(--size-2);
 }
 
@@ -883,18 +883,13 @@
 .step-body {
   font-size: var(--font-size-p);
   color: var(--color-neutral-800);
+  padding-left: var(--size-11);
 }
 
 /* When the number of steps is less than 3 (1 or 2),
    stretch them to use the full vertical space */
 .steps-column:not(:has(.step:nth-child(3))) .step {
   flex: 1 1 0;
-}
-
-/* Vertical spacing between steps (similar to Tailwind's space-y-*):
-   apply margin only between siblings, not on the outer edges */
-.steps-column > .step + .step {
-  margin-top: var(--steps-space);
 }
 
 /* When the number of steps is greater than 3 (4 or more),
@@ -908,10 +903,4 @@
 .steps-column:has(.step:nth-child(4)) .step {
   flex: 0 0 calc(50% - var(--steps-space) / 2);
   max-width: calc(50% - var(--steps-space) / 2);
-}
-
-/* Vertical spacing between rows:
-   apply margin-top only to items on the second row and beyond */
-.steps-column:has(.step:nth-child(4)) > .step:nth-child(n + 3) {
-  margin-top: var(--steps-space);
 }
