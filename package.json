@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "slidev build example.md",
-    "deploy": "bun run build && wrangler deploy",
+    "deploy": "bun run build && rm ./dist/_redirects && wrangler deploy",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
     "screenshot": "slidev export example.md --format png",
