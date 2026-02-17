@@ -630,7 +630,7 @@
 
 .team .name {
   font-size: var(--team-name);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-neutral-800);
 }
 
