@@ -178,6 +178,9 @@
   --profile-list-pl: var(--size-2);
   --profile-list-gap: var(--size-4);
 
+  /* Steps */
+  --steps-space: var(--size-4);
+
   /* Font size */
   --font-size-h1: var(--size-9);
   --font-size-h2: var(--size-4);
@@ -825,4 +828,90 @@
   color: var(--color-blue-900);
   font-size: var(--toc-h);
   font-weight: 700;
+}
+
+/* Steps layout */
+.steps-layout.frame > .frame-content.steps-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: calc(var(--frame) + var(--pad));
+  overflow: auto;
+}
+
+.steps-column {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.step {
+  border-radius: 0;
+  padding: var(--size-4);
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--size-2);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: var(--size-3);
+  font-weight: 600;
+  color: var(--color-blue-900);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-8);
+  height: var(--size-8);
+  border-radius: 999px;
+  background: var(--color-blue-900);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.step-title {
+  font-size: var(--font-size-h3);
+}
+
+.step-body {
+  font-size: var(--font-size-p);
+  color: var(--color-neutral-800);
+}
+
+/* When the number of steps is less than 3 (1 or 2),
+   stretch them to use the full vertical space */
+.steps-column:not(:has(.step:nth-child(3))) .step {
+  flex: 1 1 0;
+}
+
+/* Vertical spacing between steps (similar to Tailwind's space-y-*):
+   apply margin only between siblings, not on the outer edges */
+.steps-column > .step + .step {
+  margin-top: var(--steps-space);
+}
+
+/* When the number of steps is greater than 3 (4 or more),
+   make each box roughly half height using simple flex */
+.steps-column:has(.step:nth-child(4)) {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.steps-column:has(.step:nth-child(4)) .step {
+  flex: 0 0 calc(50% - var(--steps-space) / 2);
+  max-width: calc(50% - var(--steps-space) / 2);
+}
+
+/* Vertical spacing between rows:
+   apply margin-top only to items on the second row and beyond */
+.steps-column:has(.step:nth-child(4)) > .step:nth-child(n + 3) {
+  margin-top: var(--steps-space);
 }
