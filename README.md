@@ -19,6 +19,13 @@ A Slidev theme featuring a deep cobalt blue color scheme with framed layouts, in
 </tr>
 </table>
 
+## Live Demo
+
+| Mode      | URL                                     |
+| --------- | --------------------------------------- |
+| Live Demo | https://cobalt.minagishl.com            |
+| Presenter | https://cobalt.minagishl.com/presenter/ |
+
 ## Install
 
 Add the following frontmatter to your `slides.md`:
