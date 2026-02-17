@@ -72,7 +72,7 @@ You can deploy the built slides as static assets to Cloudflare Workers.
 2. Deploy: `bun run deploy` (runs `bun run build` then `wrangler deploy`).
 3. After deployment, the slides are available at the shown `*.workers.dev` URL.
 
-Configure the Worker name and options in `wrangler.toml` (e.g. edit `name` to change the subdomain).
+Configure the Worker name and options in `wrangler.jsonc` (e.g. edit `name` to change the subdomain).
 
 ## Contributing
 
