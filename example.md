@@ -87,7 +87,9 @@ layout: team-border
   <div class="name">Team Member 3</div>
 </div>
 
+---
 layout: steps-layout
+---
 
 <div class="steps-column">
   <div class="step">
