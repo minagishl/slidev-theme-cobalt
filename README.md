@@ -50,6 +50,8 @@ This theme provides the following layouts:
 - `team-border` - Team layout with blue border frame
 - `profile` - Framed profile/text pages with header
 - `frame-panel` - Framed slide with inner panel and header
+- `image-left` - Left image and right text (use `image-col` and `content-col` divs)
+- `image-right` - Right image and left text (use `image-col` and `content-col` divs)
 
 ## Components
 
@@ -60,7 +62,7 @@ No custom components are required. Use the utility classes in `styles/layout.css
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
 - **Japanese Support**: Includes Noto Sans JP font for Japanese text
-- **Multiple Layouts**: 13 layout options for various presentation needs
+- **Multiple Layouts**: 15 layout options for various presentation needs
 
 ## Contributing
 

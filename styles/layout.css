@@ -165,15 +165,23 @@
   /* Profile */
   --profile-name: var(--size-8);
   --profile-name-mb: var(--size-4);
-  --profile-text: var(--size-5);
   --profile-list-pl: var(--size-2);
   --profile-list-gap: var(--size-4);
+
+  /* Font size */
+  --font-size-h1: var(--size-9);
+  --font-size-h2: var(--size-4);
+  --font-size-h3: var(--size-4);
+  --font-size-p: var(--size-5);
+
+  /* Image + Text (left/right) */
+  --image-text-gap: var(--size-8);
 
   font-family:
     'Inter Variable', 'Noto Sans JP Variable', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
     'Yu Gothic', 'Meiryo', sans-serif;
   color: var(--color-neutral-800);
-  font-size: var(--profile-text);
+  font-size: var(--font-size-p);
   line-height: var(--line-height-normal);
 }
 
@@ -201,7 +209,7 @@
 }
 
 .slidev-layout p {
-  font-size: var(--profile-text);
+  font-size: var(--font-size-p);
 }
 
 .text-blue {
@@ -291,6 +299,65 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* Image + Text: left/right image + content (use .image-col and .content-col in slide) */
+.frame.image-text > .frame-content.image-text-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: var(--image-text-gap);
+  align-items: stretch;
+  padding: calc(var(--frame) + var(--pad));
+}
+
+.frame.image-text.image-left > .frame-content.image-text-inner {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+}
+
+.frame.image-text.image-right > .frame-content.image-text-inner {
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+}
+
+.frame.image-text.image-right .image-text-inner .image-col {
+  order: 2;
+}
+
+.frame.image-text.image-right .image-text-inner .content-col {
+  order: 1;
+}
+
+.frame.image-text .image-text-inner .image-col {
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-gray-100);
+}
+
+.frame.image-text .image-text-inner .image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.frame.image-text .image-text-inner .content-col {
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.frame.image-text .image-text-inner .content-col h1,
+.frame.image-text .image-text-inner .content-col h2,
+.frame.image-text .image-text-inner .content-col h3 {
+  color: var(--color-blue-900);
+  font-size: var(--font-size-p);
+  font-weight: 600;
+  margin-bottom: var(--size-2);
 }
 
 .section-frame h1 {
@@ -421,7 +488,7 @@
 }
 
 .profile p {
-  font-size: var(--profile-text);
+  font-size: var(--font-size-p);
   color: var(--color-blue-900);
   font-weight: 500;
   line-height: var(--line-height-normal);
@@ -443,7 +510,7 @@
 }
 
 .profile ol li {
-  font-size: var(--profile-text);
+  font-size: var(--font-size-p);
 }
 
 .slidev-layout ol > li::first-line {

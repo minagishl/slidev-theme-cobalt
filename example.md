@@ -134,3 +134,38 @@ layout: frame-panel
 
 <div class="frame-header">Table of Contents</div>
 <div class="quote blue">A short quote or statement</div>
+
+---
+layout: image-left
+---
+
+<div class="image-col">
+  <img src="https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop" alt="Cat" />
+</div>
+
+<div class="content-col">
+
+## Left-Right Layout Example
+
+Place an image on the left and text on the right.
+
+- Bullet points are supported
+- Add headings and paragraphs as you like
+
+</div>
+
+---
+layout: image-right
+---
+
+<div class="image-col">
+  <img src="https://images.unsplash.com/photo-1549545931-59bf067af9ab?auto=format&fit=crop" alt="Cat" />
+</div>
+
+<div class="content-col">
+
+## Image on the Right
+
+With the `image-right` layout, the image is on the right and the text on the left.
+
+</div>
