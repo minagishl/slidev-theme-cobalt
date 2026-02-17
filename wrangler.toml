@@ -1,0 +1,9 @@
+# Cloudflare Workers - Static Assets
+# Deploy: bun run build && bun run deploy
+name = "slidev-theme-cobalt"
+compatibility_date = "2024-12-01"
+
+[assets]
+directory = "./dist"
+# SPA: serve index.html for slide routes (/1, /2, etc.)
+not_found_handling = "single-page-application"

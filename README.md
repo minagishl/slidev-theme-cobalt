@@ -64,6 +64,16 @@ No custom components are required. Use the utility classes in `styles/layout.css
 - **Japanese Support**: Includes Noto Sans JP font for Japanese text
 - **Multiple Layouts**: 15 layout options for various presentation needs
 
+## Deploy (Cloudflare Workers)
+
+You can deploy the built slides as static assets to Cloudflare Workers.
+
+1. Log in at [Cloudflare](https://dash.cloudflare.com/) and run `bunx wrangler login` to authenticate (once).
+2. Deploy: `bun run deploy` (runs `bun run build` then `wrangler deploy`).
+3. After deployment, the slides are available at the shown `*.workers.dev` URL.
+
+Configure the Worker name and options in `wrangler.toml` (e.g. edit `name` to change the subdomain).
+
 ## Contributing
 
 - `bun install`
