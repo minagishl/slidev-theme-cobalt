@@ -688,7 +688,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
   padding: calc(var(--frame) + var(--pad));
   overflow: auto;
   gap: var(--size-6);
