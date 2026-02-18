@@ -42,6 +42,21 @@ layout: toc
 3. Conclusion
 
 ---
+layout: toc
+---
+
+# Table of Contents (2 columns)
+
+1. Mission
+2. Company Overview
+3. Business Overview
+4. Work Environment
+5. Employee Voices
+6. How We Work
+7. Hiring Process
+8. Contact
+
+---
 layout: section
 ---
 

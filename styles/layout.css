@@ -143,6 +143,7 @@
   /* TOC */
   --toc-h: var(--size-3\.5);
   --toc-gap: var(--size-7);
+  --toc-col-gap: var(--size-24);
   --toc-item-gap: var(--size-6);
   --toc-item-min-width: var(--size-48);
   --toc-badge-w: var(--size-12);
@@ -474,6 +475,15 @@
   margin: var(--toc-margin-top) 0 0;
   width: max-content;
   max-width: 100%;
+}
+
+.toc:has(ol li:nth-child(5)) ol {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, auto);
+  row-gap: var(--toc-gap);
+  column-gap: var(--toc-col-gap);
+  align-items: start;
 }
 
 .toc ol li {
