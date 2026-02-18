@@ -227,6 +227,7 @@
 
 .slidev-layout p {
   font-size: var(--font-size-p);
+  line-height: var(--line-height-normal);
 }
 
 .text-blue {
