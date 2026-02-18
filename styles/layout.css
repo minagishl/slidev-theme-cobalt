@@ -230,6 +230,10 @@
   line-height: var(--line-height-normal);
 }
 
+.slidev-layout ul {
+  margin-top: var(--size-2);
+}
+
 .text-blue {
   color: var(--color-blue-900);
 }
