@@ -280,6 +280,23 @@ With the `image-right` layout, the image is on the right and the text on the lef
 </div>
 
 ---
+layout: image-left
+---
+
+<div class="image-col">
+  <img src="https://images.unsplash.com/photo-1758482725144-3363d2d350be?auto=format&fit=crop" alt="Cat" />
+  <div class="image-label">Photo label</div>
+</div>
+
+<div class="content-col">
+
+## Image Label
+
+To display a label at the bottom of an image, add an element with class `image-label` inside the `.image-col` of either the `image-left` or `image-right` layout.
+
+</div>
+
+---
 layout: section
 ---
 
