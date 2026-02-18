@@ -809,6 +809,15 @@
   justify-content: center;
   padding: calc(var(--frame) + var(--pad));
   overflow: auto;
+  gap: var(--size-4);
+}
+
+.process-flow h1 {
+  color: var(--color-blue-900);
+  font-size: var(--size-6);
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
 }
 
 .process-flow-container {
