@@ -809,7 +809,7 @@
   justify-content: center;
   padding: calc(var(--frame) + var(--pad));
   overflow: auto;
-  gap: var(--size-4);
+  gap: var(--size-0);
 }
 
 .process-flow h1 {
