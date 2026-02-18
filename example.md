@@ -134,6 +134,40 @@ layout: steps-layout
 </div>
 
 ---
+layout: process-flow
+---
+
+<div class="process-flow-container">
+  <div class="process-step">
+    <div class="process-step-circle">
+      <div class="process-step-title">Planning</div>
+    </div>
+    <div class="process-step-description">Define project requirements and create a detailed plan</div>
+  </div>
+  <div class="process-arrow"></div>
+  <div class="process-step">
+    <div class="process-step-circle">
+      <div class="process-step-title">Development</div>
+    </div>
+    <div class="process-step-description">Build the solution according to specifications</div>
+  </div>
+  <div class="process-arrow"></div>
+  <div class="process-step">
+    <div class="process-step-circle">
+      <div class="process-step-title">Testing</div>
+    </div>
+    <div class="process-step-description">Verify functionality and ensure quality standards</div>
+  </div>
+  <div class="process-arrow"></div>
+  <div class="process-step">
+    <div class="process-step-circle">
+      <div class="process-step-title">Deployment</div>
+    </div>
+    <div class="process-step-description">Release to production and monitor performance</div>
+  </div>
+</div>
+
+---
 layout: table
 ---
 
