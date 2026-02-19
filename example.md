@@ -224,6 +224,40 @@ color: blue
 A short quote or statement
 
 ---
+layout: panel
+color: blue
+align: left
+---
+
+Left-aligned quote
+
+---
+layout: panel
+color: blue
+align: right
+---
+
+Right-aligned quote
+
+---
+layout: frame-panel
+header: Alignment Example
+color: blue
+align: left
+---
+
+Left-aligned content
+
+---
+layout: frame-panel
+header: Alignment Example
+color: blue
+align: right
+---
+
+Right-aligned content
+
+---
 layout: image-left
 image: https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop
 alt: Cat
