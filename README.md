@@ -58,6 +58,7 @@ This theme provides the following layouts:
 - `steps-layout` - Vertical or 2-column step list layout (use `.steps-column`, `.step`, `.step-header`, `.step-number`, `.step-title`, `.step-body`)
 - `process-flow` - Horizontal process flow with circular steps and connecting arrows (use `.process-flow-container`, `.process-step`, `.process-step-circle`, `.process-step-title`, `.process-step-description`, `.process-arrow`)
 - `table` - Framed table-focused layout for feature comparison or data overview slides
+- `two-cols` - Two equal columns for side-by-side content (use `.two-cols-col` divs for each column)
 - `profile` - Framed profile/text pages with header
 - `frame-panel` - Framed slide with inner panel and header
 - `image-left` - Left image and right text (use `image-col` and `content-col` divs)
@@ -73,13 +74,14 @@ No custom components are required. Use the utility classes in `styles/layout.css
 - `steps-column`, `step`, `step-header`, `step-number`, `step-title`, `step-body` - For structuring step-by-step slides with `steps-layout`
 - `process-flow-container`, `process-step`, `process-step-circle`, `process-step-title`, `process-step-description`, `process-arrow` - For horizontal process flow diagrams with `process-flow`
 - `table-layout` with native Markdown tables or HTML `<table>` elements - For clean, full-width tables with zebra stripes and hover states
+- `two-cols-col` - For each column in the `two-cols` layout (wrap content in two divs with this class)
 
 ## Features
 
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
 - **Japanese Support**: Includes Noto Sans JP font for Japanese text
-- **Multiple Layouts**: 17 layout options for various presentation needs
+- **Multiple Layouts**: 18 layout options for various presentation needs
 
 ## Deploy (Cloudflare Workers)
 

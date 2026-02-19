@@ -197,6 +197,30 @@ layout: table
 | Ultra | $249            | 5 TB    | VIP 24/7 White Glove |
 
 ---
+layout: two-cols
+---
+
+<div class="two-cols-col">
+
+## Left Column
+
+Place any content in the left column: lists, paragraphs, or headings.
+
+- First point
+- Second point
+- Third point
+
+</div>
+
+<div class="two-cols-col">
+
+## Right Column
+
+The right column has equal width. Use this layout to compare ideas or show two related sections side by side.
+
+</div>
+
+---
 layout: panel
 ---
 
