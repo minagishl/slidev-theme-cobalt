@@ -426,7 +426,9 @@
 
 .title-left h1,
 .title-center h1,
-.title-sandwich .title-main {
+.title-sandwich .title-main,
+.title-sandwich .title-main h1,
+.title-sandwich .title-main p {
   font-size: var(--title-h1);
   font-weight: 700;
   letter-spacing: var(--letter-spacing-normal);
@@ -435,10 +437,13 @@
 .title-left p,
 .title-center p,
 .title-sandwich .title-top,
-.title-sandwich .title-footer {
+.title-sandwich .title-footer,
+.title-sandwich .title-top p,
+.title-sandwich .title-footer p {
   color: var(--color-blue-900);
   font-weight: 600;
   font-size: var(--title-sub);
+  margin: 0;
 }
 
 .title-left .frame-content {
@@ -702,6 +707,13 @@
   font-weight: 500;
 }
 
+.quote p {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: 0;
+}
+
 .quote.blue {
   color: var(--color-blue-900);
 }
@@ -729,11 +741,26 @@
   max-width: 80%;
 }
 
+.quote-layout .quote p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+}
+
 .quote-layout .quote-source {
   font-size: var(--font-size-p);
   color: var(--color-neutral-600);
   margin: 0;
   font-weight: 500;
+}
+
+.quote-layout .quote-source p {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: 0;
 }
 
 .quote-layout .quote-source strong {

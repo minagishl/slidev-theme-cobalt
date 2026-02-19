@@ -1,61 +1,35 @@
-<template>
-  <div class="slidev-layout panel team" :class="teamClass" ref="teamRef">
-    <div class="panel-inner" ref="panelInnerRef">
-      <slot />
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { computed, ref, onMounted, nextTick, watchEffect } from 'vue'
+import { computed } from 'vue'
 
-const teamRef = ref<HTMLElement | null>(null)
-const panelInnerRef = ref<HTMLElement | null>(null)
-const memberCount = ref(0)
-
-const updateMemberCount = () => {
-  if (panelInnerRef.value) {
-    const members = panelInnerRef.value.querySelectorAll('.member')
-    memberCount.value = members.length
-  }
-}
-
-onMounted(() => {
-  nextTick(() => {
-    updateMemberCount()
-    // Watch for DOM changes in case members are loaded asynchronously
-    const observer = new MutationObserver(() => {
-      updateMemberCount()
-    })
-    if (panelInnerRef.value) {
-      observer.observe(panelInnerRef.value, {
-        childList: true,
-        subtree: true,
-      })
-    }
-  })
-})
+const props = defineProps<{
+  members: Array<{ name: string; img: string }>
+}>()
 
 const teamClass = computed(() => {
-  const count = memberCount.value
+  const count = props.members.length
   if (count < 3) return ''
 
-  // Add class according to the number of members
   const classes = [`team-count-${count}`]
 
-  // If divisible by 4: 2 columns layout (e.g., 2+2, 4+4)
   if (count % 4 === 0) {
     classes.push('team-cols-2')
-  }
-  // If divisible by 3: 3 columns layout (e.g., 3+3, 6+3)
-  else if (count % 3 === 0) {
+  } else if (count % 3 === 0) {
     classes.push('team-cols-3')
-  }
-  // Otherwise: 3 columns, with more on top and less centered on bottom
-  else {
+  } else {
     classes.push('team-cols-3', 'team-center-bottom')
   }
 
   return classes.join(' ')
 })
 </script>
+
+<template>
+  <div class="slidev-layout panel team" :class="teamClass">
+    <div class="panel-inner">
+      <div v-for="member in members" :key="member.name" class="member">
+        <img :src="member.img" />
+        <div class="name">{{ member.name }}</div>
+      </div>
+    </div>
+  </div>
+</template>

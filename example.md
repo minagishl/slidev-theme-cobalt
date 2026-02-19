@@ -27,9 +27,13 @@ Project - Minagishl
 layout: title-sandwich
 ---
 
-<div class="title-top">Project - Minagishl</div>
-<div class="title-main">Presentation Title</div>
-<div class="title-footer">Date and other information</div>
+# Presentation Title
+
+::top::
+Project - Minagishl
+
+::footer::
+Date and other information
 
 ---
 layout: toc
@@ -70,119 +74,53 @@ layout: section-frame
 
 ---
 layout: team
+members:
+  - name: Team Member 1
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+  - name: Team Member 2
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+  - name: Team Member 3
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
 ---
-
-<div class="member">
-  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" />
-  <div class="name">Team Member 1</div>
-</div>
-<div class="member">
-  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" />
-  <div class="name">Team Member 2</div>
-</div>
-<div class="member">
-  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" />
-  <div class="name">Team Member 3</div>
-</div>
 
 ---
 layout: team-border
+members:
+  - name: Team Member 1
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+  - name: Team Member 2
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+  - name: Team Member 3
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
 ---
-
-<div class="member">
-  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" />
-  <div class="name">Team Member 1</div>
-</div>
-<div class="member">
-  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" />
-  <div class="name">Team Member 2</div>
-</div>
-<div class="member">
-  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" />
-  <div class="name">Team Member 3</div>
-</div>
 
 ---
 layout: steps-layout
+steps:
+  - title: Understand the goal
+    body: Clarify what problem you want to solve and what success looks like.
+  - title: Gather requirements
+    body: List constraints, stakeholders, and any technical or business requirements.
+  - title: Design the solution
+    body: Create a simple architecture or flow that explains how the solution will work.
+  - title: Implement iteratively
+    body: Build small pieces, verify them early, and adjust based on feedback.
 ---
-
-<div class="steps-column">
-  <div class="step">
-    <div class="step-header">
-      <span class="step-number">01</span>
-      <span class="step-title">Understand the goal</span>
-    </div>
-    <div class="step-body">
-      Clarify what problem you want to solve and what success looks like.
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="step-header">
-      <span class="step-number">02</span>
-      <span class="step-title">Gather requirements</span>
-    </div>
-    <div class="step-body">
-      List constraints, stakeholders, and any technical or business requirements.
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="step-header">
-      <span class="step-number">03</span>
-      <span class="step-title">Design the solution</span>
-    </div>
-    <div class="step-body">
-      Create a simple architecture or flow that explains how the solution will work.
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="step-header">
-      <span class="step-number">04</span>
-      <span class="step-title">Implement iteratively</span>
-    </div>
-    <div class="step-body">
-      Build small pieces, verify them early, and adjust based on feedback.
-    </div>
-  </div>
-</div>
 
 ---
 layout: process-flow
+steps:
+  - title: Planning
+    description: Define project requirements and create a detailed plan
+  - title: Development
+    description: Build the solution according to specifications
+  - title: Testing
+    description: Verify functionality and ensure quality standards
+  - title: Deployment
+    description: Release to production and monitor performance
 ---
 
 # Project Workflow
-
-<div class="process-flow-container">
-  <div class="process-step">
-    <div class="process-step-circle">
-      <div class="process-step-title">Planning</div>
-    </div>
-    <div class="process-step-description">Define project requirements and create a detailed plan</div>
-  </div>
-  <div class="process-arrow"></div>
-  <div class="process-step">
-    <div class="process-step-circle">
-      <div class="process-step-title">Development</div>
-    </div>
-    <div class="process-step-description">Build the solution according to specifications</div>
-  </div>
-  <div class="process-arrow"></div>
-  <div class="process-step">
-    <div class="process-step-circle">
-      <div class="process-step-title">Testing</div>
-    </div>
-    <div class="process-step-description">Verify functionality and ensure quality standards</div>
-  </div>
-  <div class="process-arrow"></div>
-  <div class="process-step">
-    <div class="process-step-circle">
-      <div class="process-step-title">Deployment</div>
-    </div>
-    <div class="process-step-description">Release to production and monitor performance</div>
-  </div>
-</div>
 
 ---
 layout: table
@@ -200,7 +138,7 @@ layout: table
 layout: two-cols
 ---
 
-<div class="two-cols-col">
+::left::
 
 ## Left Column
 
@@ -210,47 +148,50 @@ Place any content in the left column: lists, paragraphs, or headings.
 - Second point
 - Third point
 
-</div>
-
-<div class="two-cols-col">
+::right::
 
 ## Right Column
 
 The right column has equal width. Use this layout to compare ideas or show two related sections side by side.
 
-</div>
+---
+layout: quote
+color: blue
+---
+
+This theme made our presentations look professional and consistent. We use it for every client pitch.
+
+::source::
+**Jane Doe**, Head of Design
 
 ---
 layout: quote
+color: black
 ---
 
-<div class="quote blue">This theme made our presentations look professional and consistent. We use it for every client pitch.</div>
-<div class="quote-source"><strong>Jane Doe</strong>, Head of Design</div>
+Simple to customize, great typography, and the framed layouts really stand out in the room.
 
----
-layout: quote
----
-
-<div class="quote black">Simple to customize, great typography, and the framed layouts really stand out in the room.</div>
-<div class="quote-source"><strong>Alex Chen</strong>, Engineering Lead</div>
+::source::
+**Alex Chen**, Engineering Lead
 
 ---
 layout: panel
+color: blue
 ---
 
-<div class="quote blue">A short quote or statement</div>
+A short quote or statement
 
 ---
 layout: panel
+color: black
 ---
 
-<div class="quote black">Another quote or statement</div>
+Another quote or statement
 
 ---
 layout: profile
+header: Table of Contents - About
 ---
-
-<div class="frame-header">Table of Contents - About</div>
 
 # Minagishl
 
@@ -262,9 +203,8 @@ engaging in various engineering activities
 
 ---
 layout: profile
+header: Table of Contents - About
 ---
-
-<div class="frame-header">Table of Contents - About</div>
 
 # Minagishl
 
@@ -277,20 +217,17 @@ layout: profile
 
 ---
 layout: frame-panel
+header: Table of Contents
+color: blue
 ---
 
-<div class="frame-header">Table of Contents</div>
-<div class="quote blue">A short quote or statement</div>
+A short quote or statement
 
 ---
 layout: image-left
+image: https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop
+alt: Cat
 ---
-
-<div class="image-col">
-  <img src="https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop" alt="Cat" />
-</div>
-
-<div class="content-col">
 
 ## Left-Right Layout Example
 
@@ -299,40 +236,26 @@ Place an image on the left and text on the right.
 - Bullet points are supported
 - Add headings and paragraphs as you like
 
-</div>
-
 ---
 layout: image-right
+image: https://images.unsplash.com/photo-1549545931-59bf067af9ab?auto=format&fit=crop
+alt: Cat
 ---
-
-<div class="image-col">
-  <img src="https://images.unsplash.com/photo-1549545931-59bf067af9ab?auto=format&fit=crop" alt="Cat" />
-</div>
-
-<div class="content-col">
 
 ## Image on the Right
 
 With the `image-right` layout, the image is on the right and the text on the left.
 
-</div>
-
 ---
 layout: image-left
+image: https://images.unsplash.com/photo-1758482725144-3363d2d350be?auto=format&fit=crop
+alt: Cat
+label: Photo label
 ---
-
-<div class="image-col">
-  <img src="https://images.unsplash.com/photo-1758482725144-3363d2d350be?auto=format&fit=crop" alt="Cat" />
-  <div class="image-label">Photo label</div>
-</div>
-
-<div class="content-col">
 
 ## Image Label
 
-To display a label at the bottom of an image, add an element with class `image-label` inside the `.image-col` of either the `image-left` or `image-right` layout.
-
-</div>
+To display a label at the bottom of an image, add `label` to the front matter of either the `image-left` or `image-right` layout.
 
 ---
 layout: section
