@@ -267,10 +267,9 @@ This presentation uses **Slidev Theme Cobalt** by [minagishl](https://github.com
 
 ---
 layout: panel
+heading: License
 ---
 
-<div class="license-block">
-  <div class="license-title">License</div>
-  <p><strong>Copyright (c) 2026 Minagishl</strong></p>
-  <p>This theme is provided under the MIT License.</p>
-</div>
+**Copyright (c) 2026 Minagishl**
+
+This theme is provided under the MIT License.
