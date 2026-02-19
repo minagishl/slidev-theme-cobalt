@@ -59,6 +59,7 @@ This theme provides the following layouts:
 - `process-flow` - Horizontal process flow with circular steps and connecting arrows (use `.process-flow-container`, `.process-step`, `.process-step-circle`, `.process-step-title`, `.process-step-description`, `.process-arrow`)
 - `table` - Framed table-focused layout for feature comparison or data overview slides
 - `two-cols` - Two equal columns for side-by-side content (use `.two-cols-col` divs for each column)
+- `quote` - Centered testimonial/blockquote slide: large quote + source (name/title). Use a div with class `quote` (and optionally `quote blue` or `quote black`) for the quote text, and `quote-source` for attribution
 - `profile` - Framed profile/text pages with header
 - `frame-panel` - Framed slide with inner panel and header
 - `image-left` - Left image and right text (use `image-col` and `content-col` divs)
@@ -69,7 +70,7 @@ This theme provides the following layouts:
 No custom components are required. Use the utility classes in `styles/layout.css` such as:
 
 - `text-blue` - Emphasized blue text
-- `quote` - Larger quote text in blue or black
+- `quote` - Quote text; use with `quote` layout for full testimonial slides. Optional modifiers: `quote blue` or `quote black` for color. Use `quote-source` for name/title below the quote
 - `member` / `name` - Team member blocks and names
 - `steps-column`, `step`, `step-header`, `step-number`, `step-title`, `step-body` - For structuring step-by-step slides with `steps-layout`
 - `process-flow-container`, `process-step`, `process-step-circle`, `process-step-title`, `process-step-description`, `process-arrow` - For horizontal process flow diagrams with `process-flow`
@@ -81,7 +82,7 @@ No custom components are required. Use the utility classes in `styles/layout.css
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
 - **Japanese Support**: Includes Noto Sans JP font for Japanese text
-- **Multiple Layouts**: 18 layout options for various presentation needs
+- **Multiple Layouts**: 19 layout options for various presentation needs
 
 ## Deploy (Cloudflare Workers)
 

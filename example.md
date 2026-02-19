@@ -221,6 +221,20 @@ The right column has equal width. Use this layout to compare ideas or show two r
 </div>
 
 ---
+layout: quote
+---
+
+<div class="quote blue">This theme made our presentations look professional and consistent. We use it for every client pitch.</div>
+<div class="quote-source"><strong>Jane Doe</strong>, Head of Design</div>
+
+---
+layout: quote
+---
+
+<div class="quote black">Simple to customize, great typography, and the framed layouts really stand out in the room.</div>
+<div class="quote-source"><strong>Alex Chen</strong>, Engineering Lead</div>
+
+---
 layout: panel
 ---
 

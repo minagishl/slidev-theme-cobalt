@@ -708,6 +708,36 @@
   color: var(--color-neutral-800);
 }
 
+/* Quote layout: centered testimonial / blockquote with optional source */
+.quote-layout.frame > .frame-content.quote-layout-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: calc(var(--frame) + var(--pad));
+  gap: var(--size-6);
+}
+
+.quote-layout .quote {
+  --quote-size: var(--size-7);
+  font-size: var(--quote-size);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+  max-width: 80%;
+}
+
+.quote-layout .quote-source {
+  font-size: var(--font-size-p);
+  color: var(--color-neutral-600);
+  margin: 0;
+  font-weight: 500;
+}
+
+.quote-layout .quote-source strong {
+  color: var(--color-neutral-800);
+}
+
 .frame-header {
   position: absolute;
   top: calc(var(--frame) + var(--pad));
