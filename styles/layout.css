@@ -106,18 +106,14 @@
   --frame: var(--size-7);
   --pad: var(--size-4);
   --title-left-pad: var(--size-20);
-  --title-gap: var(--size-3\.5);
+  --title-gap: var(--size-2);
   --panel-inset: var(--size-7);
   --panel-radius: var(--size-2);
 
   /* Cover */
-  --cover-h1: var(--size-11);
-  --cover-h2: var(--size-9);
-  --cover-gap: var(--size-7);
+  --cover-gap: var(--size-4);
 
   /* Title */
-  --title-h1: var(--size-9);
-  --title-sub: var(--size-4);
   --title-sandwich-pad-top: calc(var(--frame) + var(--size-48));
   --title-sandwich-pad-bottom: var(--size-16);
 
@@ -137,11 +133,7 @@
   --letter-spacing-wider: 0.05em;
   --letter-spacing-widest: 0.1em;
 
-  /* Section */
-  --section-h1: var(--size-9);
-
   /* TOC */
-  --toc-h: var(--size-3\.5);
   --toc-gap: var(--size-7);
   --toc-col-gap: var(--size-24);
   --toc-item-gap: var(--size-6);
@@ -149,34 +141,28 @@
   --toc-badge-w: var(--size-12);
   --toc-badge-h: var(--size-11);
   --toc-badge-radius: var(--size-1\.5);
-  --toc-badge-text: var(--size-4);
-  --toc-text: var(--size-6);
 
   /* Team */
   --team-img: var(--size-48);
   --team-gap: var(--size-12);
   --team-member-gap: var(--size-4);
-  --team-name: var(--size-6);
   --team-img-scale-multiple: 0.8;
   --team-name-scale-multiple: 0.9;
 
-  /* Quote */
-  --quote-size: var(--size-5);
+  /* Font sizes */
+  --font-size-display: var(--size-11);
+  --font-size-h1: var(--size-9);
+  --font-size-h2: var(--size-8);
+  --font-size-h3: var(--size-6);
+  --font-size-subtitle: var(--size-4);
+  --font-size-p: var(--size-5);
 
   /* Profile */
-  --profile-name: var(--size-8);
-  --profile-name-mb: var(--size-4);
   --profile-list-pl: var(--size-2);
   --profile-list-gap: var(--size-4);
 
   /* Steps */
   --steps-space: var(--size-4);
-
-  /* Font size */
-  --font-size-h1: var(--size-9);
-  --font-size-h2: var(--size-4);
-  --font-size-h3: var(--size-4);
-  --font-size-p: var(--size-5);
 
   /* Image + Text (left/right) */
   --image-text-gap: var(--size-8);
@@ -213,19 +199,22 @@
 }
 
 .slidev-layout h1 {
-  font-size: var(--title-h1);
+  font-size: var(--font-size-h1);
   font-weight: 700;
+  line-height: var(--line-height-tight);
   letter-spacing: var(--letter-spacing-normal);
 }
 
 .slidev-layout h2 {
-  font-size: var(--title-sub);
+  font-size: var(--font-size-subtitle);
   font-weight: 600;
+  line-height: var(--line-height-tight);
 }
 
 .slidev-layout h3 {
-  font-size: var(--title-sub);
+  font-size: var(--font-size-subtitle);
   font-weight: 600;
+  line-height: var(--line-height-tight);
 }
 
 .slidev-layout p {
@@ -300,17 +289,17 @@
 }
 
 .cover h1 {
-  font-size: var(--cover-h1);
+  font-size: var(--font-size-display);
   font-weight: 700;
 }
 
 .cover h2 {
-  font-size: var(--cover-h2);
+  font-size: var(--font-size-h1);
   font-weight: 600;
 }
 
 .section h1 {
-  font-size: var(--section-h1);
+  font-size: var(--font-size-h1);
   font-weight: 700;
 }
 
@@ -421,7 +410,7 @@
 
 .section-frame h1 {
   color: var(--color-blue-900);
-  font-size: var(--section-h1);
+  font-size: var(--font-size-h1);
 }
 
 .title-left h1,
@@ -429,7 +418,7 @@
 .title-sandwich .title-main,
 .title-sandwich .title-main h1,
 .title-sandwich .title-main p {
-  font-size: var(--title-h1);
+  font-size: var(--font-size-h1);
   font-weight: 700;
   letter-spacing: var(--letter-spacing-normal);
 }
@@ -442,7 +431,7 @@
 .title-sandwich .title-footer p {
   color: var(--color-blue-900);
   font-weight: 600;
-  font-size: var(--title-sub);
+  font-size: var(--font-size-subtitle);
   margin: 0;
 }
 
@@ -476,8 +465,8 @@
 
 .toc h1 {
   color: var(--color-blue-900);
-  font-size: var(--toc-h);
-  font-weight: 700;
+  font-size: var(--font-size-subtitle);
+  font-weight: 600;
   margin-bottom: 0;
   line-height: var(--line-height-normal);
   position: absolute;
@@ -518,12 +507,17 @@
   width: max-content;
 }
 
+/* Hide TOC items after the 8th */
+.toc ol li:nth-child(n + 9) {
+  display: none;
+}
+
 .toc ol li {
   counter-increment: toc;
   display: flex;
   align-items: center;
   gap: var(--toc-item-gap);
-  font-size: var(--toc-text);
+  font-size: var(--font-size-h3);
   font-weight: 600;
   color: var(--color-blue-900);
   margin-left: 0;
@@ -542,24 +536,34 @@
   border-radius: var(--toc-badge-radius);
   display: grid;
   place-items: center;
-  font-size: var(--toc-badge-text);
+  font-size: var(--font-size-subtitle);
   font-weight: 700;
 }
 
 .profile h1 {
   color: var(--color-blue-900);
-  font-size: var(--profile-name);
+  font-size: var(--font-size-h2);
   font-weight: 700;
-  margin-bottom: var(--profile-name-mb);
 }
 
 .profile .profile-inner {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: 100%;
+  padding: 0 var(--size-14);
+}
+
+.profile .profile-name {
+  align-self: end;
+  padding-bottom: var(--size-6);
+}
+
+.profile .profile-body {
+  align-self: start;
   display: flex;
   flex-direction: column;
-  gap: var(--size-8);
-  justify-content: space-between;
-  padding: var(--size-28) var(--size-14);
-  height: 100%;
+  gap: var(--size-4);
+  padding-top: var(--size-4);
 }
 
 .profile p {
@@ -618,7 +622,7 @@
 }
 
 .panel .license-block .license-title {
-  font-size: var(--size-6);
+  font-size: var(--font-size-h3);
   font-weight: 700;
   color: var(--color-neutral-800);
 }
@@ -627,7 +631,7 @@
   margin: 0;
   font-size: var(--font-size-p);
   color: var(--color-neutral-800);
-  line-height: var(--line-height-relaxed);
+  line-height: var(--line-height-normal);
 }
 
 .panel.panel-align-left .panel-inner {
@@ -699,7 +703,7 @@
 }
 
 .team .name {
-  font-size: var(--team-name);
+  font-size: var(--font-size-h3);
   font-weight: 600;
   color: var(--color-neutral-800);
 }
@@ -727,11 +731,11 @@
 .team.team-count-10 .name,
 .team.team-count-11 .name,
 .team.team-count-12 .name {
-  font-size: calc(var(--team-name) * var(--team-name-scale-multiple));
+  font-size: calc(var(--font-size-h3) * var(--team-name-scale-multiple));
 }
 
 .quote {
-  font-size: var(--quote-size);
+  font-size: var(--font-size-p);
   font-weight: 500;
 }
 
@@ -750,6 +754,44 @@
   color: var(--color-neutral-800);
 }
 
+.panel .quote h1,
+.panel .quote h2,
+.panel .quote h3 {
+  color: var(--color-blue-900);
+  margin: 0;
+}
+
+.panel .quote h1 {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  margin-bottom: var(--size-4);
+}
+
+.panel .quote h2 {
+  font-size: var(--font-size-h3);
+  font-weight: 600;
+  margin-top: var(--size-6);
+  margin-bottom: var(--size-2);
+}
+
+.panel .quote h3 {
+  font-size: var(--font-size-p);
+  font-weight: 600;
+  margin-top: var(--size-4);
+  margin-bottom: var(--size-1\.5);
+}
+
+.panel .quote p {
+  font-size: var(--font-size-p);
+  font-weight: normal;
+  line-height: var(--line-height-normal);
+}
+
+.panel.panel-align-left .panel-inner .quote,
+.panel.panel-align-right .panel-inner .quote {
+  width: 100%;
+}
+
 /* Quote layout: centered testimonial / blockquote with optional source */
 .quote-layout.frame > .frame-content.quote-layout-inner {
   display: flex;
@@ -762,15 +804,14 @@
 }
 
 .quote-layout .quote {
-  --quote-size: var(--size-7);
-  font-size: var(--quote-size);
+  font-size: var(--font-size-p);
   line-height: var(--line-height-relaxed);
   margin: 0;
   max-width: 80%;
 }
 
 .quote-layout .quote p {
-  font-size: inherit;
+  font-size: var(--font-size-h3);
   font-weight: inherit;
   line-height: inherit;
   color: inherit;
@@ -800,8 +841,9 @@
   top: calc(var(--frame) + var(--pad));
   left: calc(var(--frame) + var(--pad));
   color: var(--color-blue-900);
-  font-size: var(--toc-h);
-  font-weight: 700;
+  font-size: var(--font-size-subtitle);
+  font-weight: 600;
+  line-height: var(--line-height-tight);
 }
 
 /* Table layout */
@@ -819,6 +861,18 @@
 .table-layout h2,
 .table-layout h3 {
   color: var(--color-blue-900);
+}
+
+.table-layout h1 {
+  font-size: var(--font-size-h2);
+}
+
+.table-layout h2 {
+  font-size: var(--font-size-h3);
+}
+
+.table-layout h3 {
+  font-size: var(--font-size-p);
 }
 
 .table-layout table {
@@ -889,7 +943,7 @@
   display: flex;
   align-items: center;
   gap: var(--toc-item-gap);
-  font-size: var(--toc-text);
+  font-size: var(--font-size-h3);
   font-weight: 600;
   color: var(--color-blue-900);
 }
@@ -903,12 +957,12 @@
   border-radius: var(--toc-badge-radius);
   background: var(--color-blue-900);
   color: var(--color-white);
-  font-size: var(--toc-badge-text);
+  font-size: var(--font-size-subtitle);
   font-weight: 700;
 }
 
 .step-title {
-  font-size: var(--toc-text);
+  font-size: var(--font-size-h3);
   font-weight: 600;
 }
 
@@ -936,7 +990,7 @@
 
 .process-flow h1 {
   color: var(--color-blue-900);
-  font-size: var(--size-6);
+  font-size: var(--font-size-h3);
   font-weight: 600;
   text-align: center;
   margin: 0;
@@ -976,7 +1030,7 @@
 
 .process-step-title {
   color: var(--color-blue-900);
-  font-size: var(--size-5);
+  font-size: var(--font-size-p);
   font-weight: 600;
   text-align: center;
   padding: 0 var(--size-2);
@@ -985,7 +1039,7 @@
 
 .process-step-description {
   color: var(--color-blue-900);
-  font-size: var(--title-sub);
+  font-size: var(--font-size-subtitle);
   font-weight: 600;
   text-align: center;
   line-height: var(--line-height-normal);
@@ -1029,9 +1083,17 @@
   gap: var(--title-gap);
 }
 
-.two-cols .two-cols-inner .two-cols-col h1,
-.two-cols .two-cols-inner .two-cols-col h2,
+.two-cols .two-cols-inner .two-cols-col h1 {
+  color: var(--color-blue-900);
+  font-size: var(--font-size-h2);
+}
+
+.two-cols .two-cols-inner .two-cols-col h2 {
+  color: var(--color-blue-900);
+  font-size: var(--font-size-h3);
+}
+
 .two-cols .two-cols-inner .two-cols-col h3 {
   color: var(--color-blue-900);
-  line-height: var(--line-height-tight);
+  font-size: var(--font-size-p);
 }

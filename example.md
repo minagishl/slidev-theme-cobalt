@@ -189,12 +189,35 @@ color: black
 Another quote or statement
 
 ---
+layout: panel
+color: black
+align: left
+---
+
+# Why Open Source Matters
+
+## Community Driven
+
+Building together creates stronger, more resilient software that everyone can rely on.
+
+## Transparency
+
+Open code means open review — bugs get caught faster and trust is built over time.
+
+## Innovation
+
+Ideas from around the world merge into solutions no single team could have created alone.
+
+---
 layout: profile
 header: Table of Contents - About
 ---
 
+::name::
+
 # Minagishl
 
+::default::
 Student Developer based in Japan\
 Currently participating in OSS projects
 
@@ -206,7 +229,11 @@ layout: profile
 header: Table of Contents - About
 ---
 
+::name::
+
 # Minagishl
+
+::default::
 
 1. What I do\
    Web development, game design, and building custom PCs

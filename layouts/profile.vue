@@ -7,7 +7,8 @@ defineProps<{ header?: string }>()
     <div class="frame-content">
       <div class="profile-inner">
         <div v-if="header" class="frame-header">{{ header }}</div>
-        <slot />
+        <div class="profile-name"><slot name="name" /></div>
+        <div class="profile-body"><slot /></div>
       </div>
     </div>
   </div>
