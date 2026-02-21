@@ -1065,6 +1065,14 @@
   border-left: var(--size-6) solid var(--color-neutral-800);
 }
 
+/* Inline code inside panel layout */
+.panel :not(pre) > code {
+  background: var(--color-white);
+  padding: 0.1em 0.35em;
+  border-radius: 0.25em;
+  font-size: 0.9em;
+}
+
 /* Two columns layout */
 .two-cols.frame > .frame-content.two-cols-inner {
   display: grid;
