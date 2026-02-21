@@ -108,6 +108,16 @@ steps:
 ---
 
 ---
+layout: steps-layout
+start: 5
+steps:
+  - title: Review and test
+    body: Run automated tests and conduct peer reviews to catch issues before release.
+  - title: Deploy and monitor
+    body: Ship to production and watch metrics to ensure everything runs smoothly.
+---
+
+---
 layout: process-flow
 steps:
   - title: Planning

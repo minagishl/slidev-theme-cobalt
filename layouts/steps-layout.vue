@@ -1,6 +1,7 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   steps: Array<{ title: string; body: string }>
+  start?: number
 }>()
 </script>
 
@@ -10,7 +11,7 @@ defineProps<{
       <div class="steps-column">
         <div v-for="(step, i) in steps" :key="i" class="step">
           <div class="step-header">
-            <span class="step-number">{{ String(i + 1).padStart(2, '0') }}</span>
+            <span class="step-number">{{ String(i + (props.start ?? 1)).padStart(2, '0') }}</span>
             <span class="step-title">{{ step.title }}</span>
           </div>
           <div class="step-body">{{ step.body }}</div>
