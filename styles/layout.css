@@ -99,6 +99,10 @@
 
 * {
   box-sizing: border-box;
+
+  /* Anti-aliasing */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .slidev-layout {
