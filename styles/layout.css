@@ -224,6 +224,11 @@
 
 .slidev-layout ul {
   margin-top: var(--size-2);
+  list-style: disc;
+}
+
+.list-square ul {
+  list-style: square;
 }
 
 .text-blue {
