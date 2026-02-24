@@ -161,6 +161,12 @@
   --font-size-subtitle: var(--size-4);
   --font-size-p: var(--size-5);
 
+  /* Font weights */
+  --font-weight-base: 450;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
   /* Profile */
   --profile-list-pl: var(--size-2);
   --profile-list-gap: var(--size-4);
@@ -192,6 +198,7 @@
     'Yu Gothic', 'Meiryo', sans-serif;
   color: var(--color-neutral-800);
   font-size: var(--font-size-p);
+  font-weight: var(--font-weight-base);
   line-height: 1.7;
 
   /* Variable font: auto optical sizing per element font-size (Inter opsz axis) */
@@ -207,25 +214,26 @@
 
 .slidev-layout h1 {
   font-size: var(--font-size-h1);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   letter-spacing: var(--letter-spacing-normal);
 }
 
 .slidev-layout h2 {
   font-size: var(--font-size-subtitle);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
 }
 
 .slidev-layout h3 {
   font-size: var(--font-size-subtitle);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
 }
 
 .slidev-layout p {
   font-size: var(--font-size-p);
+  font-weight: var(--font-weight-base);
   line-height: var(--line-height-relaxed);
 }
 
@@ -255,7 +263,7 @@
 }
 
 .font-bold {
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 /* Override Slidev base py-10 px-14 padding that shifts content down */
@@ -302,17 +310,17 @@
 
 .cover h1 {
   font-size: var(--font-size-display);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 .cover h2 {
   font-size: var(--font-size-h1);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 .section h1 {
   font-size: var(--font-size-h1);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 .frame {
@@ -389,7 +397,7 @@
   color: var(--color-white);
   opacity: 0.8;
   background: var(--color-blue-900);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-p);
   z-index: 1;
   pointer-events: none;
@@ -416,7 +424,7 @@
 .frame.image-text .image-text-inner .content-col h3 {
   color: var(--color-blue-900);
   font-size: var(--font-size-p);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   margin-bottom: var(--size-2);
 }
 
@@ -431,7 +439,7 @@
 .title-sandwich .title-main h1,
 .title-sandwich .title-main p {
   font-size: var(--font-size-h1);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-normal);
 }
 
@@ -442,7 +450,7 @@
 .title-sandwich .title-top p,
 .title-sandwich .title-footer p {
   color: var(--color-blue-900);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-subtitle);
   margin: 0;
 }
@@ -478,7 +486,7 @@
 .toc h1 {
   color: var(--color-blue-900);
   font-size: var(--font-size-subtitle);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   margin-bottom: 0;
   line-height: var(--line-height-normal);
   position: absolute;
@@ -530,7 +538,7 @@
   align-items: center;
   gap: var(--toc-item-gap);
   font-size: var(--font-size-h3);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: var(--color-blue-900);
   margin-left: 0;
   padding-left: 0;
@@ -549,13 +557,13 @@
   display: grid;
   place-items: center;
   font-size: var(--font-size-subtitle);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 .profile h1 {
   color: var(--color-blue-900);
   font-size: var(--font-size-h2);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 .profile .profile-inner {
@@ -581,20 +589,20 @@
 .profile p {
   font-size: var(--font-size-p);
   color: var(--color-blue-900);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   line-height: var(--line-height-normal);
 }
 
 .profile .body {
   color: var(--color-blue-900);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .profile ol {
   list-style: decimal;
   padding-left: var(--profile-list-pl);
   color: var(--color-blue-900);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   display: flex;
   flex-direction: column;
   gap: var(--profile-list-gap);
@@ -605,7 +613,7 @@
 }
 
 .slidev-layout ol > li::first-line {
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 .panel {
@@ -635,7 +643,7 @@
 
 .panel .license-block .license-title {
   font-size: var(--font-size-h3);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   color: var(--color-neutral-800);
 }
 
@@ -716,7 +724,7 @@
 
 .team .name {
   font-size: var(--font-size-h3);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: var(--color-neutral-800);
 }
 
@@ -748,7 +756,7 @@
 
 .quote {
   font-size: var(--font-size-p);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .quote p {
@@ -775,27 +783,27 @@
 
 .panel .quote h1 {
   font-size: var(--font-size-h2);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   margin-bottom: var(--size-4);
 }
 
 .panel .quote h2 {
   font-size: var(--font-size-h3);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   margin-top: var(--size-6);
   margin-bottom: var(--size-2);
 }
 
 .panel .quote h3 {
   font-size: var(--font-size-p);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   margin-top: var(--size-4);
   margin-bottom: var(--size-1\.5);
 }
 
 .panel .quote p {
   font-size: var(--font-size-p);
-  font-weight: normal;
+  font-weight: var(--font-weight-base);
   line-height: var(--line-height-normal);
 }
 
@@ -834,7 +842,7 @@
   font-size: var(--font-size-p);
   color: var(--color-neutral-600);
   margin: 0;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .quote-layout .quote-source p {
@@ -854,7 +862,7 @@
   left: calc(var(--frame) + var(--pad));
   color: var(--color-blue-900);
   font-size: var(--font-size-subtitle);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
 }
 
@@ -902,7 +910,7 @@
 }
 
 .table-layout thead th {
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 .table-layout th,
@@ -956,7 +964,7 @@
   align-items: center;
   gap: var(--toc-item-gap);
   font-size: var(--font-size-h3);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: var(--color-blue-900);
 }
 
@@ -970,12 +978,12 @@
   background: var(--color-blue-900);
   color: var(--color-white);
   font-size: var(--font-size-subtitle);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 .step-title {
   font-size: var(--font-size-h3);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 .step-body {
@@ -1003,7 +1011,7 @@
 .process-flow h1 {
   color: var(--color-blue-900);
   font-size: var(--font-size-h3);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   text-align: center;
   margin: 0;
 }
@@ -1043,7 +1051,7 @@
 .process-step-title {
   color: var(--color-blue-900);
   font-size: var(--font-size-p);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   text-align: center;
   padding: 0 var(--size-2);
   line-height: var(--line-height-tight);
@@ -1052,7 +1060,7 @@
 .process-step-description {
   color: var(--color-blue-900);
   font-size: var(--font-size-subtitle);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   text-align: center;
   line-height: var(--line-height-normal);
   max-width: var(--size-48);
