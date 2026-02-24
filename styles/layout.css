@@ -199,7 +199,7 @@
   color: var(--color-neutral-800);
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-base);
-  line-height: 1.7;
+  line-height: var(--line-height-relaxed);
 
   /* Variable font: auto optical sizing per element font-size (Inter opsz axis) */
   font-optical-sizing: auto;
