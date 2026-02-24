@@ -154,12 +154,12 @@
   --team-name-scale-multiple: 0.9;
 
   /* Font sizes */
-  --font-size-display: var(--size-11);
-  --font-size-h1: var(--size-9);
+  --font-size-display: var(--size-12);
+  --font-size-h1: var(--size-10);
   --font-size-h2: var(--size-8);
   --font-size-h3: var(--size-6);
   --font-size-subtitle: var(--size-4);
-  --font-size-p: var(--size-5);
+  --font-size-p: var(--size-4);
 
   /* Font weights */
   --font-weight-base: 400;
