@@ -1,4 +1,4 @@
-@import '@fontsource-variable/inter';
+@import '@fontsource-variable/inter/standard.css';
 @import '@fontsource-variable/noto-sans-jp';
 
 :root {
@@ -192,7 +192,10 @@
     'Yu Gothic', 'Meiryo', sans-serif;
   color: var(--color-neutral-800);
   font-size: var(--font-size-p);
-  line-height: var(--line-height-normal);
+  line-height: 1.7;
+
+  /* Variable font: auto optical sizing per element font-size (Inter opsz axis) */
+  font-optical-sizing: auto;
 }
 
 .slidev-layout h1,
@@ -223,7 +226,7 @@
 
 .slidev-layout p {
   font-size: var(--font-size-p);
-  line-height: var(--line-height-normal);
+  line-height: var(--line-height-relaxed);
 }
 
 .slidev-layout ul {
