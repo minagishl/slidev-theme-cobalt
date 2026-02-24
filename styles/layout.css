@@ -162,7 +162,7 @@
   --font-size-p: var(--size-5);
 
   /* Font weights */
-  --font-weight-base: 450;
+  --font-weight-base: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
