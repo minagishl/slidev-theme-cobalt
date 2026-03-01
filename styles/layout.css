@@ -640,6 +640,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Code block — same background as body text, underline only */
+  --slidev-code-background: var(--color-gray-100) !important;
+  --slidev-code-foreground: var(--color-neutral-800) !important;
+  --slidev-code-radius: 0 !important;
+  --slidev-code-padding: 0 !important;
 }
 
 .panel .panel-inner {
@@ -1105,12 +1111,31 @@
   border-left: var(--size-6) solid var(--color-neutral-800);
 }
 
-/* Inline code inside panel layout */
+/* Code block in panel — same as normal text, blue underline only */
+.panel pre {
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: var(--size-0\.5) solid var(--color-blue-900);
+  margin: 0 !important;
+  font-family: inherit;
+}
+
+.panel pre code {
+  background: transparent !important;
+  padding: 0 !important;
+  font-family: inherit;
+}
+
+/* Inline code in panel — same as normal text, blue underline only */
 .panel :not(pre) > code {
-  background: var(--color-white);
-  padding: 0.1em 0.35em;
-  border-radius: 0.25em;
-  font-size: var(--text-sm);
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  border-bottom: var(--size-0\.5) solid var(--color-blue-900);
 }
 
 /* Two columns layout */
