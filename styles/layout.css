@@ -95,6 +95,21 @@
   --size-72: 18rem;
   --size-80: 20rem;
   --size-96: 24rem;
+
+  /*
+   * Typography scale — matches Tailwind CSS font-size
+   * https://tailwindcss.com/docs/font-size
+   */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
 }
 
 * {
@@ -153,16 +168,8 @@
   --team-img-scale-multiple: 0.8;
   --team-name-scale-multiple: 0.9;
 
-  /* Font sizes */
-  --font-size-display: var(--size-12);
-  --font-size-h1: var(--size-10);
-  --font-size-h2: var(--size-8);
-  --font-size-h3: var(--size-6);
-  --font-size-subtitle: var(--size-4);
-  --font-size-p: var(--size-4);
-
   /* Font weights */
-  --font-weight-base: 400;
+  --font-weight-base: 500;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -184,20 +191,20 @@
   --slidev-code-background: #f5f5f5 !important;
   --slidev-code-foreground: #1b1b1b !important;
   --slidev-code-padding: var(--size-2) !important;
-  --slidev-code-font-size: var(--font-size-p) !important;
+  --slidev-code-font-size: var(--text-base) !important;
   --slidev-code-line-height: var(--line-height-normal) !important;
   --slidev-code-radius: var(--size-1) !important;
   --slidev-code-margin: var(--size-2) 0 !important;
   --slidev-code-tab-divider: var(--color-gray-200) !important;
   --slidev-code-tab-text-color: var(--color-gray-500) !important;
-  --slidev-code-tab-font-size: var(--font-size-p) !important;
+  --slidev-code-tab-font-size: var(--text-base) !important;
   --slidev-code-tab-active-text-color: #3c3c43;
 
   font-family:
     'Inter Variable', 'Noto Sans JP Variable', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
     'Yu Gothic', 'Meiryo', sans-serif;
   color: var(--color-neutral-800);
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-relaxed);
 
@@ -213,33 +220,45 @@
 }
 
 .slidev-layout h1 {
-  font-size: var(--font-size-h1);
+  font-size: var(--text-3xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
-  letter-spacing: var(--letter-spacing-normal);
+  letter-spacing: var(--letter-spacing-tight);
 }
 
 .slidev-layout h2 {
-  font-size: var(--font-size-subtitle);
+  font-size: var(--text-lg);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
 }
 
 .slidev-layout h3 {
-  font-size: var(--font-size-subtitle);
+  font-size: var(--text-lg);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
 }
 
 .slidev-layout p {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-relaxed);
 }
 
-.slidev-layout ul {
+.slidev-layout ul,
+.slidev-layout ol {
+  padding-left: var(--size-1);
   margin-top: var(--size-2);
+  margin-bottom: var(--size-2);
   list-style: disc;
+}
+
+.slidev-layout ol {
+  list-style: decimal;
+}
+
+.slidev-layout b,
+.slidev-layout strong {
+  font-weight: var(--font-weight-bold);
 }
 
 .list-square ul {
@@ -309,17 +328,17 @@
 }
 
 .cover h1 {
-  font-size: var(--font-size-display);
+  font-size: var(--text-4xl);
   font-weight: var(--font-weight-bold);
 }
 
 .cover h2 {
-  font-size: var(--font-size-h1);
+  font-size: var(--text-3xl);
   font-weight: var(--font-weight-semibold);
 }
 
 .section h1 {
-  font-size: var(--font-size-h1);
+  font-size: var(--text-3xl);
   font-weight: var(--font-weight-bold);
 }
 
@@ -398,7 +417,7 @@
   opacity: 0.8;
   background: var(--color-blue-900);
   font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   z-index: 1;
   pointer-events: none;
 }
@@ -423,14 +442,14 @@
 .frame.image-text .image-text-inner .content-col h2,
 .frame.image-text .image-text-inner .content-col h3 {
   color: var(--color-blue-900);
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--size-2);
 }
 
 .section-frame h1 {
   color: var(--color-blue-900);
-  font-size: var(--font-size-h1);
+  font-size: var(--text-3xl);
 }
 
 .title-left h1,
@@ -438,7 +457,7 @@
 .title-sandwich .title-main,
 .title-sandwich .title-main h1,
 .title-sandwich .title-main p {
-  font-size: var(--font-size-h1);
+  font-size: var(--text-4xl);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-normal);
 }
@@ -451,7 +470,7 @@
 .title-sandwich .title-footer p {
   color: var(--color-blue-900);
   font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--text-lg);
   margin: 0;
 }
 
@@ -485,7 +504,7 @@
 
 .toc h1 {
   color: var(--color-blue-900);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
   margin-bottom: 0;
   line-height: var(--line-height-normal);
@@ -537,7 +556,7 @@
   display: flex;
   align-items: center;
   gap: var(--toc-item-gap);
-  font-size: var(--font-size-h3);
+  font-size: var(--text-xl);
   font-weight: var(--font-weight-semibold);
   color: var(--color-blue-900);
   margin-left: 0;
@@ -556,13 +575,13 @@
   border-radius: var(--toc-badge-radius);
   display: grid;
   place-items: center;
-  font-size: var(--font-size-subtitle);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-bold);
 }
 
 .profile h1 {
   color: var(--color-blue-900);
-  font-size: var(--font-size-h2);
+  font-size: var(--text-2xl);
   font-weight: var(--font-weight-bold);
 }
 
@@ -587,7 +606,7 @@
 }
 
 .profile p {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   color: var(--color-blue-900);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-normal);
@@ -609,10 +628,10 @@
 }
 
 .profile ol li {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
 }
 
-.slidev-layout ol > li::first-line {
+.slidev-layout .profile-body ol > li::first-line {
   font-weight: var(--font-weight-bold);
 }
 
@@ -642,14 +661,14 @@
 }
 
 .panel .license-block .license-title {
-  font-size: var(--font-size-h3);
+  font-size: var(--text-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-neutral-800);
 }
 
 .panel .license-block p {
   margin: 0;
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   color: var(--color-neutral-800);
   line-height: var(--line-height-normal);
 }
@@ -723,7 +742,7 @@
 }
 
 .team .name {
-  font-size: var(--font-size-h3);
+  font-size: var(--text-xl);
   font-weight: var(--font-weight-semibold);
   color: var(--color-neutral-800);
 }
@@ -751,11 +770,11 @@
 .team.team-count-10 .name,
 .team.team-count-11 .name,
 .team.team-count-12 .name {
-  font-size: calc(var(--font-size-h3) * var(--team-name-scale-multiple));
+  font-size: calc(var(--text-xl) * var(--team-name-scale-multiple));
 }
 
 .quote {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-medium);
 }
 
@@ -782,27 +801,27 @@
 }
 
 .panel .quote h1 {
-  font-size: var(--font-size-h2);
+  font-size: var(--text-2xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--size-4);
 }
 
 .panel .quote h2 {
-  font-size: var(--font-size-h3);
-  font-weight: var(--font-weight-semibold);
-  margin-top: var(--size-6);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--size-8);
   margin-bottom: var(--size-2);
 }
 
 .panel .quote h3 {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
   margin-top: var(--size-4);
   margin-bottom: var(--size-1\.5);
 }
 
 .panel .quote p {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-normal);
 }
@@ -824,14 +843,14 @@
 }
 
 .quote-layout .quote {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   line-height: var(--line-height-relaxed);
   margin: 0;
   max-width: 80%;
 }
 
 .quote-layout .quote p {
-  font-size: var(--font-size-h3);
+  font-size: var(--text-xl);
   font-weight: inherit;
   line-height: inherit;
   color: inherit;
@@ -839,7 +858,7 @@
 }
 
 .quote-layout .quote-source {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   color: var(--color-neutral-600);
   margin: 0;
   font-weight: var(--font-weight-medium);
@@ -861,7 +880,7 @@
   top: calc(var(--frame) + var(--pad));
   left: calc(var(--frame) + var(--pad));
   color: var(--color-blue-900);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
 }
@@ -884,15 +903,15 @@
 }
 
 .table-layout h1 {
-  font-size: var(--font-size-h2);
+  font-size: var(--text-2xl);
 }
 
 .table-layout h2 {
-  font-size: var(--font-size-h3);
+  font-size: var(--text-xl);
 }
 
 .table-layout h3 {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
 }
 
 .table-layout table {
@@ -926,7 +945,7 @@
 }
 
 .table-layout .table-caption {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   color: var(--color-neutral-700);
 }
 
@@ -963,7 +982,7 @@
   display: flex;
   align-items: center;
   gap: var(--toc-item-gap);
-  font-size: var(--font-size-h3);
+  font-size: var(--text-xl);
   font-weight: var(--font-weight-semibold);
   color: var(--color-blue-900);
 }
@@ -977,19 +996,20 @@
   border-radius: var(--toc-badge-radius);
   background: var(--color-blue-900);
   color: var(--color-white);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-bold);
 }
 
 .step-title {
-  font-size: var(--font-size-h3);
+  font-size: var(--text-xl);
   font-weight: var(--font-weight-semibold);
 }
 
 .step-body {
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   color: var(--color-neutral-800);
   padding-left: calc(var(--size-16) + var(--size-2));
+  white-space: pre-line;
 }
 
 /* Hide steps after the 4th step */
@@ -1010,7 +1030,7 @@
 
 .process-flow h1 {
   color: var(--color-blue-900);
-  font-size: var(--font-size-h3);
+  font-size: var(--text-xl);
   font-weight: var(--font-weight-semibold);
   text-align: center;
   margin: 0;
@@ -1050,7 +1070,7 @@
 
 .process-step-title {
   color: var(--color-blue-900);
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
   text-align: center;
   padding: 0 var(--size-2);
@@ -1059,7 +1079,7 @@
 
 .process-step-description {
   color: var(--color-blue-900);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
   text-align: center;
   line-height: var(--line-height-normal);
@@ -1090,7 +1110,7 @@
   background: var(--color-white);
   padding: 0.1em 0.35em;
   border-radius: 0.25em;
-  font-size: 0.9em;
+  font-size: var(--text-sm);
 }
 
 /* Two columns layout */
@@ -1113,15 +1133,15 @@
 
 .two-cols .two-cols-inner .two-cols-col h1 {
   color: var(--color-blue-900);
-  font-size: var(--font-size-h2);
+  font-size: var(--text-2xl);
 }
 
 .two-cols .two-cols-inner .two-cols-col h2 {
   color: var(--color-blue-900);
-  font-size: var(--font-size-h3);
+  font-size: var(--text-xl);
 }
 
 .two-cols .two-cols-inner .two-cols-col h3 {
   color: var(--color-blue-900);
-  font-size: var(--font-size-p);
+  font-size: var(--text-base);
 }
