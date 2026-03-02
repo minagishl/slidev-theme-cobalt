@@ -458,6 +458,34 @@ stats:
 layout: section
 ---
 
+# Timeline
+
+---
+layout: timeline
+events:
+  - date: '2020'
+    title: Founded
+    description: Company established in Tokyo
+  - date: '2021'
+    title: Series A
+    description: Raised $5M in funding
+  - date: '2022'
+    title: Launch
+    description: Product released globally
+  - date: '2023'
+    title: 1M Users
+    description: Reached first million
+  - date: '2024'
+    title: Series B
+    description: Raised $20M
+---
+
+# Company History
+
+---
+layout: section
+---
+
 # Code Blocks
 
 ---
