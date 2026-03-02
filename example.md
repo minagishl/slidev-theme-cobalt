@@ -509,6 +509,60 @@ Add overlay text on top of a full-bleed background image using `dim: true`.
 layout: section
 ---
 
+# Comparison
+
+---
+layout: comparison
+leftTitle: Before
+rightTitle: After
+---
+
+::left::
+
+- Manual deployment
+- Weekly releases
+- No monitoring
+- High error rate
+- Hours to rollback
+
+::right::
+
+- Automated CI/CD
+- Daily releases
+- Real-time alerts
+- 99.9% uptime
+- One-click rollback
+
+---
+layout: comparison
+leftTitle: Monolith
+rightTitle: Microservices
+---
+
+::left::
+
+## Architecture
+
+Single deployable unit with all features bundled together.
+
+## Scaling
+
+Scale the entire application even for one bottleneck.
+
+::right::
+
+## Architecture
+
+Independent services each owning their own data and logic.
+
+## Scaling
+
+Scale only the services that need more capacity.
+
+---
+layout: section
+---
+
 # Code Blocks
 
 ---
