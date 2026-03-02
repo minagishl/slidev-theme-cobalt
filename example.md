@@ -347,6 +347,21 @@ color: blue
 Label component works on any layout — not just panel or profile.
 
 ---
+layout: panel
+color: black
+align: left
+---
+
+<Note>Bottom Left (default)</Note>
+<Note position="bottom-right">Bottom Right</Note>
+<Note position="top-left">Top Left</Note>
+<Note position="top-right">Top Right</Note>
+
+Use `<Note>` for small, muted annotation text in any corner.
+
+The `position` prop works the same as `<Label>`. Default is `bottom-left`.
+
+---
 layout: image-left
 image: https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop
 alt: Cat

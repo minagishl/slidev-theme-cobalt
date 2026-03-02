@@ -962,6 +962,36 @@
   right: calc(var(--frame) + var(--pad));
 }
 
+/* Slide Note component — small, muted annotation text */
+.slide-note {
+  position: absolute;
+  z-index: 10;
+  color: var(--color-neutral-500);
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-normal);
+}
+
+.slide-note-top-left {
+  top: calc(var(--frame) + var(--pad));
+  left: calc(var(--frame) + var(--pad));
+}
+
+.slide-note-top-right {
+  top: calc(var(--frame) + var(--pad));
+  right: calc(var(--frame) + var(--pad));
+}
+
+.slide-note-bottom-left {
+  bottom: calc(var(--frame) + var(--pad));
+  left: calc(var(--frame) + var(--pad));
+}
+
+.slide-note-bottom-right {
+  bottom: calc(var(--frame) + var(--pad));
+  right: calc(var(--frame) + var(--pad));
+}
+
 /* Table layout */
 .table-layout.frame > .frame-content.table-content {
   align-items: center;
