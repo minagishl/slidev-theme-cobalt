@@ -486,6 +486,29 @@ events:
 layout: section
 ---
 
+# Image Full
+
+---
+layout: image-full
+image: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1200&q=80
+alt: Background
+---
+
+---
+layout: image-full
+image: https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop&w=1200&q=80
+alt: Background
+dim: true
+---
+
+# Full-Bleed Image
+
+Add overlay text on top of a full-bleed background image using `dim: true`.
+
+---
+layout: section
+---
+
 # Code Blocks
 
 ---
