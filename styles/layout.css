@@ -1,4 +1,4 @@
-@import '@fontsource-variable/inter/standard.css';
+@import '@fontsource-variable/inter';
 @import '@fontsource-variable/noto-sans-jp';
 
 :root {
@@ -118,6 +118,15 @@
   /* Anti-aliasing */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Font family */
+  font-family:
+    'Inter Variable', 'Noto Sans JP Variable', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+    'Yu Gothic', 'Meiryo', sans-serif !important;
+
+  /* Font optical sizing */
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .slidev-layout {
@@ -200,9 +209,6 @@
   --slidev-code-tab-font-size: var(--text-base) !important;
   --slidev-code-tab-active-text-color: #3c3c43;
 
-  font-family:
-    'Inter Variable', 'Noto Sans JP Variable', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-    'Yu Gothic', 'Meiryo', sans-serif;
   color: var(--color-neutral-800);
   font-size: var(--text-base);
   font-weight: var(--font-weight-base);
