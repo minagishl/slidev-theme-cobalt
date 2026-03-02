@@ -146,7 +146,7 @@ layout: table
 | Ultra | $249            | 5 TB    | VIP 24/7 White Glove |
 
 ---
-layout: two-cols
+layout: cols
 ---
 
 ::left::
@@ -164,6 +164,38 @@ Place any content in the left column: lists, paragraphs, or headings.
 ## Right Column
 
 The right column has equal width. Use this layout to compare ideas or show two related sections side by side.
+
+---
+layout: cols
+cols: 3
+---
+
+::left::
+
+## Left Column
+
+Content for the left column.
+
+- First point
+- Second point
+
+::middle::
+
+## Middle Column
+
+Content for the middle column.
+
+- Third point
+- Fourth point
+
+::right::
+
+## Right Column
+
+Content for the right column.
+
+- Fifth point
+- Sixth point
 
 ---
 layout: quote
