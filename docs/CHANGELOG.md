@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-03-02
+
+### Fixed
+
+- `components` directory was missing from the npm package `files` field, causing `Label`, `Note`, `PageNumber`, and `Underline` components to be unavailable after installation
+
 ## [0.3.0] - 2026-03-02
 
 ### Added
@@ -140,8 +146,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions workflow for automated npm publish
 - GitHub issue and pull request templates
 
-[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.0...HEAD
-[0.3.0]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.0...v0.2.2
+[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.1.4...v0.2.0

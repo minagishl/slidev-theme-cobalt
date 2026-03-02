@@ -13,6 +13,7 @@
     "url": "https://github.com/minagishl/slidev-theme-cobalt.git"
   },
   "files": [
+    "components",
     "layouts",
     "styles",
     "setup",
