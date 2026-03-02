@@ -496,6 +496,13 @@ alt: Background
 
 ---
 layout: image-full
+image: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1200&q=80
+alt: Background
+color: white
+---
+
+---
+layout: image-full
 image: https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop&w=1200&q=80
 alt: Background
 dim: true
@@ -503,7 +510,9 @@ dim: true
 
 # Full-Bleed Image
 
-Add overlay text on top of a full-bleed background image using `dim: true`.
+Use `dim: true` to add a dark overlay for text readability.
+
+Set `color` to `blue` (default) or `white` to switch the frame color.
 
 ---
 layout: section
