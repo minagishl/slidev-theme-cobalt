@@ -616,6 +616,14 @@
   font-weight: var(--font-weight-bold);
 }
 
+.toc ol.toc-has-active > li {
+  opacity: calc(100% / 3);
+}
+
+.toc ol.toc-has-active > li.toc-active {
+  opacity: 1;
+}
+
 .profile h1 {
   color: var(--color-blue-900);
   font-size: var(--text-2xl);
