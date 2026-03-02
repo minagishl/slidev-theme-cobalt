@@ -130,6 +130,8 @@
 }
 
 .slidev-layout {
+  position: relative;
+
   /* Structure */
   --frame: var(--size-7);
   --pad: var(--size-4);
@@ -928,6 +930,36 @@
   font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
+}
+
+/* Slide Label component — positions relative to the slide root */
+.slide-label {
+  position: absolute;
+  z-index: 10;
+  color: var(--color-blue-900);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.slide-label-top-left {
+  top: calc(var(--frame) + var(--pad));
+  left: calc(var(--frame) + var(--pad));
+}
+
+.slide-label-top-right {
+  top: calc(var(--frame) + var(--pad));
+  right: calc(var(--frame) + var(--pad));
+}
+
+.slide-label-bottom-left {
+  bottom: calc(var(--frame) + var(--pad));
+  left: calc(var(--frame) + var(--pad));
+}
+
+.slide-label-bottom-right {
+  bottom: calc(var(--frame) + var(--pad));
+  right: calc(var(--frame) + var(--pad));
 }
 
 /* Table layout */

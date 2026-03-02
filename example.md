@@ -236,7 +236,6 @@ Ideas from around the world merge into solutions no single team could have creat
 
 ---
 layout: profile
-header: Table of Contents - About
 ---
 
 ::name::
@@ -244,6 +243,9 @@ header: Table of Contents - About
 # Minagishl
 
 ::default::
+
+<Label>Table of Contents - About</Label>
+
 Student Developer based in Japan\
 Currently participating in OSS projects
 
@@ -252,7 +254,6 @@ engaging in various engineering activities
 
 ---
 layout: profile
-header: Table of Contents - About
 ---
 
 ::name::
@@ -260,6 +261,8 @@ header: Table of Contents - About
 # Minagishl
 
 ::default::
+
+<Label>Table of Contents - About</Label>
 
 1. What I do\
    Web development, game design, and building custom PCs
@@ -270,9 +273,10 @@ header: Table of Contents - About
 
 ---
 layout: frame-panel
-header: Table of Contents
 color: blue
 ---
+
+<Label>Table of Contents</Label>
 
 A short quote or statement
 
@@ -294,21 +298,53 @@ Right-aligned quote
 
 ---
 layout: frame-panel
-header: Alignment Example
 color: blue
 align: left
 ---
+
+<Label>Alignment Example</Label>
 
 Left-aligned content
 
 ---
 layout: frame-panel
-header: Alignment Example
 color: blue
 align: right
 ---
 
+<Label>Alignment Example</Label>
+
 Right-aligned content
+
+---
+layout: section
+---
+
+# Label Component
+
+---
+layout: panel
+color: black
+align: left
+---
+
+<Label>Top Left (default)</Label>
+<Label position="top-right">Top Right</Label>
+<Label position="bottom-left">Bottom Left</Label>
+<Label position="bottom-right">Bottom Right</Label>
+
+Use `<Label>` to place a label in any corner of the slide.
+
+The `position` prop accepts `top-left` (default), `top-right`, `bottom-left`, or `bottom-right`.
+
+---
+layout: frame-panel
+color: blue
+---
+
+<Label position="top-right">Top Right Label</Label>
+
+Label component works on any layout — not just panel or profile.
 
 ---
 layout: image-left
