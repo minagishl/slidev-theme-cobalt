@@ -423,6 +423,41 @@ To display a label at the bottom of an image, add `label` to the front matter of
 layout: section
 ---
 
+# Stats
+
+---
+layout: stats
+stats:
+  - value: '98%'
+    label: Uptime
+    description: Last 12 months
+  - value: '2M'
+    label: Active Users
+    description: Monthly active
+  - value: '$50M'
+    label: Revenue
+    description: FY 2025
+---
+
+# Key Metrics
+
+---
+layout: stats
+stats:
+  - value: '12k'
+    label: Commits
+  - value: '340'
+    label: Contributors
+  - value: '4.9'
+    label: Avg Rating
+  - value: '99%'
+    label: Test Coverage
+---
+
+---
+layout: section
+---
+
 # Code Blocks
 
 ---
