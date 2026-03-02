@@ -3,9 +3,6 @@ import { defineShikiSetup } from '@slidev/types'
 
 export default defineShikiSetup((): ShikiSetupReturn => {
   return {
-    themes: {
-      dark: 'vitesse-dark',
-      light: 'vitesse-light',
-    },
+    theme: 'github-dark',
   }
 })

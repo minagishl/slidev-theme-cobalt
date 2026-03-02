@@ -347,6 +347,33 @@ To display a label at the bottom of an image, add `label` to the front matter of
 layout: section
 ---
 
+# Code Blocks
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## Code Blocks & Inline Code
+
+Fenced code blocks use the standard dark background.
+
+```ts
+function greet(name: string): string {
+  return `Hello, ${name}!`
+}
+
+console.log(greet('World'))
+```
+
+Inline `code` uses a gray background by default.
+Use `<Underline>text</Underline>` to apply a blue underline: <Underline>underlined code</Underline>
+
+---
+layout: section
+---
+
 # About This Theme
 
 This presentation uses **Slidev Theme Cobalt** by [minagishl](https://github.com/minagishl). It is licensed under MIT. We would be happy if you could credit the theme name and developer somewhere in your slides.
