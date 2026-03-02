@@ -362,6 +362,30 @@ Use `<Note>` for small, muted annotation text in any corner.
 The `position` prop works the same as `<Label>`. Default is `bottom-left`.
 
 ---
+layout: panel
+color: black
+align: left
+---
+
+<PageNumber />
+
+Use `<PageNumber />` to show the current page number. Built on top of `<Label>`.
+
+Add `showTotal` to also display the total number of slides.
+
+---
+layout: panel
+color: black
+align: left
+---
+
+<PageNumber :showTotal="true" position="bottom-right" />
+
+With `:showTotal="true"`, the format becomes `current / total`.
+
+The `position` prop works the same as `<Label>`. Default is `bottom-right`.
+
+---
 layout: image-left
 image: https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop
 alt: Cat
