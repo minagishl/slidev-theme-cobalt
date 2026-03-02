@@ -186,6 +186,21 @@ Simple to customize, great typography, and the framed layouts really stand out i
 
 ---
 layout: panel
+color: black
+align: left
+---
+
+# Checkboxes
+
+You can create read-only checkboxes using Markdown task list syntax.
+
+- [ ] This item is not completed
+- [x] This item is completed
+
+Note that checkboxes are styled by the theme and cannot be toggled during the presentation.
+
+---
+layout: panel
 color: blue
 ---
 
