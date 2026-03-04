@@ -39,7 +39,7 @@ Date and other information
 layout: toc
 ---
 
-# Table of Contents
+<Label>Table of Contents</Label>
 
 1. Introduction
 2. Main Content
@@ -50,7 +50,7 @@ layout: toc
 activeIndex: 2
 ---
 
-# Table of Contents (2 columns)
+<Label>Table of Contents (2 columns)</Label>
 
 1. Mission
 2. Company Overview
