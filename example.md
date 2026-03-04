@@ -694,6 +694,28 @@ Use `<Underline>text</Underline>` to apply a blue underline: <Underline>underlin
 layout: section
 ---
 
+# Blockquotes
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## Blockquote styling
+
+Use standard Markdown blockquotes to call out important statements.
+
+> Great design is not just what it looks like and feels like. Design is how it works.
+>
+> — Steve Jobs
+
+You can also mix blockquotes with other text on the same slide.
+
+---
+layout: section
+---
+
 # Note Blocks
 
 ---
