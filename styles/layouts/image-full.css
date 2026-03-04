@@ -1,0 +1,62 @@
+/* Image Full layout */
+.image-full-layout.frame > .frame-content.image-full-inner {
+  padding: 0;
+}
+
+/* White frame variant — override the default blue background */
+.image-full-white.frame {
+  background: var(--color-white);
+}
+
+/* Inner box sits exactly on top of the frame border */
+.image-full-box {
+  position: absolute;
+  inset: var(--frame);
+  overflow: hidden;
+}
+
+.image-full-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-full-dim {
+  position: absolute;
+  inset: 0;
+  background: oklch(0 0 0 / 0.5);
+}
+
+.image-full-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--size-8);
+  gap: var(--size-4);
+  color: var(--color-white);
+}
+
+.image-full-content h1 {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+
+.image-full-content h2 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+}
+
+.image-full-content p {
+  color: var(--color-white);
+}
+
+.image-full-content :not(pre) > code {
+  color: var(--color-neutral-800);
+}

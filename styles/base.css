@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+
+  /* Anti-aliasing */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Font family */
+  font-family:
+    'Inter Variable', 'Noto Sans JP Variable', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+    'Yu Gothic', 'Meiryo', sans-serif !important;
+
+  /* Font optical sizing */
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.slidev-layout {
+  position: relative;
+
+  /* Structure */
+  --frame: var(--size-7);
+  --pad: var(--size-4);
+  --title-left-pad: var(--size-20);
+  --title-gap: var(--size-2);
+  --panel-inset: var(--size-7);
+  --panel-radius: var(--size-2);
+
+  /* Cover */
+  --cover-gap: var(--size-4);
+
+  /* Title */
+  --title-sandwich-pad-top: calc(var(--frame) + var(--size-48));
+  --title-sandwich-pad-bottom: var(--size-16);
+
+  /* Line height */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Letter spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* TOC */
+  --toc-gap: var(--size-7);
+  --toc-col-gap: var(--size-24);
+  --toc-item-gap: var(--size-6);
+  --toc-item-min-width: var(--size-48);
+  --toc-badge-w: var(--size-12);
+  --toc-badge-h: var(--size-11);
+  --toc-badge-radius: var(--size-1\.5);
+
+  /* Team */
+  --team-img: var(--size-48);
+  --team-gap: var(--size-12);
+  --team-member-gap: var(--size-4);
+  --team-img-scale-multiple: 0.8;
+  --team-name-scale-multiple: 0.9;
+
+  /* Font weights */
+  --font-weight-base: 500;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Profile */
+  --profile-list-pl: var(--size-2);
+  --profile-list-gap: var(--size-4);
+
+  /* Steps */
+  --steps-space: var(--size-4);
+
+  /* Image + Text (left/right) */
+  --image-text-gap: var(--size-8);
+
+  /* Two columns */
+  --cols-gap: var(--size-8);
+
+  /* Slidev Code Block */
+  --slidev-code-background: #000 !important;
+  --slidev-code-foreground: #fff !important;
+  --slidev-code-padding: var(--size-2) !important;
+  --slidev-code-font-size: var(--text-base) !important;
+  --slidev-code-line-height: var(--line-height-normal) !important;
+  --slidev-code-radius: var(--size-1) !important;
+  --slidev-code-margin: var(--size-2) 0 !important;
+  --slidev-code-tab-divider: var(--color-gray-200) !important;
+  --slidev-code-tab-text-color: var(--color-gray-500) !important;
+  --slidev-code-tab-font-size: var(--text-base) !important;
+  --slidev-code-tab-active-text-color: #3c3c43;
+
+  color: var(--color-neutral-800);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-relaxed);
+
+  /* Variable font: auto optical sizing per element font-size (Inter opsz axis) */
+  font-optical-sizing: auto;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout p {
+  margin: 0;
+}
+
+.slidev-layout h1 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.slidev-layout h2 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.slidev-layout h3 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.slidev-layout p {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-relaxed);
+}
+
+.slidev-layout ul,
+.slidev-layout ol {
+  padding-left: var(--size-1);
+  margin-top: var(--size-2);
+  margin-bottom: var(--size-2);
+  list-style: disc;
+}
+
+.slidev-layout ol {
+  list-style: decimal;
+}
+
+/* Task list / checkbox styling */
+.slidev-layout ul.task-list,
+.slidev-layout ol.task-list {
+  padding-left: 0;
+  margin-top: var(--size-2);
+  margin-bottom: var(--size-2);
+  list-style: none;
+}
+
+.slidev-layout .task-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-2);
+  margin-bottom: var(--size-1);
+  pointer-events: none;
+}
+
+.slidev-layout li:has(input[type='checkbox']) {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.slidev-layout .task-list-item input[type='checkbox'] {
+  margin-top: var(--size-1\.5);
+  cursor: default;
+  width: var(--size-4);
+  height: var(--size-4);
+  accent-color: var(--color-blue-900);
+}
+
+.slidev-layout b,
+.slidev-layout strong {
+  font-weight: var(--font-weight-bold);
+}
+
+.list-square ul {
+  list-style: square;
+}
+
+.text-blue {
+  color: var(--color-blue-900);
+}
+
+.text-muted {
+  color: var(--color-neutral-800);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Override Slidev base py-10 px-14 padding that shifts content down */
+.slidev-layout.cover,
+.slidev-layout.section,
+.slidev-layout.frame,
+.slidev-layout.panel {
+  padding: 0;
+}

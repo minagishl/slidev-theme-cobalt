@@ -1,0 +1,92 @@
+/* Timeline layout */
+.timeline-layout.frame > .frame-content.timeline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: calc(var(--frame) + var(--pad));
+  gap: var(--size-6);
+}
+
+.timeline-layout h1 {
+  color: var(--color-blue-900);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+}
+
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+  padding: var(--size-4) 0;
+}
+
+.timeline-items {
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-2);
+}
+
+.timeline-date {
+  height: var(--size-6);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-blue-900);
+  line-height: var(--line-height-tight);
+}
+
+.timeline-dot {
+  width: var(--size-3);
+  height: var(--size-3);
+  border-radius: 50%;
+  background: var(--color-blue-900);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--size-1);
+  padding: 0 var(--size-2);
+}
+
+.timeline-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-800);
+  line-height: var(--line-height-tight);
+}
+
+.timeline-description {
+  font-size: var(--text-xs);
+  color: var(--color-neutral-500);
+  line-height: var(--line-height-normal);
+}
+
+/*
+ * Track line Y = padding-top(--size-4) + date-height(--size-6)
+ *               + flex-gap(--size-2) + dot-radius(--size-1.5) - 1px
+ */
+.timeline-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-blue-900);
+  top: calc(var(--size-4) + var(--size-6) + var(--size-2) + var(--size-1\.5) - 1px);
+  z-index: 0;
+}

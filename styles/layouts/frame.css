@@ -1,0 +1,169 @@
+.frame {
+  position: relative;
+  background: var(--color-blue-900);
+  color: var(--color-neutral-800);
+}
+
+.frame::before {
+  content: '';
+  position: absolute;
+  inset: var(--frame);
+  background: var(--color-white);
+}
+
+.frame > .frame-content {
+  position: relative;
+  height: 100%;
+  padding: calc(var(--frame) + var(--pad) + var(--size-6));
+  display: flex;
+  flex-direction: column;
+  gap: var(--title-gap);
+}
+
+.frame.section-frame > .frame-content,
+.frame.frame-center > .frame-content {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Image + Text: left/right image + content (use .image-col and .content-col in slide) */
+.frame.image-text > .frame-content.image-text-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: var(--image-text-gap);
+  align-items: stretch;
+  padding: calc(var(--frame) + var(--pad));
+}
+
+.frame.image-text.image-left > .frame-content.image-text-inner {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+}
+
+.frame.image-text.image-right > .frame-content.image-text-inner {
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+}
+
+.frame.image-text.image-right .image-text-inner .image-col {
+  order: 2;
+}
+
+.frame.image-text.image-right .image-text-inner .content-col {
+  order: 1;
+}
+
+.frame.image-text .image-text-inner .image-col {
+  min-height: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-gray-100);
+}
+
+.frame.image-text .image-text-inner .image-col .image-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: var(--size-4) var(--size-6);
+  text-align: center;
+  color: var(--color-white);
+  opacity: 0.8;
+  background: var(--color-blue-900);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-base);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.frame.image-text .image-text-inner .image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.frame.image-text .image-text-inner .content-col {
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.frame.image-text .image-text-inner .content-col h1,
+.frame.image-text .image-text-inner .content-col h2,
+.frame.image-text .image-text-inner .content-col h3 {
+  color: var(--color-blue-900);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--size-2);
+}
+
+.section-frame h1 {
+  color: var(--color-blue-900);
+  font-size: var(--text-3xl);
+}
+
+.title-left h1,
+.title-center h1,
+.title-sandwich .title-main,
+.title-sandwich .title-main h1,
+.title-sandwich .title-main p {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.title-left p,
+.title-center p,
+.title-sandwich .title-top,
+.title-sandwich .title-footer,
+.title-sandwich .title-top p,
+.title-sandwich .title-footer p {
+  color: var(--color-blue-900);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-lg);
+  margin: 0;
+}
+
+.title-left .frame-content {
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: var(--title-left-pad);
+  padding-right: calc(var(--frame) + var(--pad));
+  gap: var(--title-gap);
+}
+
+.title-center .frame-content {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--title-gap);
+}
+
+.title-sandwich .frame-content {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: var(--title-sandwich-pad-top);
+  padding-bottom: var(--title-sandwich-pad-bottom);
+}
+
+.title-sandwich .title-footer {
+  margin-top: auto;
+}
+
+.frame.frame-align-left > .frame-content {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.frame.frame-align-right > .frame-content {
+  align-items: flex-end;
+  text-align: right;
+}

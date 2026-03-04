@@ -1,0 +1,84 @@
+.toc h1 {
+  color: var(--color-blue-900);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 0;
+  line-height: var(--line-height-normal);
+  position: absolute;
+  top: calc(var(--frame) + var(--pad));
+  left: calc(var(--frame) + var(--pad));
+}
+
+.toc .frame-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.toc ol {
+  list-style: none;
+  counter-reset: toc;
+  display: flex;
+  flex-direction: column;
+  gap: var(--toc-gap);
+  align-items: stretch;
+  padding: 0;
+  margin: var(--toc-margin-top) 0 0;
+  width: max-content;
+  max-width: 100%;
+}
+
+.toc:has(ol li:nth-child(5)) ol {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  row-gap: var(--toc-gap);
+  column-gap: var(--toc-col-gap);
+  align-items: start;
+  width: max-content;
+}
+
+/* Hide TOC items after the 8th */
+.toc ol li:nth-child(n + 9) {
+  display: none;
+}
+
+.toc ol li {
+  counter-increment: toc;
+  display: flex;
+  align-items: center;
+  gap: var(--toc-item-gap);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-blue-900);
+  margin-left: 0;
+  padding-left: 0;
+  min-width: var(--toc-item-min-width);
+  width: 100%;
+  white-space: nowrap;
+}
+
+.toc ol li::before {
+  content: counter(toc, decimal-leading-zero);
+  background: var(--color-blue-900);
+  color: var(--color-white);
+  width: var(--toc-badge-w);
+  height: var(--toc-badge-h);
+  border-radius: var(--toc-badge-radius);
+  display: grid;
+  place-items: center;
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-bold);
+}
+
+.toc ol.toc-has-active > li {
+  opacity: calc(100% / 3);
+}
+
+.toc ol.toc-has-active > li.toc-active {
+  opacity: 1;
+}

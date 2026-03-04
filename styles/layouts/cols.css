@@ -1,0 +1,36 @@
+/* Cols layout (2 or 3 columns) */
+.cols-layout.frame > .frame-content.cols-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--cols-gap);
+  align-items: stretch;
+  padding: calc(var(--frame) + var(--pad) + var(--size-4));
+  overflow: auto;
+}
+
+.cols-layout.cols-3.frame > .frame-content.cols-inner {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cols-layout .cols-inner .cols-col {
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--title-gap);
+}
+
+.cols-layout .cols-inner .cols-col h1 {
+  color: var(--color-blue-900);
+  font-size: var(--text-2xl);
+}
+
+.cols-layout .cols-inner .cols-col h2 {
+  color: var(--color-blue-900);
+  font-size: var(--text-xl);
+}
+
+.cols-layout .cols-inner .cols-col h3 {
+  color: var(--color-blue-900);
+  font-size: var(--text-base);
+}

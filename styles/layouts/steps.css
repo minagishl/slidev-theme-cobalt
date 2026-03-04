@@ -1,0 +1,67 @@
+/* Steps layout */
+.steps-layout.frame > .frame-content.steps-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: calc(var(--frame) + var(--pad));
+  overflow: auto;
+}
+
+.steps-column {
+  display: grid;
+  padding: 0 var(--size-4);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: var(--toc-gap);
+  max-height: 100%;
+}
+
+.step {
+  border-radius: 0;
+  padding: var(--size-4) 0;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--size-2);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: var(--toc-item-gap);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-blue-900);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--toc-badge-w);
+  height: var(--toc-badge-h);
+  border-radius: var(--toc-badge-radius);
+  background: var(--color-blue-900);
+  color: var(--color-white);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-bold);
+}
+
+.step-title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.step-body {
+  font-size: var(--text-base);
+  color: var(--color-neutral-800);
+  padding-left: calc(var(--size-16) + var(--size-2));
+  white-space: pre-line;
+}
+
+/* Hide steps after the 4th step */
+.steps-column .step:nth-child(n + 5) {
+  display: none;
+}

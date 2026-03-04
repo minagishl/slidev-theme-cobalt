@@ -1,0 +1,71 @@
+.team .panel-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: var(--team-gap);
+  text-align: center;
+}
+
+/* 2 columns layout (divisible by 4: 4, 8, 12, etc.) */
+.team.team-cols-2 .panel-inner .member {
+  width: calc(50% - var(--team-gap) / 2);
+}
+
+/* Default layout, 3 columns (divisible by 3: 3, 6, 9, etc.) */
+.team.team-cols-3 .panel-inner .member,
+.team .panel-inner .member {
+  width: calc(100% / 3 - var(--team-gap) * 2 / 3);
+}
+
+.team.team-border .panel-inner {
+  background: transparent;
+  box-shadow: 0 0 0 var(--size-1) var(--color-blue-900);
+}
+
+.team .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--team-member-gap);
+}
+
+.team img {
+  width: var(--team-img);
+  height: var(--team-img);
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.team .name {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-800);
+}
+
+/* If there are more than 4 members, make the icon and name smaller */
+.team.team-count-4 img,
+.team.team-count-5 img,
+.team.team-count-6 img,
+.team.team-count-7 img,
+.team.team-count-8 img,
+.team.team-count-9 img,
+.team.team-count-10 img,
+.team.team-count-11 img,
+.team.team-count-12 img {
+  width: calc(var(--team-img) * var(--team-img-scale-multiple));
+  height: calc(var(--team-img) * var(--team-img-scale-multiple));
+}
+
+.team.team-count-4 .name,
+.team.team-count-5 .name,
+.team.team-count-6 .name,
+.team.team-count-7 .name,
+.team.team-count-8 .name,
+.team.team-count-9 .name,
+.team.team-count-10 .name,
+.team.team-count-11 .name,
+.team.team-count-12 .name {
+  font-size: calc(var(--text-xl) * var(--team-name-scale-multiple));
+}

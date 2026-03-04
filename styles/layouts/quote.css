@@ -1,0 +1,101 @@
+.quote {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-medium);
+}
+
+.quote p {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+.quote.blue {
+  color: var(--color-blue-900);
+}
+
+.quote.black {
+  color: var(--color-neutral-800);
+}
+
+.panel .quote h1,
+.panel .quote h2,
+.panel .quote h3 {
+  color: var(--color-blue-900);
+  margin: 0;
+}
+
+.panel .quote h1 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--size-4);
+}
+
+.panel .quote h2 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--size-8);
+  margin-bottom: var(--size-2);
+}
+
+.panel .quote h3 {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--size-4);
+  margin-bottom: var(--size-1\.5);
+}
+
+.panel .quote p {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-normal);
+}
+
+.panel.panel-align-left .panel-inner .quote,
+.panel.panel-align-right .panel-inner .quote {
+  width: 100%;
+}
+
+/* Quote layout: centered testimonial / blockquote with optional source */
+.quote-layout.frame > .frame-content.quote-layout-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: calc(var(--frame) + var(--pad));
+  gap: var(--size-6);
+}
+
+.quote-layout .quote {
+  font-size: var(--text-base);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+  max-width: 80%;
+}
+
+.quote-layout .quote p {
+  font-size: var(--text-xl);
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+.quote-layout .quote-source {
+  font-size: var(--text-base);
+  color: var(--color-neutral-600);
+  margin: 0;
+  font-weight: var(--font-weight-medium);
+}
+
+.quote-layout .quote-source p {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+.quote-layout .quote-source strong {
+  color: var(--color-neutral-800);
+}

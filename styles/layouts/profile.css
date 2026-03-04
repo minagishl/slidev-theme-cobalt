@@ -1,0 +1,55 @@
+.profile h1 {
+  color: var(--color-blue-900);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.profile .profile-inner {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: 100%;
+  padding: 0 var(--size-14);
+}
+
+.profile .profile-name {
+  align-self: end;
+  padding-bottom: var(--size-6);
+}
+
+.profile .profile-body {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+  padding-top: var(--size-4);
+}
+
+.profile p {
+  font-size: var(--text-base);
+  color: var(--color-blue-900);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+}
+
+.profile .body {
+  color: var(--color-blue-900);
+  font-weight: var(--font-weight-medium);
+}
+
+.profile ol {
+  list-style: decimal;
+  padding-left: var(--profile-list-pl);
+  color: var(--color-blue-900);
+  font-weight: var(--font-weight-medium);
+  display: flex;
+  flex-direction: column;
+  gap: var(--profile-list-gap);
+}
+
+.profile ol li {
+  font-size: var(--text-base);
+}
+
+.slidev-layout .profile-body ol > li::first-line {
+  font-weight: var(--font-weight-bold);
+}

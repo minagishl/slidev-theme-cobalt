@@ -1,0 +1,56 @@
+/* Comparison layout */
+.comparison-layout.frame > .frame-content.comparison-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding: calc(var(--frame) + var(--pad));
+  align-items: stretch;
+  overflow: auto;
+}
+
+.comparison-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+  min-width: 0;
+}
+
+.comparison-title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-blue-900);
+  padding-bottom: var(--size-3);
+  border-bottom: 2px solid var(--color-blue-900);
+}
+
+.comparison-divider {
+  width: 1px;
+  background: var(--color-gray-200);
+  margin: 0 var(--size-8);
+  align-self: stretch;
+}
+
+.comparison-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+}
+
+.comparison-body h1,
+.comparison-body h2,
+.comparison-body h3 {
+  color: var(--color-blue-900);
+  margin-top: var(--size-2);
+}
+
+.comparison-body h1 {
+  font-size: var(--text-2xl);
+}
+
+.comparison-body h2 {
+  font-size: var(--text-xl);
+}
+
+.comparison-body h3 {
+  font-size: var(--text-base);
+}
