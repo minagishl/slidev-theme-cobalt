@@ -8,6 +8,12 @@
   overflow: auto;
 }
 
+/* Add padding clearance on both top and bottom when any Label is present */
+.cols-layout.frame > .frame-content.cols-inner:has(.slide-label) {
+  padding-top: calc(var(--frame) + var(--pad) + var(--size-8));
+  padding-bottom: calc(var(--frame) + var(--pad) + var(--size-8));
+}
+
 .cols-layout.cols-3.frame > .frame-content.cols-inner {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }

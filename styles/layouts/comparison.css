@@ -7,6 +7,12 @@
   overflow: auto;
 }
 
+/* Add padding clearance on both top and bottom when any Label is present */
+.comparison-layout.frame > .frame-content.comparison-content:has(.slide-label) {
+  padding-top: calc(var(--frame) + var(--pad) + var(--size-8));
+  padding-bottom: calc(var(--frame) + var(--pad) + var(--size-8));
+}
+
 .comparison-col {
   display: flex;
   flex-direction: column;

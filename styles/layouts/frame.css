@@ -167,3 +167,9 @@
   align-items: flex-end;
   text-align: right;
 }
+
+/* Add padding clearance on both top and bottom when any Label is present */
+.frame > .frame-content:has(.slide-label) {
+  padding-top: calc(var(--frame) + var(--pad) + var(--size-8));
+  padding-bottom: calc(var(--frame) + var(--pad) + var(--size-8));
+}
