@@ -418,6 +418,38 @@ With `:showTotal="true"`, the format becomes `current / total`.
 The `position` prop works the same as `<Label>`. Default is `bottom-right`.
 
 ---
+layout: section
+---
+
+# Q&A Component
+
+---
+layout: panel
+align: left
+---
+
+<Label>Q&A Example</Label>
+
+<QA question="What is the QA component?">
+  A component for showing question-and-answer pairs on a slide. Use the <code>question</code> prop for the question and the default slot for the answer.
+</QA>
+
+<QA question="Can I place multiple QA items on one slide?">
+  Yes — stack multiple <code>&lt;QA&gt;</code> components. A gap is automatically added between them.
+</QA>
+
+---
+layout: frame-panel
+color: blue
+---
+
+<Label>Single Q&A</Label>
+
+<QA question="Where can I use this component?">
+  In any layout — panel, frame-panel, cols, or any other frame-based layout.
+</QA>
+
+---
 layout: image-left
 image: https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop
 alt: Cat
