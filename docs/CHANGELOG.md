@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.4] - 2026-03-04
+
+### Added
+
+- `NoteBlock` component — framed blue note block with Lucide icon; accepts a `type` prop (`info` (default), `warn`, `alert`) and can be used in any layout
+- Documentation updates in `example.md` and `README.md` showing how to use `NoteBlock` and Markdown blockquotes
+
+### Changed
+
+- Global table styling updated for Markdown tables inside any layout — consistent cell padding and row borders using theme spacing and color variables
+- Blockquote styling redesigned to match the theme and to override Slidev's default code-style quote UI
+
 ## [0.3.3] - 2026-03-04
 
 ### Added
@@ -170,7 +182,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions workflow for automated npm publish
 - GitHub issue and pull request templates
 
-[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.2...HEAD
+[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.4...HEAD
+[0.3.4]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.3...v0.3.4
+[0.3.3]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.2.2...v0.3.0
