@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.2] - 2026-03-04
+
+### Added
+
+- `QA` component — question-and-answer pair; accepts a `question` prop for the question text and a default slot for the answer; multiple `<QA>` items stack vertically with automatic spacing
+
+### Changed
+
+- Split the monolithic `styles/layout.css` into per-category files under `styles/layouts/` and `styles/components/` for easier maintenance; `styles/layout.css` is now an entry point with `@import` statements only
+
+### Fixed
+
+- `Label` component overlapping with slide content text — padding is now increased on both top and bottom whenever a `Label` is present, covering `frame`, `cols`, and `comparison` layouts
+
 ## [0.3.1] - 2026-03-02
 
 ### Fixed
@@ -146,7 +160,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions workflow for automated npm publish
 - GitHub issue and pull request templates
 
-[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.1...HEAD
+[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.2...HEAD
+[0.3.2]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.2.1...v0.2.2
