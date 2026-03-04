@@ -160,6 +160,23 @@ layout: table
 | Ultra | $249            | 5 TB    | VIP 24/7 White Glove |
 
 ---
+layout: panel
+color: black
+align: left
+---
+
+## Table in Panel Layout
+
+You can also use a standard Markdown table inside other layouts.
+
+| Feature        | Basic     | Pro           |
+| -------------- | --------- | ------------- |
+| Max projects   | 3         | Unlimited     |
+| Support        | Community | Priority      |
+| Export formats | PDF only  | PDF, PPTX, MD |
+| Custom domain  | -         | Available     |
+
+---
 layout: cols
 ---
 
