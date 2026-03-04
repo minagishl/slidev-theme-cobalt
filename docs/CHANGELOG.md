@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.3] - 2026-03-04
+
 ### Added
 
 - `section-index` layout — full blue section divider with a large muted number on the left and a vertical divider; accepts a `number` prop; pairs well with `toc`
