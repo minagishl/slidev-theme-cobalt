@@ -694,6 +694,37 @@ Use `<Underline>text</Underline>` to apply a blue underline: <Underline>underlin
 layout: section
 ---
 
+# Note Blocks
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## NoteBlock component
+
+Use the `NoteBlock` component to create emphasized note blocks without writing raw HTML divs.
+
+<NoteBlock type="info">
+Information
+This is an informational note. The second line is optional.
+</NoteBlock>
+
+<NoteBlock type="warn">
+Warning
+Please pay attention to this point.
+</NoteBlock>
+
+<NoteBlock type="alert">
+Alert
+Do not perform this action.
+</NoteBlock>
+
+---
+layout: section
+---
+
 # About This Theme
 
 This presentation uses **Slidev Theme Cobalt** by [minagishl](https://github.com/minagishl). It is licensed under MIT. We would be happy if you could credit the theme name and developer somewhere in your slides.

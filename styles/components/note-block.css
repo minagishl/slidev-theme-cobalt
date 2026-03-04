@@ -1,0 +1,65 @@
+.slidev-layout .note-block {
+  position: relative;
+  display: flex;
+  gap: var(--size-3);
+  padding: var(--size-2) var(--size-4);
+  margin-top: var(--size-2);
+  margin-bottom: var(--size-2);
+  border-radius: var(--size-1\.5);
+  background: var(--color-blue-900);
+  color: var(--color-white);
+  align-items: center;
+  min-height: var(--size-11);
+}
+
+/* Fit nicely inside panel inner padding using calc instead of a hard max width */
+.panel .note-block {
+  width: 100%;
+}
+
+.slidev-layout .note-block-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--size-5);
+  height: var(--size-5);
+}
+
+.slidev-layout .note-block-icon-inner {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-mask: center / contain no-repeat;
+  mask: center / contain no-repeat;
+}
+
+.slidev-layout .note-block-icon-inner--info {
+  -webkit-mask-image: url('lucide-static/icons/info.svg');
+  mask-image: url('lucide-static/icons/info.svg');
+}
+
+.slidev-layout .note-block-icon-inner--warn {
+  -webkit-mask-image: url('lucide-static/icons/alert-triangle.svg');
+  mask-image: url('lucide-static/icons/alert-triangle.svg');
+}
+
+.slidev-layout .note-block-icon-inner--alert {
+  -webkit-mask-image: url('lucide-static/icons/x-circle.svg');
+  mask-image: url('lucide-static/icons/x-circle.svg');
+}
+
+.slidev-layout .note-block > * {
+  margin: 0;
+}
+
+.slidev-layout .note-block-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slidev-layout .note-block-body:not(:first-child) {
+  font-size: var(--text-sm);
+  line-height: var(--line-height-relaxed);
+}

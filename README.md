@@ -103,6 +103,7 @@ This theme provides the following layouts:
 | `<PageNumber>` | Current page number built on `Label`. `position` prop (default `bottom-right`) and `showTotal` boolean |
 | `<Underline>`  | Inline text with a blue underline                                                                      |
 | `<QA>`         | Question-and-answer pair. `question` prop for the question text, default slot for the answer           |
+| `<NoteBlock>`  | Framed blue note block with icon. `type` prop: `info` (default), `warn`, or `alert`                    |
 
 Components can be placed in any layout:
 
@@ -111,6 +112,10 @@ Components can be placed in any layout:
 <Note>\* Estimated value</Note>
 <PageNumber :showTotal="true" />
 <QA question="What is this?">A Slidev theme with cobalt blue design.</QA>
+<NoteBlock type="info">
+Information
+This is an informational note. The second line is optional.
+</NoteBlock>
 ```
 
 ## Features
