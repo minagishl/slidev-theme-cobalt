@@ -46,16 +46,17 @@ This theme provides the following layouts:
 
 ### Title & Structure
 
-| Layout           | Description                                                            |
-| ---------------- | ---------------------------------------------------------------------- |
-| `cover`          | Full blue cover slide with centered content                            |
-| `title`          | Left-aligned title on framed slide                                     |
-| `title-center`   | Centered title on framed slide                                         |
-| `title-sandwich` | Three-part layout with top subtitle, centered title, and bottom footer |
-| `intro`          | Centered content on framed slide                                       |
-| `section`        | Full blue section divider                                              |
-| `section-frame`  | Framed section divider with white background                           |
-| `toc`            | Table of contents with numbered badges                                 |
+| Layout           | Description                                                                              |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| `cover`          | Full blue cover slide with centered content                                              |
+| `title`          | Left-aligned title on framed slide                                                       |
+| `title-center`   | Centered title on framed slide                                                           |
+| `title-sandwich` | Three-part layout with top subtitle, centered title, and bottom footer                   |
+| `intro`          | Centered content on framed slide                                                         |
+| `section`        | Full blue section divider                                                                |
+| `section-frame`  | Framed section divider with white background                                             |
+| `section-index`  | Full blue section divider with a large muted number on the left. Accepts a `number` prop |
+| `toc`            | Table of contents with numbered badges                                                   |
 
 ### Content
 

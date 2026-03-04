@@ -1,0 +1,25 @@
+.section-index {
+  background: var(--color-blue-900);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--size-8);
+  padding: var(--size-14);
+}
+
+.section-index-index {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  opacity: calc(100% / 3);
+  width: var(--size-12);
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.section-index-content h1 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+}

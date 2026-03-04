@@ -74,6 +74,20 @@ layout: section-frame
 # Section Title
 
 ---
+layout: section-index
+number: 1
+---
+
+# Section Title
+
+---
+layout: section-index
+number: 2
+---
+
+# Another Section
+
+---
 layout: team
 members:
   - name: Team Member 1
