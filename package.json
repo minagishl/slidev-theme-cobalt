@@ -36,7 +36,8 @@
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",
     "@fontsource-variable/noto-sans-jp": "^5.2.10",
-    "@slidev/types": "^52.12.0"
+    "@slidev/types": "^52.12.0",
+    "lucide-static": "^0.576.0"
   },
   "devDependencies": {
     "@slidev/cli": "^52.12.0",

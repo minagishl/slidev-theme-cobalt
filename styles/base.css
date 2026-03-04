@@ -173,11 +173,33 @@
 }
 
 .slidev-layout .task-list-item input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
   margin-top: var(--size-1\.5);
   cursor: default;
   width: var(--size-4);
   height: var(--size-4);
-  accent-color: var(--color-blue-900);
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 0;
+  border: var(--size-0\.5) solid var(--color-neutral-400);
+  background-color: transparent;
+  background-image: none;
+}
+
+.slidev-layout .task-list-item input[type='checkbox']:checked {
+  background-color: var(--color-blue-900);
+  border-color: var(--color-blue-900);
+}
+
+.slidev-layout .task-list-item input[type='checkbox']:checked::after {
+  content: '';
+  position: absolute;
+  inset: var(--size-px);
+  background-color: #fff;
+  -webkit-mask: url('lucide-static/icons/check.svg') center / contain no-repeat;
+  mask: url('lucide-static/icons/check.svg') center / contain no-repeat;
+  mask-size: 120%;
 }
 
 .slidev-layout b,

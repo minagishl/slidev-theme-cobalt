@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `section-index` layout — full blue section divider with a large muted number on the left and a vertical divider; accepts a `number` prop; pairs well with `toc`
 
+### Changed
+
+- Checkbox styling redesigned: unchecked state shows a square border, checked state shows a filled blue square with a white check mark icon sourced from `lucide-static`
+
 ## [0.3.2] - 2026-03-04
 
 ### Added
