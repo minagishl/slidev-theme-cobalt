@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- npm publish workflow migrated to OIDC Trusted Publishing — `NPM_TOKEN` secret is no longer required
+
 ## [0.3.4] - 2026-03-04
 
 ### Added
