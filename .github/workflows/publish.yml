@@ -7,20 +7,21 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: npm
     permissions:
       contents: read
       id-token: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Upgrade npm for provenance support
+      - name: Upgrade npm for trusted publishing support
         run: npm install -g npm@latest
 
       - name: Install bun
@@ -42,7 +43,5 @@ jobs:
         run: |
           npm version ${{ steps.version.outputs.version }} --no-git-tag-version --no-commit-hooks
 
-      - name: Publish to npm with provenance
-        run: npm publish --provenance --access public --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish to npm
+        run: npm publish --access public --no-git-checks
