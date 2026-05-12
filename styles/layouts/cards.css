@@ -1,0 +1,79 @@
+/* Cards layout */
+.cards-layout.frame > .frame-content.cards-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: calc(var(--frame) + var(--pad));
+  gap: var(--size-8);
+}
+
+.cards-layout h1 {
+  color: var(--color-blue-900);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+}
+
+.cards-grid {
+  display: grid;
+  gap: var(--size-4);
+}
+
+/* Auto column count based on the number of cards */
+.cards-grid-auto-1 {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.cards-grid-auto-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cards-grid-auto-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cards-grid-auto-4 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cards-grid-auto-5,
+.cards-grid-auto-6 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Explicit columns prop */
+.cards-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cards-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cards-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+  padding: var(--size-5) var(--size-6);
+  background: var(--color-gray-50);
+  border-left: var(--size-1) solid var(--color-blue-900);
+  min-width: 0;
+}
+
+.card-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-blue-900);
+  line-height: var(--line-height-tight);
+}
+
+.card-description {
+  font-size: var(--text-sm);
+  color: var(--color-neutral-700);
+  line-height: var(--line-height-normal);
+}

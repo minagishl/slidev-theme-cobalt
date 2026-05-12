@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `cards` layout — framed grid of feature cards; accepts a `cards` array with `title` and optional `description`, and an optional `columns` prop (`2`, `3`, `4`) that overrides the auto column count based on card count
+
 ### Changed
 
 - npm publish workflow migrated to OIDC Trusted Publishing — `NPM_TOKEN` secret is no longer required

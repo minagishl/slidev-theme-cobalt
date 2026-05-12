@@ -67,6 +67,7 @@ This theme provides the following layouts:
 | `quote`       | Centered testimonial/blockquote with optional `::source::` slot                                                         |
 | `profile`     | Framed profile slide with `::name::` and default slots                                                                  |
 | `cols`        | 2 or 3 equal columns. Set `cols: 3` for three columns. Uses `::left::`, `::middle::`, `::right::` slots                 |
+| `cards`       | Grid of feature cards. Pass a `cards` array with `title` and optional `description`. Supports optional `columns` prop   |
 | `table`       | Framed layout for Markdown tables                                                                                       |
 | `comparison`  | Side-by-side comparison with column titles. Uses `::left::` and `::right::` slots, and `leftTitle` / `rightTitle` props |
 
@@ -123,7 +124,7 @@ This is an informational note. The second line is optional.
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
 - **Japanese Support**: Includes Noto Sans JP font for Japanese text
-- **Multiple Layouts**: 24 layout options for various presentation needs
+- **Multiple Layouts**: 25 layout options for various presentation needs
 
 ## Deploy (Cloudflare Workers)
 

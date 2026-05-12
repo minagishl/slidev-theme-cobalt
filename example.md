@@ -667,6 +667,52 @@ Scale only the services that need more capacity.
 layout: section
 ---
 
+# Cards
+
+---
+layout: cards
+cards:
+  - title: Fast
+    description: Built for performance with minimal runtime overhead.
+  - title: Flexible
+    description: Compose layouts and components to fit any presentation.
+  - title: Themed
+    description: Consistent typography, colors, and spacing across slides.
+---
+
+# Why this theme
+
+---
+layout: cards
+cards:
+  - title: Plan
+    description: Define the scope and the audience for the deck.
+  - title: Draft
+    description: Outline each section before polishing any single slide.
+  - title: Design
+    description: Use layouts and components to keep visuals consistent.
+  - title: Deliver
+    description: Rehearse the timing and prepare for live questions.
+---
+
+# Workshop Steps
+
+---
+layout: cards
+columns: 2
+cards:
+  - title: Engineering
+    description: Builds and ships the product, owns reliability and scale.
+  - title: Design
+    description: Shapes the experience, from research to high-fidelity UI.
+---
+
+# Teams at a glance
+
+---
+layout: section
+---
+
 # Code Blocks
 
 ---
