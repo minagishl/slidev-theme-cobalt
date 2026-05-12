@@ -97,14 +97,15 @@ This theme provides the following layouts:
 
 ## Components
 
-| Component      | Description                                                                                            |
-| -------------- | ------------------------------------------------------------------------------------------------------ |
-| `<Label>`      | Corner label. `position` prop: `top-left` (default), `top-right`, `bottom-left`, `bottom-right`        |
-| `<Note>`       | Small muted annotation. Same `position` prop as `Label`. Default is `bottom-left`                      |
-| `<PageNumber>` | Current page number built on `Label`. `position` prop (default `bottom-right`) and `showTotal` boolean |
-| `<Underline>`  | Inline text with a blue underline                                                                      |
-| `<QA>`         | Question-and-answer pair. `question` prop for the question text, default slot for the answer           |
-| `<NoteBlock>`  | Framed blue note block with icon. `type` prop: `info` (default), `warn`, or `alert`                    |
+| Component      | Description                                                                                                         |
+| -------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `<Label>`      | Corner label. `position` prop: `top-left` (default), `top-right`, `bottom-left`, `bottom-right`                     |
+| `<Note>`       | Small muted annotation. Same `position` prop as `Label`. Default is `bottom-left`                                   |
+| `<PageNumber>` | Current page number built on `Label`. `position` prop (default `bottom-right`) and `showTotal` boolean              |
+| `<Underline>`  | Inline text with a blue underline                                                                                   |
+| `<Badge>`      | Inline label for status or emphasis. `variant` prop: `solid` (default), `soft`, or `outline`; default slot for text |
+| `<QA>`         | Question-and-answer pair. `question` prop for the question text, default slot for the answer                        |
+| `<NoteBlock>`  | Framed blue note block with icon. `type` prop: `info` (default), `warn`, or `alert`                                 |
 
 Components can be placed in any layout:
 
@@ -112,6 +113,7 @@ Components can be placed in any layout:
 <Label>Table of Contents</Label>
 <Note>\* Estimated value</Note>
 <PageNumber :showTotal="true" />
+<Badge>New</Badge>
 <QA question="What is this?">A Slidev theme with cobalt blue design.</QA>
 <NoteBlock type="info">
 Information

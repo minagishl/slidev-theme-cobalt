@@ -762,6 +762,26 @@ You can also mix blockquotes with other text on the same slide.
 layout: section
 ---
 
+# Badges
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## Badge component
+
+Use `<Badge>` for short inline labels such as release status, experimental features, or emphasis next to body text.
+
+<Badge>New</Badge> <Badge variant="soft">Beta</Badge> <Badge variant="outline">Draft</Badge>
+
+This release is <Badge>stable</Badge> — mix badges freely with paragraphs and headings.
+
+---
+layout: section
+---
+
 # Note Blocks
 
 ---
