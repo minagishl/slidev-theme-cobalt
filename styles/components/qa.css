@@ -41,7 +41,7 @@
 .qa-answer .qa-badge {
   background: transparent;
   color: var(--color-blue-900);
-  box-shadow: 0 0 0 1px var(--color-blue-900);
+  box-shadow: 0 0 0 var(--size-px) var(--color-blue-900);
 }
 
 .qa-text {

@@ -21,7 +21,7 @@
 
 .team.team-border .panel-inner {
   background: transparent;
-  box-shadow: 0 0 0 var(--size-1) var(--color-blue-900);
+  box-shadow: 0 0 0 var(--size-px) var(--color-blue-900);
 }
 
 .team .member {
