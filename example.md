@@ -813,6 +813,42 @@ Do not perform this action.
 layout: section
 ---
 
+# Fact rows
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## FactRow component
+
+Use `<FactRow>` for release metadata, API fields, or any label–value pairs. Stack several rows; spacing and dividers are handled by the theme.
+
+<FactRow label="Theme">Slidev Theme Cobalt</FactRow>
+<FactRow label="Package">
+`slidev-theme-cobalt` on npm
+</FactRow>
+<FactRow label="Repository">
+[GitHub](https://github.com/minagishl/slidev-theme-cobalt)
+</FactRow>
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## Short spec sheet
+
+<FactRow label="Runtime">Node 18+</FactRow>
+<FactRow label="Package manager">npm, pnpm, yarn, or Bun</FactRow>
+<FactRow label="Fonts">Inter Variable, Noto Sans JP Variable</FactRow>
+
+---
+layout: section
+---
+
 # About This Theme
 
 This presentation uses **Slidev Theme Cobalt** by [minagishl](https://github.com/minagishl). It is licensed under MIT. We would be happy if you could credit the theme name and developer somewhere in your slides.

@@ -106,6 +106,7 @@ This theme provides the following layouts:
 | `<Badge>`      | Inline label for status or emphasis. `variant` prop: `solid` (default), `soft`, or `outline`; default slot for text |
 | `<QA>`         | Question-and-answer pair. `question` prop for the question text, default slot for the answer                        |
 | `<NoteBlock>`  | Framed blue note block with icon. `type` prop: `info` (default), `warn`, or `alert`                                 |
+| `<FactRow>`    | Label–value row for specs or metadata. Required `label` prop; default slot for the value (text or short Markdown)   |
 
 Components can be placed in any layout:
 
@@ -119,6 +120,9 @@ Components can be placed in any layout:
 Information
 This is an informational note. The second line is optional.
 </NoteBlock>
+
+<FactRow label="Version">0.4.0</FactRow>
+<FactRow label="License">MIT</FactRow>
 ```
 
 ## Features

@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- `FactRow` component — two-column label and value row for metadata or specifications; required `label` prop and default slot for the value; stack multiple rows for a compact fact list
 - `Badge` component — compact inline label for status or emphasis; default slot for text, optional `variant` prop (`solid` (default), `soft`, `outline`)
 - `cards` layout — framed grid of feature cards; accepts a `cards` array with `title` and optional `description`, and an optional `columns` prop (`2`, `3`, `4`) that overrides the auto column count based on card count
 

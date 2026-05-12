@@ -1,0 +1,39 @@
+.slidev-layout .fact-row {
+  display: grid;
+  grid-template-columns: minmax(6rem, 28%) 1fr;
+  gap: var(--size-3) var(--size-5);
+  padding: var(--size-3) 0;
+  align-items: baseline;
+  border-bottom: var(--size-px) solid var(--color-gray-200);
+}
+
+.slidev-layout .fact-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.slidev-layout .fact-row:first-child {
+  padding-top: 0;
+}
+
+.slidev-layout .fact-row-label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-blue-900);
+  line-height: var(--line-height-snug);
+}
+
+.slidev-layout .fact-row-value {
+  margin: 0;
+  font-size: var(--text-base);
+  color: var(--color-neutral-800);
+  line-height: var(--line-height-relaxed);
+}
+
+.slidev-layout .fact-row-value > :first-child {
+  margin-top: 0;
+}
+
+.slidev-layout .fact-row-value > :last-child {
+  margin-bottom: 0;
+}
