@@ -97,16 +97,17 @@ This theme provides the following layouts:
 
 ## Components
 
-| Component      | Description                                                                                                         |
-| -------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `<Label>`      | Corner label. `position` prop: `top-left` (default), `top-right`, `bottom-left`, `bottom-right`                     |
-| `<Note>`       | Small muted annotation. Same `position` prop as `Label`. Default is `bottom-left`                                   |
-| `<PageNumber>` | Current page number built on `Label`. `position` prop (default `bottom-right`) and `showTotal` boolean              |
-| `<Underline>`  | Inline text with a blue underline                                                                                   |
-| `<Badge>`      | Inline label for status or emphasis. `variant` prop: `solid` (default), `soft`, or `outline`; default slot for text |
-| `<QA>`         | Question-and-answer pair. `question` prop for the question text, default slot for the answer                        |
-| `<NoteBlock>`  | Framed blue note block with icon. `type` prop: `info` (default), `warn`, or `alert`                                 |
-| `<FactRow>`    | Label–value row for specs or metadata. Required `label` prop; default slot for the value (text or short Markdown)   |
+| Component      | Description                                                                                                                                                                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `<Label>`      | Corner label. `position` prop: `top-left` (default), `top-right`, `bottom-left`, `bottom-right`                                                                                      |
+| `<Note>`       | Small muted annotation. Same `position` prop as `Label`. Default is `bottom-left`                                                                                                    |
+| `<PageNumber>` | Current page number built on `Label`. `position` prop (default `bottom-right`) and `showTotal` boolean                                                                               |
+| `<Underline>`  | Inline text with a blue underline                                                                                                                                                    |
+| `<Badge>`      | Inline label for status or emphasis. `variant` prop: `solid` (default), `soft`, or `outline`; default slot for text                                                                  |
+| `<QA>`         | Question-and-answer pair. `question` prop for the question text, default slot for the answer                                                                                         |
+| `<NoteBlock>`  | Framed blue note block with icon. `type` prop: `info` (default), `warn`, or `alert`                                                                                                  |
+| `<FactRow>`    | Label–value row for specs or metadata. Required `label` prop; default slot for the value (text or short Markdown)                                                                    |
+| `<Kbd>`        | Inline keyboard key with depth and border. Default slot for the key label, or `icon` prop with a lucide icon name (`command`, `arrow-up`, `arrow-down`, `arrow-left`, `arrow-right`) |
 
 Components can be placed in any layout:
 
@@ -123,6 +124,8 @@ This is an informational note. The second line is optional.
 
 <FactRow label="Version">0.4.0</FactRow>
 <FactRow label="License">MIT</FactRow>
+
+Open the palette with <Kbd icon="command" /> + <Kbd>K</Kbd>.
 ```
 
 ## Features

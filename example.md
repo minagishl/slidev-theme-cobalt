@@ -849,6 +849,30 @@ align: left
 layout: section
 ---
 
+# Keyboard Keys
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## Kbd component
+
+Use `<Kbd>` to display keyboard keys inline. Combine multiple keys to show shortcuts. Pass an `icon` prop to render a lucide icon (`command`, `arrow-up`, `arrow-down`, `arrow-left`, `arrow-right`).
+
+Open the command palette with <Kbd icon="command" /> + <Kbd>K</Kbd>.
+
+Save the current file using <Kbd>Ctrl</Kbd> + <Kbd>S</Kbd>.
+
+Navigate slides with <Kbd icon="arrow-left" /> and <Kbd icon="arrow-right" />, or move down with <Kbd icon="arrow-down" />.
+
+Each key sits centered on the text line, so multiple lines of shortcuts stack cleanly without overlapping.
+
+---
+layout: section
+---
+
 # About This Theme
 
 This presentation uses **Slidev Theme Cobalt** by [minagishl](https://github.com/minagishl). It is licensed under MIT. We would be happy if you could credit the theme name and developer somewhere in your slides.

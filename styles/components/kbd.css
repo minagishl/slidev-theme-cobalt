@@ -1,0 +1,52 @@
+.slidev-layout .theme-kbd {
+  display: inline-block;
+  min-width: var(--size-5);
+  padding: 0 var(--size-1\.5) var(--size-0\.5);
+  margin: 0 var(--size-0\.5);
+  border-radius: var(--size-1);
+  background: var(--color-neutral-50);
+  color: var(--color-blue-900);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: var(--size-px) solid var(--color-gray-300);
+  box-shadow: inset 0 calc(-1 * var(--size-0\.5)) 0 0 var(--color-gray-200);
+}
+
+.slidev-layout .theme-kbd-icon {
+  display: inline-block;
+  width: 1em;
+  height: calc(1em * var(--line-height-snug));
+  vertical-align: top;
+  background-color: currentColor;
+  -webkit-mask: center / contain no-repeat;
+  mask: center / contain no-repeat;
+}
+
+.slidev-layout .theme-kbd-icon--command {
+  -webkit-mask-image: url('lucide-static/icons/command.svg');
+  mask-image: url('lucide-static/icons/command.svg');
+}
+
+.slidev-layout .theme-kbd-icon--arrow-up {
+  -webkit-mask-image: url('lucide-static/icons/arrow-up.svg');
+  mask-image: url('lucide-static/icons/arrow-up.svg');
+}
+
+.slidev-layout .theme-kbd-icon--arrow-down {
+  -webkit-mask-image: url('lucide-static/icons/arrow-down.svg');
+  mask-image: url('lucide-static/icons/arrow-down.svg');
+}
+
+.slidev-layout .theme-kbd-icon--arrow-left {
+  -webkit-mask-image: url('lucide-static/icons/arrow-left.svg');
+  mask-image: url('lucide-static/icons/arrow-left.svg');
+}
+
+.slidev-layout .theme-kbd-icon--arrow-right {
+  -webkit-mask-image: url('lucide-static/icons/arrow-right.svg');
+  mask-image: url('lucide-static/icons/arrow-right.svg');
+}
