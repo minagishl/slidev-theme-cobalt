@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- `Kbd` component — inline keyboard key with subtle depth and border for displaying shortcuts; default slot for the key label, or an optional `icon` prop that renders a Lucide icon (`command`, `arrow-up`, `arrow-down`, `arrow-left`, `arrow-right`) via `lucide-static`; sized via theme design tokens and centered on the text line so stacked shortcut lines do not overlap; combine multiple `<Kbd>` elements to show key combinations
+- `Kbd` component — inline keyboard key with subtle depth and border for displaying shortcuts; default slot for the key label, or an optional `icon` prop that renders a Lucide icon (`command`, `arrow-up`, `arrow-down`, `arrow-left`, `arrow-right`) via `lucide-static`; sized via theme design tokens and centered on the text line so stacked shortcut lines do not overlap; default cursor is a pointer and hover triggers a subtle press animation that sinks the key cap and shrinks the depth shadow (respecting `prefers-reduced-motion`); pass `no-hover` to disable the animation and pointer cursor for decorative keys; combine multiple `<Kbd>` elements to show key combinations
 - `FactRow` component — two-column label and value row for metadata or specifications; required `label` prop and default slot for the value; stack multiple rows for a compact fact list
 - `Badge` component — compact inline label for status or emphasis; default slot for text, optional `variant` prop (`solid` (default), `soft`, `outline`)
 - `cards` layout — framed grid of feature cards; accepts a `cards` array with `title` and optional `description`, and an optional `columns` prop (`2`, `3`, `4`) that overrides the auto column count based on card count

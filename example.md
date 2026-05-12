@@ -867,6 +867,8 @@ Save the current file using <Kbd>Ctrl</Kbd> + <Kbd>S</Kbd>.
 
 Navigate slides with <Kbd icon="arrow-left" /> and <Kbd icon="arrow-right" />, or move down with <Kbd icon="arrow-down" />.
 
+The default cursor is a pointer and hovering plays a subtle press animation. Pass `no-hover` for decorative keys that should stay still: <Kbd no-hover>Esc</Kbd>.
+
 Each key sits centered on the text line, so multiple lines of shortcuts stack cleanly without overlapping.
 
 ---

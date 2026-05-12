@@ -12,8 +12,27 @@
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
+  cursor: pointer;
   border: var(--size-px) solid var(--color-gray-300);
   box-shadow: inset 0 calc(-1 * var(--size-0\.5)) 0 0 var(--color-gray-200);
+  transition:
+    transform 120ms ease-out,
+    box-shadow 120ms ease-out;
+}
+
+.slidev-layout .theme-kbd:hover:not(.theme-kbd--no-hover) {
+  transform: translateY(var(--size-px));
+  box-shadow: inset 0 calc(-1 * var(--size-px)) 0 0 var(--color-gray-200);
+}
+
+.slidev-layout .theme-kbd--no-hover {
+  cursor: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slidev-layout .theme-kbd {
+    transition: none;
+  }
 }
 
 .slidev-layout .theme-kbd-icon {

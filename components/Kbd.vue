@@ -3,11 +3,12 @@ type KbdIcon = 'command' | 'arrow-up' | 'arrow-down' | 'arrow-left' | 'arrow-rig
 
 defineProps<{
   icon?: KbdIcon
+  noHover?: boolean
 }>()
 </script>
 
 <template>
-  <kbd class="theme-kbd">
+  <kbd class="theme-kbd" :class="{ 'theme-kbd--no-hover': noHover }">
     <span
       v-if="icon"
       class="theme-kbd-icon"
