@@ -827,10 +827,14 @@ Use `<FactRow>` for release metadata, API fields, or any label–value pairs. St
 
 <FactRow label="Theme">Slidev Theme Cobalt</FactRow>
 <FactRow label="Package">
+
 `slidev-theme-cobalt` on npm
+
 </FactRow>
 <FactRow label="Repository">
+
 [GitHub](https://github.com/minagishl/slidev-theme-cobalt)
+
 </FactRow>
 
 ---
