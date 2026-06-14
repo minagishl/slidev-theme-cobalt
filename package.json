@@ -52,7 +52,8 @@
     "colorSchema": "both",
     "defaults": {
       "themeConfig": {
-        "font": "gen-interface-jp"
+        "font": "gen-interface-jp",
+        "ellipsisFont": "cjk"
       },
       "fonts": {
         "sans": "Gen Interface JP",

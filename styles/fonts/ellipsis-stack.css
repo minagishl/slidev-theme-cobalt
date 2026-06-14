@@ -1,0 +1,24 @@
+/*
+ * Ellipsis (U+2026, U+22EF) font routing — switch via themeConfig.ellipsisFont.
+ * cjk: Noto Sans JP glyph (aligns with Japanese text)
+ * latin: Inter glyph (Latin baseline)
+ */
+@font-face {
+  font-family: 'Cobalt Ellipsis CJK';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/noto-sans-jp/files/noto-sans-jp-113-wght-normal.woff2')
+    format('woff2-variations');
+  unicode-range: U+2026, U+22EF;
+}
+
+@font-face {
+  font-family: 'Cobalt Ellipsis Latin';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2')
+    format('woff2-variations');
+  unicode-range: U+2026, U+22EF;
+}

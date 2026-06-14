@@ -6,6 +6,7 @@
    * Default: Gen Interface JP — UI typeface blending Inter with Noto Sans JP.
    * https://gen.typesetting.jp/
    * Switch via themeConfig.font: inter | gen-interface-jp
+   * Ellipsis (…) routing via themeConfig.ellipsisFont: cjk | latin
    */
   --font-family-sans: 'Gen Interface JP', var(--font-stack-fallback);
   --font-family-display: 'Gen Interface JP Display', var(--font-family-sans);
@@ -123,8 +124,31 @@
   --text-6xl: 3.75rem;
 }
 
+/* Gen Interface JP + CJK ellipsis (Noto Sans JP glyph) */
+body[style*='--slidev-theme-ellipsisFont: cjk']:not([style*='--slidev-theme-font: inter']) {
+  --font-family-sans: 'Cobalt Ellipsis CJK', 'Gen Interface JP', var(--font-stack-fallback);
+}
+
+/* Gen Interface JP + Latin ellipsis (Inter glyph) */
+body[style*='--slidev-theme-ellipsisFont: latin']:not([style*='--slidev-theme-font: inter']) {
+  --font-family-sans: 'Cobalt Ellipsis Latin', 'Gen Interface JP', var(--font-stack-fallback);
+}
+
+/* Inter font stack */
 body[style*='--slidev-theme-font: inter'] {
   --font-family-sans: 'Inter Variable', 'Noto Sans JP Variable', var(--font-stack-fallback);
   --font-family-display: var(--font-family-sans);
   --cjk-open-pull: 0.28em;
+}
+
+/* Inter + CJK ellipsis */
+body[style*='--slidev-theme-font: inter'][style*='--slidev-theme-ellipsisFont: cjk'] {
+  --font-family-sans:
+    'Cobalt Ellipsis CJK', 'Inter Variable', 'Noto Sans JP Variable', var(--font-stack-fallback);
+}
+
+/* Inter + Latin ellipsis */
+body[style*='--slidev-theme-font: inter'][style*='--slidev-theme-ellipsisFont: latin'] {
+  --font-family-sans:
+    'Cobalt Ellipsis Latin', 'Inter Variable', 'Noto Sans JP Variable', var(--font-stack-fallback);
 }

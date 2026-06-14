@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Typography switched from Inter Variable and Noto Sans JP Variable to [Gen Interface JP](https://gen.typesetting.jp/) — a UI typeface that blends Inter with Noto Sans JP for consistent Latin and Japanese readability; `section`, `section-frame`, and `section-index` layouts use the Display variant
 - Font stack is switchable via `themeConfig.font` — `gen-interface-jp` (default) or `inter` (Inter Variable + Noto Sans JP Variable)
+- Ellipsis (`…`) font priority is switchable via `themeConfig.ellipsisFont` — `cjk` (Noto Sans JP, default) or `latin` (Inter); works with both font stacks
 - CJK opening punctuation at block start (e.g. 「 （ 【) aligned via client script that wraps the first character in `.cjk-open-start`; applies to headings, lists, tables, blockquotes, and theme components (TOC, QA, NoteBlock, FactRow)
 - `--cjk-open-pull` for Gen Interface JP increased from `0.25em` to `0.375em` for slightly stronger opening punctuation alignment
 

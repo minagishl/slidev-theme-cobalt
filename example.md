@@ -851,6 +851,7 @@ align: left
 <FactRow label="Package manager">npm, pnpm, yarn, or Bun</FactRow>
 <FactRow label="Fonts">Gen Interface JP (default) or Inter + Noto Sans JP</FactRow>
 <FactRow label="Font config">themeConfig.font: gen-interface-jp | inter</FactRow>
+<FactRow label="Ellipsis font">themeConfig.ellipsisFont: cjk | latin</FactRow>
 
 ---
 layout: section

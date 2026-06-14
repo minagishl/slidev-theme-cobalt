@@ -144,6 +144,15 @@ This theme supports two font stacks, switchable via `themeConfig.font` in your s
 | `gen-interface-jp` (default) | [Gen Interface JP](https://gen.typesetting.jp/) | Gen Interface JP Display |
 | `inter`                      | Inter Variable + Noto Sans JP Variable          | Same as body text        |
 
+Ellipsis (`…`) vertical alignment is switchable via `themeConfig.ellipsisFont`:
+
+| Value           | Ellipsis glyph | Appearance with Japanese text |
+| --------------- | -------------- | ----------------------------- |
+| `cjk` (default) | Noto Sans JP   | Centered with CJK text        |
+| `latin`         | Inter          | Latin baseline (lower)        |
+
+Works with both `font` values above.
+
 [Gen Interface JP](https://gen.typesetting.jp/) is a typeface designed for digital interfaces that aims to harmonize Latin script with Japanese. It blends [Inter](https://rsms.me/inter/) with [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP) to ensure consistent readability across multiple languages.
 
 ```yaml
@@ -151,6 +160,7 @@ This theme supports two font stacks, switchable via `themeConfig.font` in your s
 theme: cobalt
 themeConfig:
   font: inter # or gen-interface-jp (default)
+  ellipsisFont: cjk # or latin — which font draws … (default: cjk)
 ---
 ```
 
