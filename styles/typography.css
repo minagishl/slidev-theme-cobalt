@@ -1,0 +1,28 @@
+/*
+ * CJK opening punctuation at block start — wrapped by setup/cjk-open-start.ts
+ * when the first character is a fullwidth opening bracket (e.g. 「 （ 【).
+ */
+
+.cjk-open-start {
+  margin-inline-start: calc(-1 * var(--cjk-open-pull));
+}
+
+.cjk-text-block {
+  display: inline;
+  min-width: 0;
+}
+
+/* Keep wrapped text as one flex/grid item when the parent lays out children in a row */
+.slidev-layout :is(li, .note-block-body) > .cjk-text-block {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.slidev-layout .qa-row > .cjk-text-block {
+  flex: 1;
+  min-width: 0;
+}
+
+body[style*='--slidev-theme-font: inter'] .slidev-layout {
+  font-optical-sizing: auto;
+}

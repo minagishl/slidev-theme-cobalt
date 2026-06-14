@@ -6,6 +6,7 @@
 
 /* Base */
 @import './base.css';
+@import './typography.css';
 
 /* Layouts */
 @import './layouts/cover.css';

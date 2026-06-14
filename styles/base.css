@@ -9,9 +9,6 @@
   font-family: var(--font-family-sans) !important;
 
   font-style: normal;
-
-  /* Text spacing trim */
-  text-spacing-trim: trim-start;
 }
 
 .slidev-layout {

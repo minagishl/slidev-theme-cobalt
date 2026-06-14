@@ -10,6 +10,9 @@
   --font-family-sans: 'Gen Interface JP', var(--font-stack-fallback);
   --font-family-display: 'Gen Interface JP Display', var(--font-family-sans);
 
+  /* Fullwidth opening punctuation pull (e.g. TOC labels starting with 「) */
+  --cjk-open-pull: 0.25em;
+
   --slidev-theme-primary: oklch(37.9% 0.146 265.522);
 
   --color-blue-50: oklch(0.97 0.014 254.604);
@@ -123,4 +126,5 @@
 body[style*='--slidev-theme-font: inter'] {
   --font-family-sans: 'Inter Variable', 'Noto Sans JP Variable', var(--font-stack-fallback);
   --font-family-display: var(--font-family-sans);
+  --cjk-open-pull: 0.28em;
 }
