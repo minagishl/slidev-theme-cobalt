@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - npm publish workflow migrated to OIDC Trusted Publishing — `NPM_TOKEN` secret is no longer required
+- Global styles now use `text-spacing-trim: trim-start` for improved typographic spacing
+- Border widths in QA badge, table layout, and team-border layout now use the `--size-px` design token instead of hardcoded pixel values
 
 ## [0.3.4] - 2026-03-04
 
@@ -80,6 +82,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `two-cols` layout renamed to `cols` to reflect multi-column support
 - `image-full` layout now uses the standard frame border; frame color is switchable between `blue` (default) and `white`
 - Inline code inside `image-full` content area uses dark text to prevent white-on-white contrast issue
+- Code block theme switched to `github-dark` with a black background and white foreground
+- Inline code styling updated — gray background by default; blue underline preserved for `code-normal` class or `.code-normal` wrapper
 
 ### Fixed
 
