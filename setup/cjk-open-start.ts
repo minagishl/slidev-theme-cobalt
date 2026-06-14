@@ -1,7 +1,24 @@
 import type { Router } from 'vue-router'
 
-/** Fullwidth CJK opening punctuation at the start of a text block */
+/** Fullwidth CJK opening punctuation at line or block start */
 const OPEN_PUNCT = /^(\s*)([\u300C\u300E\u300A\u3008\uFF08\u3010\uFF3B\uFF5B])/
+
+const PHRASING_TAGS = new Set([
+  'A',
+  'B',
+  'DEL',
+  'EM',
+  'I',
+  'INS',
+  'MARK',
+  'SMALL',
+  'SPAN',
+  'STRONG',
+  'SUB',
+  'SUP',
+])
+
+const SKIP_SELECTOR = 'code, pre, kbd, .shiki, .cjk-open-start'
 
 const TEXT_BLOCK_SELECTOR = [
   '.slidev-layout :is(p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th)',
@@ -11,7 +28,58 @@ const TEXT_BLOCK_SELECTOR = [
   '.slidev-layout blockquote footer',
 ].join(', ')
 
-const SKIP_SELECTOR = 'code, pre, kbd, .shiki, .cjk-open-start'
+function isLineStart(textNode: Text): boolean {
+  let node: Node | null = textNode
+
+  while (node) {
+    let prev: ChildNode | null = node.previousSibling
+
+    while (prev) {
+      if (prev.nodeType === Node.TEXT_NODE) {
+        if ((prev.textContent ?? '').trim().length > 0) return false
+      } else if (prev.nodeName === 'BR') {
+        return true
+      } else if (prev.nodeType === Node.ELEMENT_NODE) {
+        const el = prev as HTMLElement
+        if (el.classList.contains('cjk-open-start')) return false
+        if ((el.textContent ?? '').trim().length > 0) return false
+      }
+      prev = prev.previousSibling
+    }
+
+    const parent = node.parentElement
+    if (!parent || parent.classList.contains('cjk-text-block')) return true
+
+    if (PHRASING_TAGS.has(parent.tagName)) {
+      node = parent
+      continue
+    }
+
+    return true
+  }
+
+  return true
+}
+
+function wrapOpenPunctInTextNode(textNode: Text): boolean {
+  const text = textNode.textContent ?? ''
+  const match = text.match(OPEN_PUNCT)
+  if (!match || !isLineStart(textNode)) return false
+
+  const [, leading] = match
+  let node: Text = textNode
+
+  if (leading.length > 0) node = node.splitText(leading.length)!
+
+  node.splitText(1)
+
+  const span = document.createElement('span')
+  span.className = 'cjk-open-start'
+  node.parentNode!.insertBefore(span, node)
+  span.appendChild(node)
+
+  return true
+}
 
 function hasDirectTextNodes(el: HTMLElement): boolean {
   return [...el.childNodes].some(
@@ -67,39 +135,23 @@ export function wrapCjkOpenStart(el: HTMLElement): boolean {
   if (el.closest(SKIP_SELECTOR)) return false
 
   const target = consolidateInlineContent(el)
-
+  const textNodes: Text[] = []
   const walker = document.createTreeWalker(target, NodeFilter.SHOW_TEXT)
   let textNode: Text | null
 
   while ((textNode = walker.nextNode() as Text | null)) {
     if (textNode.parentElement?.closest('.cjk-open-start')) continue
-
-    const text = textNode.textContent ?? ''
-    const match = text.match(OPEN_PUNCT)
-
-    if (!match) {
-      if (text.trim().length > 0) break
-      continue
-    }
-
-    const [, leading] = match
-    let node: Text = textNode
-
-    if (leading.length > 0) node = node.splitText(leading.length)!
-
-    node.splitText(1)
-
-    const span = document.createElement('span')
-    span.className = 'cjk-open-start'
-    node.parentNode!.insertBefore(span, node)
-    span.appendChild(node)
-
-    el.dataset.cjkOpenStart = 'done'
-    return true
+    textNodes.push(textNode)
   }
 
-  if (target !== el) el.dataset.cjkOpenStart = 'done'
-  return false
+  let wrapped = false
+  for (const node of textNodes) {
+    if (!node.isConnected || node.parentElement?.closest('.cjk-open-start')) continue
+    if (wrapOpenPunctInTextNode(node)) wrapped = true
+  }
+
+  if (wrapped || target !== el) el.dataset.cjkOpenStart = 'done'
+  return wrapped
 }
 
 export function applyCjkOpenStart(root: ParentNode = document): void {

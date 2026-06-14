@@ -1,6 +1,7 @@
 /*
- * CJK opening punctuation at block start — wrapped by setup/cjk-open-start.ts
- * when the first character is a fullwidth opening bracket (e.g. 「 （ 【).
+ * CJK opening punctuation at block or line start — wrapped by setup/cjk-open-start.ts
+ * when the first character after a block or <br> line break is a fullwidth opening
+ * bracket (e.g. 「 （ 【).
  */
 
 .cjk-open-start {
