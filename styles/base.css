@@ -6,12 +6,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Font family */
-  font-family:
-    'Inter Variable', 'Noto Sans JP Variable', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-    'Yu Gothic', 'Meiryo', sans-serif !important;
+  font-family: var(--font-family-sans) !important;
 
-  /* Font optical sizing */
-  font-optical-sizing: auto;
   font-style: normal;
 
   /* Text spacing trim */
@@ -105,8 +101,12 @@
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-relaxed);
 
-  /* Variable font: auto optical sizing per element font-size (Inter opsz axis) */
-  font-optical-sizing: auto;
+}
+
+.slidev-layout.section,
+.slidev-layout.section-frame,
+.slidev-layout.section-index {
+  --font-family-sans: var(--font-family-display);
 }
 
 .slidev-layout h1,

@@ -132,8 +132,16 @@ Open the palette with <Kbd icon="command" /> + <Kbd>K</Kbd>.
 
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
-- **Japanese Support**: Includes Noto Sans JP font for Japanese text
+- **Typography**: [Gen Interface JP](https://gen.typesetting.jp/) for Latin and Japanese text (see [Typography](#typography) below)
 - **Multiple Layouts**: 25 layout options for various presentation needs
+
+## Typography
+
+This theme uses [Gen Interface JP](https://gen.typesetting.jp/), a typeface designed for digital interfaces that aims to harmonize Latin script with Japanese. It blends [Inter](https://rsms.me/inter/) with [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP) to ensure consistent readability across multiple languages.
+
+Section layouts (`section`, `section-frame`, `section-index`) use **Gen Interface JP Display**, the display variant of the same family.
+
+The font files are bundled via the [`gen-interface-jp`](https://www.npmjs.com/package/gen-interface-jp) npm package.
 
 ## Deploy (Cloudflare Workers)
 

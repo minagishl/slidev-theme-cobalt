@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Typography switched from Inter Variable and Noto Sans JP Variable to [Gen Interface JP](https://gen.typesetting.jp/) — a UI typeface that blends Inter with Noto Sans JP for consistent Latin and Japanese readability; `section`, `section-frame`, and `section-index` layouts use the Display variant
+
 ## [0.3.5] - 2026-06-15
 
 ### Added

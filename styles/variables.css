@@ -1,4 +1,13 @@
 :root {
+  /*
+   * Gen Interface JP — UI typeface blending Inter with Noto Sans JP.
+   * https://gen.typesetting.jp/
+   */
+  --font-family-sans:
+    'Gen Interface JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo',
+    sans-serif;
+  --font-family-display: 'Gen Interface JP Display', var(--font-family-sans);
+
   --slidev-theme-primary: oklch(37.9% 0.146 265.522);
 
   --color-blue-50: oklch(0.97 0.014 254.604);

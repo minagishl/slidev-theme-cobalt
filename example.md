@@ -847,7 +847,8 @@ align: left
 
 <FactRow label="Runtime">Node 18+</FactRow>
 <FactRow label="Package manager">npm, pnpm, yarn, or Bun</FactRow>
-<FactRow label="Fonts">Inter Variable, Noto Sans JP Variable</FactRow>
+<FactRow label="Fonts">Gen Interface JP (Inter + Noto Sans JP)</FactRow>
+<FactRow label="Section font">Gen Interface JP Display</FactRow>
 
 ---
 layout: section
