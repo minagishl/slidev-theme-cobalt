@@ -34,6 +34,8 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/noto-sans-jp": "^5.2.10",
     "@slidev/types": "^52.16.0",
     "gen-interface-jp": "^0.6.2",
     "lucide-static": "^0.576.0"
@@ -49,6 +51,9 @@
   "slidev": {
     "colorSchema": "both",
     "defaults": {
+      "themeConfig": {
+        "font": "gen-interface-jp"
+      },
       "fonts": {
         "sans": "Gen Interface JP",
         "mono": "Fira Code"

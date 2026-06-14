@@ -1,6 +1,8 @@
 ---
 theme: ./
 layout: cover
+themeConfig:
+  font: gen-interface-jp
 ---
 
 # Slidev Theme Cobalt
@@ -847,8 +849,8 @@ align: left
 
 <FactRow label="Runtime">Node 18+</FactRow>
 <FactRow label="Package manager">npm, pnpm, yarn, or Bun</FactRow>
-<FactRow label="Fonts">Gen Interface JP (Inter + Noto Sans JP)</FactRow>
-<FactRow label="Section font">Gen Interface JP Display</FactRow>
+<FactRow label="Fonts">Gen Interface JP (default) or Inter + Noto Sans JP</FactRow>
+<FactRow label="Font config">themeConfig.font: gen-interface-jp | inter</FactRow>
 
 ---
 layout: section

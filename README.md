@@ -132,16 +132,29 @@ Open the palette with <Kbd icon="command" /> + <Kbd>K</Kbd>.
 
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
-- **Typography**: [Gen Interface JP](https://gen.typesetting.jp/) for Latin and Japanese text (see [Typography](#typography) below)
+- **Typography**: [Gen Interface JP](https://gen.typesetting.jp/) by default, or Inter + Noto Sans JP — switchable via `themeConfig.font` (see [Typography](#typography))
 - **Multiple Layouts**: 25 layout options for various presentation needs
 
 ## Typography
 
-This theme uses [Gen Interface JP](https://gen.typesetting.jp/), a typeface designed for digital interfaces that aims to harmonize Latin script with Japanese. It blends [Inter](https://rsms.me/inter/) with [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP) to ensure consistent readability across multiple languages.
+This theme supports two font stacks, switchable via `themeConfig.font` in your slide deck headmatter:
 
-Section layouts (`section`, `section-frame`, `section-index`) use **Gen Interface JP Display**, the display variant of the same family.
+| Value                        | Font stack                                      | Section layouts          |
+| ---------------------------- | ----------------------------------------------- | ------------------------ |
+| `gen-interface-jp` (default) | [Gen Interface JP](https://gen.typesetting.jp/) | Gen Interface JP Display |
+| `inter`                      | Inter Variable + Noto Sans JP Variable          | Same as body text        |
 
-The font files are bundled via the [`gen-interface-jp`](https://www.npmjs.com/package/gen-interface-jp) npm package.
+[Gen Interface JP](https://gen.typesetting.jp/) is a typeface designed for digital interfaces that aims to harmonize Latin script with Japanese. It blends [Inter](https://rsms.me/inter/) with [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP) to ensure consistent readability across multiple languages.
+
+```yaml
+---
+theme: cobalt
+themeConfig:
+  font: inter # or gen-interface-jp (default)
+---
+```
+
+Font files are bundled via [`gen-interface-jp`](https://www.npmjs.com/package/gen-interface-jp) and [`@fontsource-variable`](https://fontsource.org/) packages.
 
 ## Deploy (Cloudflare Workers)
 

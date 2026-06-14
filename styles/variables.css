@@ -1,11 +1,13 @@
 :root {
+  --font-stack-fallback:
+    'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+
   /*
-   * Gen Interface JP — UI typeface blending Inter with Noto Sans JP.
+   * Default: Gen Interface JP — UI typeface blending Inter with Noto Sans JP.
    * https://gen.typesetting.jp/
+   * Switch via themeConfig.font: inter | gen-interface-jp
    */
-  --font-family-sans:
-    'Gen Interface JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo',
-    sans-serif;
+  --font-family-sans: 'Gen Interface JP', var(--font-stack-fallback);
   --font-family-display: 'Gen Interface JP Display', var(--font-family-sans);
 
   --slidev-theme-primary: oklch(37.9% 0.146 265.522);
@@ -116,4 +118,9 @@
   --text-4xl: 2.25rem;
   --text-5xl: 3rem;
   --text-6xl: 3.75rem;
+}
+
+body[style*='--slidev-theme-font: inter'] {
+  --font-family-sans: 'Inter Variable', 'Noto Sans JP Variable', var(--font-stack-fallback);
+  --font-family-display: var(--font-family-sans);
 }
