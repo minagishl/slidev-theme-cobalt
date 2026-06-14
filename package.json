@@ -36,15 +36,15 @@
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",
     "@fontsource-variable/noto-sans-jp": "^5.2.10",
-    "@slidev/types": "^52.12.0",
+    "@slidev/types": "^52.16.0",
     "lucide-static": "^0.576.0"
   },
   "devDependencies": {
-    "@slidev/cli": "^52.12.0",
-    "playwright-chromium": "^1.58.2",
-    "prettier": "^3.2.5",
+    "@slidev/cli": "^52.16.0",
+    "playwright-chromium": "^1.60.0",
+    "prettier": "^3.8.4",
     "prettier-plugin-slidev": "^1.0.5",
-    "wrangler": "^3.94.0"
+    "wrangler": "^3.114.17"
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
