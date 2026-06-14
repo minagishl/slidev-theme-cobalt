@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.5] - 2026-06-15
+
 ### Added
 
 - `Kbd` component — inline keyboard key with subtle depth and border for displaying shortcuts; default slot for the key label, or an optional `icon` prop that renders a Lucide icon (`command`, `arrow-up`, `arrow-down`, `arrow-left`, `arrow-right`) via `lucide-static`; sized via theme design tokens and centered on the text line so stacked shortcut lines do not overlap; default cursor is a pointer and hover triggers a subtle press animation that sinks the key cap and shrinks the depth shadow (respecting `prefers-reduced-motion`); pass `no-hover` to disable the animation and pointer cursor for decorative keys; combine multiple `<Kbd>` elements to show key combinations
@@ -16,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Updated dependencies: `@slidev/cli` and `@slidev/types` to ^52.16.0; dev dependencies `playwright-chromium` to ^1.60.0, `prettier` to ^3.8.4, and `wrangler` to ^3.114.17
 - npm publish workflow migrated to OIDC Trusted Publishing — `NPM_TOKEN` secret is no longer required
 - Global styles now use `text-spacing-trim: trim-start` for improved typographic spacing
 - Border widths in QA badge, table layout, and team-border layout now use the `--size-px` design token instead of hardcoded pixel values
@@ -197,7 +200,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions workflow for automated npm publish
 - GitHub issue and pull request templates
 
-[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.4...HEAD
+[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.5...HEAD
+[0.3.5]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.4...v0.3.5
 [0.3.4]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.3...v0.3.4
 [0.3.3]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.1...v0.3.2
