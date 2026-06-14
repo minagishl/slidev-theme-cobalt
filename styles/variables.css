@@ -11,7 +11,7 @@
   --font-family-display: 'Gen Interface JP Display', var(--font-family-sans);
 
   /* Fullwidth opening punctuation pull (e.g. TOC labels starting with 「) */
-  --cjk-open-pull: 0.25em;
+  --cjk-open-pull: 0.375em;
 
   --slidev-theme-primary: oklch(37.9% 0.146 265.522);
 
