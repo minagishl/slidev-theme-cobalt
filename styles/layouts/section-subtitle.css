@@ -1,0 +1,37 @@
+.section-subtitle-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-3);
+}
+
+.section-subtitle-number {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  opacity: calc(100% / 3);
+  line-height: var(--line-height-none);
+}
+
+.section-subtitle-content h1 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.section-subtitle-content h2,
+.section-subtitle-desc {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-relaxed);
+  opacity: calc(100% / 3);
+}
+
+.section-subtitle a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: var(--size-px) dashed var(--color-white);
+}
+
+.section-subtitle a:hover {
+  color: var(--color-white);
+}

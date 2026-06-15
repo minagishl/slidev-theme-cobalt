@@ -120,6 +120,22 @@ number: 3
 # Centered Section
 
 ---
+layout: section-subtitle
+---
+
+# Section Title
+
+## Subtitle via Markdown heading
+
+---
+layout: section-subtitle
+subtitle: Goals and overview
+number: 4
+---
+
+# Section with Props
+
+---
 layout: team
 members:
   - name: Team Member 1

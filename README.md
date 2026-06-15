@@ -58,6 +58,7 @@ This theme provides the following layouts:
 | `section-frame`        | Framed section divider with white background                                                         |
 | `section-index`        | Full blue section divider with a large muted number on the left. Accepts a `number` prop             |
 | `section-index-center` | Full blue section divider with a large muted number above a centered title. Accepts a `number` prop  |
+| `section-subtitle`     | Full blue section divider with a centered title and subtitle. Optional `subtitle` and `number` props |
 | `toc`                  | Table of contents with numbered badges                                                               |
 | `agenda`               | Framed agenda list with numbered badges. Pass a `heading` and `items` array, or use the default slot |
 

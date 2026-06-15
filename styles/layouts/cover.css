@@ -1,6 +1,7 @@
 .cover,
 .closing,
-.section {
+.section,
+.section-subtitle {
   background: var(--color-blue-900);
   color: var(--color-white);
   display: flex;

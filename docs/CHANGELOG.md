@@ -14,10 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Divider` component — horizontal rule for separating content blocks; `variant` (`solid`, `muted`, `dashed`) and `spacing` (`sm`, `md`, `lg`)
 - `agenda` layout — framed agenda list with numbered badges; accepts `heading` and `items` props, or default slot with Markdown
 - `section-index-center` layout — full blue section divider with a large muted number above a centered title; accepts a `number` prop; pairs well with `toc`
+- `section-subtitle` layout — full blue section divider with a centered title and subtitle; optional `subtitle` and `number` props, or use Markdown `h2` for the subtitle
 
 ### Changed
 
-- Typography switched from Inter Variable and Noto Sans JP Variable to [Gen Interface JP](https://gen.typesetting.jp/) — a UI typeface that blends Inter with Noto Sans JP for consistent Latin and Japanese readability; `section`, `section-frame`, `section-index`, and `section-index-center` layouts use the Display variant
+- Typography switched from Inter Variable and Noto Sans JP Variable to [Gen Interface JP](https://gen.typesetting.jp/) — a UI typeface that blends Inter with Noto Sans JP for consistent Latin and Japanese readability; `section`, `section-frame`, `section-index`, `section-index-center`, and `section-subtitle` layouts use the Display variant
 - Font stack is switchable via `themeConfig.font` — `gen-interface-jp` (default) or `inter` (Inter Variable + Noto Sans JP Variable)
 - Ellipsis (`…`) font priority is switchable via `themeConfig.ellipsisFont` — `cjk` (Noto Sans JP, default) or `latin` (Inter); works with both font stacks
 - CJK opening punctuation at block or line start (e.g. 「 （ 【) aligned via client script that wraps the first character in `.cjk-open-start`; applies after `<br>` line breaks as well as block start; targets headings, lists, tables, blockquotes, and theme components (TOC, QA, NoteBlock, FactRow)

@@ -103,7 +103,8 @@
 .slidev-layout.section,
 .slidev-layout.section-frame,
 .slidev-layout.section-index,
-.slidev-layout.section-index-center {
+.slidev-layout.section-index-center,
+.slidev-layout.section-subtitle {
   --font-family-sans: var(--font-family-display);
 }
 
