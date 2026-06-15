@@ -90,6 +90,13 @@ number: 2
 # Another Section
 
 ---
+layout: section-index-center
+number: 3
+---
+
+# Centered Section
+
+---
 layout: team
 members:
   - name: Team Member 1

@@ -101,7 +101,8 @@
 
 .slidev-layout.section,
 .slidev-layout.section-frame,
-.slidev-layout.section-index {
+.slidev-layout.section-index,
+.slidev-layout.section-index-center {
   --font-family-sans: var(--font-family-display);
 }
 

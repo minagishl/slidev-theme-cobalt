@@ -1,0 +1,24 @@
+.section-index-center {
+  background: var(--color-blue-900);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--size-4);
+  padding: var(--size-14);
+}
+
+.section-index-center-index {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  opacity: calc(100% / 3);
+  line-height: var(--line-height-none);
+}
+
+.section-index-center-content h1 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+}
