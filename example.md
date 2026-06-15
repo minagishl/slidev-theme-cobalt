@@ -864,6 +864,26 @@ align: left
 layout: section
 ---
 
+# Icons
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## Icon component
+
+Use `<Icon>` to render Lucide icons inline via `lucide-static`. Pass a `name` prop matching the icon file (e.g. `mail`, `github`, `external-link`). Optional `size` prop: `sm`, `md` (default), or `lg`.
+
+Contact us at <Icon name="mail" /> email@example.com or visit <Icon name="github" /> GitHub.
+
+<Icon name="info" size="lg" /> Large info icon · <Icon name="alert-triangle" size="sm" /> Small warning
+
+---
+layout: section
+---
+
 # Keyboard Keys
 
 ---

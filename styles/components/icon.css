@@ -1,0 +1,25 @@
+.slidev-layout .theme-icon {
+  display: inline-block;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-url) center / contain no-repeat;
+  mask: var(--icon-url) center / contain no-repeat;
+}
+
+.slidev-layout .theme-icon--sm {
+  width: var(--size-4);
+  height: var(--size-4);
+  vertical-align: -0.1em;
+}
+
+.slidev-layout .theme-icon--md {
+  width: var(--size-5);
+  height: var(--size-5);
+  vertical-align: -0.15em;
+}
+
+.slidev-layout .theme-icon--lg {
+  width: var(--size-6);
+  height: var(--size-6);
+  vertical-align: -0.2em;
+}
