@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `closing` layout — full blue closing slide with centered content; pairs with `cover` for thank-you, Q&A, or contact slides
-- `Icon` component — inline Lucide icon via `lucide-static`; required `name` prop and optional `size` (`sm`, `md`, `lg`)
+- `Icon` component — inline Lucide icon from `lucide-static` via jsDelivr CDN; required `name` prop and optional `size` (`sm`, `md`, `lg`)
 - `agenda` layout — framed agenda list with numbered badges; accepts `heading` and `items` props, or default slot with Markdown
 - `section-index-center` layout — full blue section divider with a large muted number above a centered title; accepts a `number` prop; pairs well with `toc`
 
@@ -25,6 +25,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- `Icon` component not rendering — icon URLs in inline styles were not resolved by the bundler; icons now load from the `lucide-static` CDN
+- `Icon` component vertical alignment with adjacent text — icons use typography scale tokens and `vertical-align: middle`
 - CJK opening punctuation pull not applied when opening `/export` directly — slides mount asynchronously; script now re-runs on DOM changes and with delayed retries
 
 ## [0.3.5] - 2026-06-15

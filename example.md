@@ -897,7 +897,7 @@ align: left
 
 ## Icon component
 
-Use `<Icon>` to render Lucide icons inline via `lucide-static`. Pass a `name` prop matching the icon file (e.g. `mail`, `github`, `external-link`). Optional `size` prop: `sm`, `md` (default), or `lg`.
+Use `<Icon>` to render Lucide icons inline. Icons load from the Lucide static CDN (`name` matches the icon file without `.svg`, e.g. `mail`, `github`, `external-link`). Optional `size` prop: `sm`, `md` (default), or `lg`.
 
 Contact us at <Icon name="mail" /> email@example.com or visit <Icon name="github" /> GitHub.
 
