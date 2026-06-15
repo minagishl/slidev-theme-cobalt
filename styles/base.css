@@ -140,6 +140,10 @@
   line-height: var(--line-height-relaxed);
 }
 
+.slidev-layout p + p {
+  margin-top: var(--size-2);
+}
+
 .slidev-layout ul,
 .slidev-layout ol {
   padding-left: var(--size-1);

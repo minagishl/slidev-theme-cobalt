@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Consecutive paragraphs in slide content are spaced with `p + p { margin-top: var(--size-2) }` so blank-line breaks in Markdown are visible on slides
 - Typography switched from Inter Variable and Noto Sans JP Variable to [Gen Interface JP](https://gen.typesetting.jp/) — a UI typeface that blends Inter with Noto Sans JP for consistent Latin and Japanese readability; `section`, `section-frame`, `section-index`, `section-index-center`, and `section-subtitle` layouts use the Display variant
 - Font stack is switchable via `themeConfig.font` — `gen-interface-jp` (default) or `inter` (Inter Variable + Noto Sans JP Variable)
 - Ellipsis (`…`) font priority is switchable via `themeConfig.ellipsisFont` — `cjk` (Noto Sans JP, default) or `latin` (Inter); works with both font stacks
