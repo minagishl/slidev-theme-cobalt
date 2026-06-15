@@ -58,6 +58,7 @@
   --team-img: var(--size-48);
   --team-gap: var(--size-12);
   --team-member-gap: var(--size-4);
+  --team-border-width: var(--size-1);
   --team-img-scale-multiple: 0.8;
   --team-name-scale-multiple: 0.9;
 
