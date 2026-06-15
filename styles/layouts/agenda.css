@@ -1,0 +1,97 @@
+.agenda .frame-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.agenda-heading,
+.agenda h1 {
+  color: var(--color-blue-900);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 0;
+  line-height: var(--line-height-normal);
+  position: absolute;
+  top: calc(var(--frame) + var(--pad));
+  left: calc(var(--frame) + var(--pad));
+}
+
+.agenda-list,
+.agenda ol {
+  list-style: none;
+  counter-reset: agenda;
+  display: flex;
+  flex-direction: column;
+  gap: var(--toc-gap);
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+  width: max-content;
+  max-width: 100%;
+}
+
+.agenda-list li,
+.agenda ol li {
+  counter-increment: agenda;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--toc-item-gap);
+  margin-left: 0;
+  padding-left: 0;
+  min-width: var(--toc-item-min-width);
+  width: 100%;
+}
+
+.agenda ol li {
+  align-items: center;
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-blue-900);
+  line-height: var(--line-height-tight);
+  white-space: nowrap;
+}
+
+.agenda-list li::before,
+.agenda ol li::before {
+  content: counter(agenda, decimal-leading-zero);
+  background: var(--color-blue-900);
+  color: var(--color-white);
+  width: var(--toc-badge-w);
+  height: var(--toc-badge-h);
+  border-radius: var(--toc-badge-radius);
+  display: grid;
+  place-items: center;
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.agenda-list li::before {
+  margin-top: var(--size-1);
+}
+
+.agenda-item-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1);
+  min-width: 0;
+}
+
+.agenda-item-title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-blue-900);
+  line-height: var(--line-height-tight);
+}
+
+.agenda-item-desc {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-base);
+  color: var(--color-neutral-800);
+  line-height: var(--line-height-relaxed);
+  white-space: normal;
+}

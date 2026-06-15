@@ -58,7 +58,8 @@ This theme provides the following layouts:
 | `section-frame`        | Framed section divider with white background                                                        |
 | `section-index`        | Full blue section divider with a large muted number on the left. Accepts a `number` prop            |
 | `section-index-center` | Full blue section divider with a large muted number above a centered title. Accepts a `number` prop |
-| `toc`                  | Table of contents with numbered badges                                                              |
+| `toc`                  | Table of contents with numbered badges                                                               |
+| `agenda`               | Framed agenda list with numbered badges. Pass a `heading` and `items` array, or use the default slot |
 
 ### Content
 
@@ -137,7 +138,7 @@ Open the palette with <Kbd icon="command" /> + <Kbd>K</Kbd>.
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
 - **Typography**: [Gen Interface JP](https://gen.typesetting.jp/) by default, or Inter + Noto Sans JP — switchable via `themeConfig.font` (see [Typography](#typography))
-- **Multiple Layouts**: 25 layout options for various presentation needs
+- **Multiple Layouts**: 27+ layout options for various presentation needs
 
 ## Typography
 

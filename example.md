@@ -48,8 +48,31 @@ layout: toc
 3. Conclusion
 
 ---
+layout: agenda
+items:
+  - title: Introduction
+    description: Goals and overview
+  - title: Main Content
+    description: Key topics and demos
+  - title: Q&A
+---
+
+<Label>Agenda</Label>
+
+---
 layout: toc
 activeIndex: 2
+---
+
+<Label>Table of Contents (active item)</Label>
+
+1. Mission
+2. Company Overview
+3. Business Overview
+4. Work Environment
+
+---
+layout: toc
 ---
 
 <Label>Table of Contents (2 columns)</Label>

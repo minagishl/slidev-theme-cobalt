@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `closing` layout — full blue closing slide with centered content; pairs with `cover` for thank-you, Q&A, or contact slides
 - `Icon` component — inline Lucide icon via `lucide-static`; required `name` prop and optional `size` (`sm`, `md`, `lg`)
+- `agenda` layout — framed agenda list with numbered badges; accepts `heading` and `items` props, or default slot with Markdown
 - `section-index-center` layout — full blue section divider with a large muted number above a centered title; accepts a `number` prop; pairs well with `toc`
 
 ### Changed
@@ -20,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ellipsis (`…`) font priority is switchable via `themeConfig.ellipsisFont` — `cjk` (Noto Sans JP, default) or `latin` (Inter); works with both font stacks
 - CJK opening punctuation at block or line start (e.g. 「 （ 【) aligned via client script that wraps the first character in `.cjk-open-start`; applies after `<br>` line breaks as well as block start; targets headings, lists, tables, blockquotes, and theme components (TOC, QA, NoteBlock, FactRow)
 - `--cjk-open-pull` for Gen Interface JP increased from `0.25em` to `0.375em` for slightly stronger opening punctuation alignment
+- `team-border` layout border width increased from `1px` to `--size-1` (4px) via new `--team-border-width` token
 
 ### Fixed
 
