@@ -46,18 +46,18 @@ This theme provides the following layouts:
 
 ### Title & Structure
 
-| Layout                 | Description                                                                                         |
-| ---------------------- | --------------------------------------------------------------------------------------------------- |
-| `cover`                | Full blue cover slide with centered content                                                         |
-| `closing`              | Full blue closing slide with centered content — pairs with `cover`                                  |
-| `title`                | Left-aligned title on framed slide                                                                  |
-| `title-center`         | Centered title on framed slide                                                                      |
-| `title-sandwich`       | Three-part layout with top subtitle, centered title, and bottom footer                              |
-| `intro`                | Centered content on framed slide                                                                    |
-| `section`              | Full blue section divider                                                                           |
-| `section-frame`        | Framed section divider with white background                                                        |
-| `section-index`        | Full blue section divider with a large muted number on the left. Accepts a `number` prop            |
-| `section-index-center` | Full blue section divider with a large muted number above a centered title. Accepts a `number` prop |
+| Layout                 | Description                                                                                          |
+| ---------------------- | ---------------------------------------------------------------------------------------------------- |
+| `cover`                | Full blue cover slide with centered content                                                          |
+| `closing`              | Full blue closing slide with centered content — pairs with `cover`                                   |
+| `title`                | Left-aligned title on framed slide                                                                   |
+| `title-center`         | Centered title on framed slide                                                                       |
+| `title-sandwich`       | Three-part layout with top subtitle, centered title, and bottom footer                               |
+| `intro`                | Centered content on framed slide                                                                     |
+| `section`              | Full blue section divider                                                                            |
+| `section-frame`        | Framed section divider with white background                                                         |
+| `section-index`        | Full blue section divider with a large muted number on the left. Accepts a `number` prop             |
+| `section-index-center` | Full blue section divider with a large muted number above a centered title. Accepts a `number` prop  |
 | `toc`                  | Table of contents with numbered badges                                                               |
 | `agenda`               | Framed agenda list with numbered badges. Pass a `heading` and `items` array, or use the default slot |
 
