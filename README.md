@@ -49,6 +49,7 @@ This theme provides the following layouts:
 | Layout                 | Description                                                                                         |
 | ---------------------- | --------------------------------------------------------------------------------------------------- |
 | `cover`                | Full blue cover slide with centered content                                                         |
+| `closing`              | Full blue closing slide with centered content — pairs with `cover`                                  |
 | `title`                | Left-aligned title on framed slide                                                                  |
 | `title-center`         | Centered title on framed slide                                                                      |
 | `title-sandwich`       | Three-part layout with top subtitle, centered title, and bottom footer                              |

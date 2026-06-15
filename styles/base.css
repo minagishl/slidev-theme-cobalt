@@ -261,6 +261,7 @@
 
 /* Override Slidev base py-10 px-14 padding that shifts content down */
 .slidev-layout.cover,
+.slidev-layout.closing,
 .slidev-layout.section,
 .slidev-layout.frame,
 .slidev-layout.panel {

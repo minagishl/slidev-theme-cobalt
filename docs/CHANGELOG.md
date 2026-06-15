@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- `closing` layout — full blue closing slide with centered content; pairs with `cover` for thank-you, Q&A, or contact slides
 - `section-index-center` layout — full blue section divider with a large muted number above a centered title; accepts a `number` prop; pairs well with `toc`
 
 ### Changed

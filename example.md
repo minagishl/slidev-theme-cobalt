@@ -902,3 +902,13 @@ heading: License
 **Copyright (c) 2026 Minagishl**
 
 This theme is provided under the MIT License.
+
+---
+layout: closing
+---
+
+# Thank You
+
+## Questions?
+
+[github.com/minagishl](https://github.com/minagishl)
