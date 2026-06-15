@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `closing` layout — full blue closing slide with centered content; pairs with `cover` for thank-you, Q&A, or contact slides
 - `Icon` component — inline Lucide icon from `lucide-static` via jsDelivr CDN; required `name` prop and optional `size` (`sm`, `md`, `lg`)
+- `Divider` component — horizontal rule for separating content blocks; `variant` (`solid`, `muted`, `dashed`) and `spacing` (`sm`, `md`, `lg`)
 - `agenda` layout — framed agenda list with numbered badges; accepts `heading` and `items` props, or default slot with Markdown
 - `section-index-center` layout — full blue section divider with a large muted number above a centered title; accepts a `number` prop; pairs well with `toc`
 

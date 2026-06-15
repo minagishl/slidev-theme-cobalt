@@ -814,6 +814,32 @@ This release is <Badge>stable</Badge> — mix badges freely with paragraphs and 
 layout: section
 ---
 
+# Dividers
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## Divider component
+
+Use `<Divider>` to separate sections within a slide. Default is a cobalt blue solid line.
+
+<Divider />
+
+Muted variant for lighter separation:
+
+<Divider variant="muted" />
+
+Dashed variant:
+
+<Divider variant="dashed" spacing="lg" />
+
+---
+layout: section
+---
+
 # Note Blocks
 
 ---
