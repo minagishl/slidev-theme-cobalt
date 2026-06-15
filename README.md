@@ -107,6 +107,7 @@ This theme provides the following layouts:
 | `<Note>`       | Small muted annotation. Same `position` prop as `Label`. Default is `bottom-left`                                                                                                                                                                                          |
 | `<PageNumber>` | Current page number built on `Label`. `position` prop (default `bottom-right`) and `showTotal` boolean                                                                                                                                                                     |
 | `<Underline>`  | Inline text with a blue underline                                                                                                                                                                                                                                          |
+| `<Highlight>`  | Inline emphasis for key phrases. `variant` prop: `blue` (default) or `amber`; marker stroke for plain text and for inline `code` (no background pill)                                                                                                                      |
 | `<Badge>`      | Inline label for status or emphasis. `variant` prop: `solid` (default), `soft`, or `outline`; default slot for text                                                                                                                                                        |
 | `<Icon>`       | Inline Lucide icon from CDN (`lucide-static`). Required `name` prop (icon file name without `.svg`); optional `size` prop: `sm`, `md` (default), or `lg`                                                                                                                   |
 | `<Divider>`    | Horizontal rule for separating content blocks. `variant` prop: `solid` (default), `muted`, or `dashed`; `spacing` prop: `sm`, `md` (default), or `lg`                                                                                                                      |
@@ -122,6 +123,7 @@ Components can be placed in any layout:
 <Note>\* Estimated value</Note>
 <PageNumber :showTotal="true" />
 <Badge>New</Badge>
+<Highlight>key phrase</Highlight> in a sentence.
 <Icon name="sparkles" /> Inline icon beside text
 <Divider />
 <QA question="What is this?">A Slidev theme with cobalt blue design.</QA>

@@ -1,0 +1,65 @@
+.slidev-layout .theme-highlight {
+  --highlight-ink: color-mix(in oklch, var(--color-blue-300) 42%, transparent);
+
+  display: inline;
+  padding: 0 var(--size-0\.5);
+  margin: 0;
+  border-radius: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to top,
+    var(--highlight-ink) 0%,
+    var(--highlight-ink) 58%,
+    transparent 58%
+  );
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.slidev-layout .theme-highlight--blue {
+  --highlight-ink: color-mix(in oklch, var(--color-blue-300) 42%, transparent);
+}
+
+.slidev-layout .theme-highlight--amber {
+  --highlight-ink: color-mix(in oklch, var(--color-amber-400) 48%, transparent);
+}
+
+/* Inline code inside highlight — layout-transparent wrapper, marker stroke on code */
+.slidev-layout .theme-highlight:has(> code) {
+  display: contents;
+  padding: 0;
+  background-image: none;
+  background-color: transparent;
+}
+
+.slidev-layout .theme-highlight > code {
+  --highlight-ink: color-mix(in oklch, var(--color-blue-300) 42%, transparent);
+
+  display: inline;
+  padding: 0 var(--size-0\.5);
+  border-radius: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to top,
+    var(--highlight-ink) 0%,
+    var(--highlight-ink) 58%,
+    transparent 58%
+  );
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.slidev-layout .theme-highlight--amber > code {
+  --highlight-ink: color-mix(in oklch, var(--color-amber-400) 48%, transparent);
+}

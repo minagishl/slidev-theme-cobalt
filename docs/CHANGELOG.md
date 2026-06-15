@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- `Highlight` component — inline marker-style emphasis for key phrases in body text; default slot for the highlighted text, optional `variant` prop (`blue` (default), `amber`); plain text uses a marker stroke through the lower half (linear gradient) without affecting line height; inline `code` inside a highlight uses the same marker stroke on the code element with a layout-transparent wrapper (`display: contents`) instead of a gray or tinted pill; `box-decoration-break: clone` for multi-line phrases
 - `closing` layout — full blue closing slide with centered content; pairs with `cover` for thank-you, Q&A, or contact slides
 - `Icon` component — inline Lucide icon from `lucide-static` via jsDelivr CDN; required `name` prop and optional `size` (`sm`, `md`, `lg`)
 - `Divider` component — horizontal rule for separating content blocks; `variant` (`solid`, `muted`, `dashed`) and `spacing` (`sm`, `md`, `lg`)

@@ -830,6 +830,36 @@ This release is <Badge>stable</Badge> — mix badges freely with paragraphs and 
 layout: section
 ---
 
+# Highlight
+
+---
+layout: panel
+color: black
+align: left
+---
+
+## Highlight component
+
+Use `<Highlight>` for key phrases in body text. Plain text gets a marker stroke through the lower half — like a highlighter pen — without changing line height.
+
+The default <Highlight>blue variant</Highlight> matches the Cobalt palette. Use it when you want listeners to remember a specific term or takeaway.
+
+You can also pass `variant="amber"` for a classic highlighter look: <Highlight variant="amber">important point</Highlight>.
+
+When a phrase includes inline `code`, the wrapper stays layout-transparent and the marker stroke applies to the code itself — no gray or tinted pill behind it:
+
+Call <Highlight>`useState`</Highlight> when you need local state in a React component.
+
+Use `<Highlight>` for prose and backtick `code` on its own for identifiers — <Highlight>real-time sync</Highlight> pairs naturally with `WebSocket` on the same line.
+
+Multi-line highlights wrap cleanly when the phrase spans a line break:
+
+This slide theme supports <Highlight>consistent typography, colors, and spacing across every slide</Highlight> in the deck.
+
+---
+layout: section
+---
+
 # Dividers
 
 ---
