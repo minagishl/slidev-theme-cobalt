@@ -920,6 +920,7 @@ align: left
 Use `<FactRow>` for release metadata, API fields, or any label–value pairs. Stack several rows; spacing and dividers are handled by the theme.
 
 <FactRow label="Theme">Slidev Theme Cobalt</FactRow>
+<FactRow label="Version">0.4.0</FactRow>
 <FactRow label="Package">
 
 `slidev-theme-cobalt` on npm

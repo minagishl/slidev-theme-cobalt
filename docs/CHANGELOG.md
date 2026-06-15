@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-06-15
+
 ### Added
 
 - `Highlight` component — inline marker-style emphasis for key phrases in body text; default slot for the highlighted text, optional `variant` prop (`blue` (default), `amber`); plain text uses a marker stroke through the lower half (linear gradient) without affecting line height; inline `code` inside a highlight uses the same marker stroke on the code element with a layout-transparent wrapper (`display: contents`) instead of a gray or tinted pill; `box-decoration-break: clone` for multi-line phrases
@@ -19,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Added dependency: `gen-interface-jp` (^0.6.2) for bundled Gen Interface JP font files
 - Consecutive paragraphs in slide content are spaced with `p + p { margin-top: var(--size-2) }` so blank-line breaks in Markdown are visible on slides
 - Typography switched from Inter Variable and Noto Sans JP Variable to [Gen Interface JP](https://gen.typesetting.jp/) — a UI typeface that blends Inter with Noto Sans JP for consistent Latin and Japanese readability; `section`, `section-frame`, `section-index`, `section-index-center`, and `section-subtitle` layouts use the Display variant
 - Font stack is switchable via `themeConfig.font` — `gen-interface-jp` (default) or `inter` (Inter Variable + Noto Sans JP Variable)
@@ -227,7 +230,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions workflow for automated npm publish
 - GitHub issue and pull request templates
 
-[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.5...HEAD
+[Unreleased]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.5...v0.4.0
 [0.3.5]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.4...v0.3.5
 [0.3.4]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.3...v0.3.4
 [0.3.3]: https://github.com/minagishl/slidev-theme-cobalt/compare/v0.3.2...v0.3.3
