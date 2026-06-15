@@ -150,7 +150,8 @@ export function wrapCjkOpenStart(el: HTMLElement): boolean {
     if (wrapOpenPunctInTextNode(node)) wrapped = true
   }
 
-  if (wrapped || target !== el) el.dataset.cjkOpenStart = 'done'
+  const hasText = textNodes.some((n) => (n.textContent ?? '').trim().length > 0)
+  if (wrapped || hasText) el.dataset.cjkOpenStart = 'done'
   return wrapped
 }
 
@@ -164,15 +165,43 @@ export function applyCjkOpenStart(root: ParentNode = document): void {
     })
 }
 
+function isExportOrPrintRoute(): boolean {
+  if (typeof window === 'undefined') return false
+  const path = `${window.location.pathname}${window.location.hash}`
+  return /\/export|\/print/.test(path)
+}
+
 export function initCjkOpenStart(router?: Router): void {
+  let scheduled = false
+
   const run = () => {
+    applyCjkOpenStart()
+  }
+
+  const schedule = () => {
+    if (scheduled) return
+    scheduled = true
     requestAnimationFrame(() => {
-      requestAnimationFrame(() => applyCjkOpenStart())
+      requestAnimationFrame(() => {
+        scheduled = false
+        run()
+      })
     })
   }
 
-  run()
-  router?.afterEach(() => run())
+  schedule()
+  router?.afterEach(() => schedule())
 
-  if (typeof window !== 'undefined') window.addEventListener('load', run)
+  if (typeof window === 'undefined') return
+
+  window.addEventListener('load', schedule)
+
+  const observer = new MutationObserver(() => schedule())
+  observer.observe(document.documentElement, { childList: true, subtree: true })
+
+  if (isExportOrPrintRoute()) {
+    for (const delay of [100, 300, 800, 2000]) {
+      window.setTimeout(schedule, delay)
+    }
+  }
 }
