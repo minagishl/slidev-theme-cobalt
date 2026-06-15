@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- `panel` layout with `color` (`.panel .quote`) — headings (`h1`–`h6`) no longer receive top margin when they are the first child; `h1`–`h3` keep spacing above only when following other content
 - `Icon` component not rendering — icon URLs in inline styles were not resolved by the bundler; icons now load from the `lucide-static` CDN
 - `Icon` component vertical alignment with adjacent text — icons use typography scale tokens and `vertical-align: middle`
 - CJK opening punctuation pull not applied when opening `/export` directly — slides mount asynchronously; script now re-runs on DOM changes and with delayed retries

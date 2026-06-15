@@ -18,11 +18,13 @@
   color: var(--color-neutral-800);
 }
 
-.panel .quote h1,
-.panel .quote h2,
-.panel .quote h3 {
+.panel .quote :is(h1, h2, h3, h4, h5, h6) {
   color: var(--color-blue-900);
   margin: 0;
+}
+
+.panel .quote :is(h1, h2, h3, h4, h5, h6):first-child {
+  margin-top: 0;
 }
 
 .panel .quote h1 {
@@ -31,18 +33,28 @@
   margin-bottom: var(--size-4);
 }
 
+.panel .quote h1:not(:first-child) {
+  margin-top: var(--size-8);
+}
+
 .panel .quote h2 {
   font-size: var(--text-xl);
   font-weight: var(--font-weight-bold);
-  margin-top: var(--size-8);
   margin-bottom: var(--size-2);
+}
+
+.panel .quote h2:not(:first-child) {
+  margin-top: var(--size-8);
 }
 
 .panel .quote h3 {
   font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
-  margin-top: var(--size-4);
   margin-bottom: var(--size-1\.5);
+}
+
+.panel .quote h3:not(:first-child) {
+  margin-top: var(--size-4);
 }
 
 .panel .quote p {
